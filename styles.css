@@ -1,0 +1,607 @@
+/*WORKFLOW ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+    1. BIG IDEA CONCEPT
+    2. AUDIENCE TO TARGET
+    3. RESEARCH
+    4. UI DESIGN IDEAS
+        > COLOR PALETTE & TYPOGRAPHY
+            > COLOR BLINDNESS
+        > MOBILE-FIRST DESIGN
+    5. DESIGN PROCESS
+        A. GENERAL SETTINGS
+            a. MOBILE -> ENORMOUS
+        B. HEADER
+            a. MOBILE -> ENORMOUS
+        C. FOOTER
+            a. MOBILE -> ENORMOUS
+        D. MAIN
+            a. MOBILE -> ENORMOUS
+    6. SHOW PEOPLE. TAKE NOTES.
+    7. IMPLEMENT WHAT YOU LEARNED
+    8. ADD NEW IDEAS
+?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????*/
+
+
+
+
+
+
+
+/* FINISHED */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ GENERAL SETTINGS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+body {
+    position: relative;
+    font-family: 'Cairo', sans-serif;
+    background: black url("https://drscdn.500px.org/photo/1058173890/m%3D900/v2?sig=8c9c51b742bfbcd4a2a98f340b75a1c2d70c4669215b479a7c37050bd31d78c0") local no-repeat 10%/cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.btn {
+    height: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.1em;
+}
+
+.btn:link, .btn:visited, .btn:hover, .btn:active {
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+    
+    body {
+        background: url("https://drscdn.500px.org/photo/1057434294/m%3D900/v2?sig=2436428e873c7e0b4a40806382e4eedecc55957a33d4ab024aabf6c0eca66511") local no-repeat 20%/cover;
+    }
+
+    .btn:link, .btn:visited, .btn:active {
+        background-color: black;
+        color: white;
+    }
+
+    .btn:hover {
+        background-color: black;
+        color: #E8B130;
+    }
+
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+    
+    body {
+        background: black url("https://drscdn.500px.org/photo/1058173923/m%3D900/v2?sig=e32003ff76774dc0e712a64471d49dbd4e449e507bb0d1b7cdfcf25dd1f442e4") local no-repeat right/contain;
+    }
+    
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    body {
+        overflow-y: initial;
+        background: black url("https://drscdn.500px.org/photo/1058173896/m%3D900/v2?sig=a07a9a9d380f7fdc568518f26a9d94fa86b949d2cbb1d6f8e05bedbf3bd6256d") local no-repeat center/cover;
+    }
+    
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+    
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*====================================================== MAIN CONTENT ===================================================================*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+header {
+    color: white;
+    width: 90%;
+    z-index: 8;
+    color: white;
+    position: fixed;
+    overflow-y: hidden;
+    margin-top: 5vh;
+    top: 0;
+    border-left: solid white 0.1vw;
+    font-size: 1em;
+}
+
+    .sig-box {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+        height: 6.5em;
+        margin-bottom: 1em;
+    }
+
+        .sig {
+            max-height: 3em;
+        }
+
+        .sig-box p {
+            padding: 0;
+        }
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+    header {
+        border-left: solid white 0.1vw;
+        margin-top: 2vh;
+    }
+
+    header .btn:link, header .btn:visited, header .btn:active {
+        background-color: white;
+        color: black;
+    }
+
+    header .btn:hover {
+        background-color: #E8B130 !important;
+    }
+
+    .sig-box {
+        justify-content: center;
+        padding: 0;
+        margin-left: 1.1vw;
+    }
+
+    .sig-box p {
+        text-align: center;
+    }
+    
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+
+    header {
+        margin-top: 5vh;
+    }
+
+    .sig-box {
+        margin-bottom: 3em;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+    }
+
+        .sig {
+            max-height: 3em;
+        }
+
+        .sig-box p {
+            font-size: 1em !important;
+            text-align: left;
+        }
+
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+/*====================================================== NAVIGATION PANE ================================================================*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+#menu-button-container {
+    display: none;
+}
+
+.navbar {
+    left: 0;
+    padding: 0;
+    z-index: 9;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: center;
+    align-items: center;
+}
+
+.navbar-collapse {
+    padding: 0;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0;
+    text-align: center;
+}
+
+    .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
+        color: white;
+        text-align: left;
+        padding: 1.1vh 0 0 0;
+        width: 50%;
+    }
+
+/*
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+        
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+
+    .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
+        width: 30%;
+    }
+        
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) { 
+    .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
+        width: 25%;
+    }
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+    .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
+        width: 20%;
+    }
+
+    .nav-item {
+        font-size: 1.1em;
+    }
+
+}
+/*====================================================== SOCIAL MEDIA AND CONTACT =======================================================*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+    
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+        
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ MAIN \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+
+
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ FOOTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+.footer {
+    width: 90%;
+    color: white;
+    position: fixed;
+    right: 8vw;
+    bottom: 0;
+    border-left: solid white 0.1vw;
+    font-size: 0.9em;
+    margin-bottom: 5vh;
+}
+
+.footer-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-info {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1.1vh 0 0 0;
+}
+
+    .footer-info p {
+        padding: 0;
+    }
+
+.footer-button {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+/*Social Media - Footer*/
+.footer-social_media {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    padding: 0;
+    align-content: center;
+    font-size: 1.1em;
+  }
+
+  .footer-social_media i {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-right: 1.5vw;
+    padding-left: 1.5vw;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    margin-right: 1.6em;
+  }
+  
+  .footer-social_media i:link, .footer-social_media i:visited, .footer-social_media i:active{
+    cursor:pointer;
+    color: white;
+  }
+  
+  .footer-social_media i:hover{
+    cursor:pointer;
+    color: #E8B130;
+  }
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+
+    .footer {
+        right: 8vw;
+        border-right: solid white 0.1vw;
+        border-left: none;
+        bottom: 0;
+    }
+
+    .footer-content {
+        justify-content: flex-end;
+    }
+
+    .footer-info {
+        justify-content: flex-end;
+        text-align: right;
+    }
+
+    .footer-social_media {
+        justify-content: flex-end;
+    }
+
+    .footer-social_media i {
+      font-size: 1em;
+      margin-right: 0;
+    }
+
+    footer {
+        bottom: 0;
+        position: absolute;
+        right: 3vw;
+    }
+    
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+
+    .footer {
+        border-left: solid white 0.1vw;
+        border-right: none;
+        bottom: 0;
+    }
+
+    .footer-content {
+        justify-content: flex-start;
+    }
+
+    .footer-info {
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .footer-social_media {
+        justify-content: flex-start;
+    }
+
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+
+    .footer {
+        right: 8vw;
+        border-right: solid white 0.1vw;
+        border-left: none;
+        bottom: 0;
+    }
+
+    .footer-content {
+        justify-content: flex-end;
+    }
+
+    .footer-info {
+        justify-content: flex-end;
+        text-align: right;
+    }
+
+    .footer-social_media {
+        justify-content: flex-end;
+    }
+
+    .footer-social_media {
+        position:relative;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        padding: 0 1vw 0 1vw;
+        align-content: center;
+      }
+    
+      .footer-social_media i {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        text-align: center;
+        color: white;
+      }
+      
+      .footer-social_media i:link, .footer-social_media i:visited, .footer-social_media i:active{
+        cursor:pointer;
+        color: white;
+      }
+      
+      .footer-social_media i:hover{
+        cursor:pointer;
+        color: #E8B130;
+      }
+
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XXL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+    
+    .footer-social_media i {
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+        padding-right: 1vw;
+        padding-left: 1vw;
+        text-align: center;
+        color: white;
+        font-size: 1.1em;
+    }
+
+    .footer {
+        margin-bottom: 5vh;
+        font-size: 1.1em;
+    }
+
+}
+
+
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+html {
+    height: 100%;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+    background: black;
+}
+
+html::-webkit-scrollbar-button {
+    display: none;
+}
+
+html::-webkit-scrollbar-thumb {
+    background:#E8B130;
+    border-radius: 5px;
+}
+
+html::-webkit-scrollbar-track {
+    background: black;
+}
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+    
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+        
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+/*---------------------- PRINTING -------------------------------*/
+@media print {
+
+}
+
+
+
+
+
+
+
+
