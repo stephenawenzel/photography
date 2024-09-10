@@ -238,35 +238,20 @@ main {
     align-items: center;
 }
 
-#about {
+.cont {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-    padding-bottom: 1em;
-    text-align: left;
-    margin-top: 2em;
+    align-items: space-between;
+    background-color: white;
+    height: 30em;
 }
 
-    #about h2 {
-        font-size: 3em;
-        color: white;
-        margin: 2em 0 2em 0;
-        text-align: center;
-        padding: 0.2em 0.5em;
-        border-top: white solid 0.05em;
-        border-right: white solid 0.05em;
-        border-bottom: #e8b130 solid 0.05em;
-        border-left: #e8b130 solid 0.05em;
-        border-radius: 1em;
-    }
-
-    .about_img {
+    .image {    
         border: white solid 0.2em;
         border-radius: 0.3em;
-        display: block;
-        height: 25vh;
-        width: 90%;
+        height: 20em;
+        max-width: 100%;
         background-color: black;
         background-image: url("blur.jpg");
         background-position: center center;
@@ -278,121 +263,31 @@ main {
         box-shadow: 0 0 1em 1em hsla(100, 100%, 100%, 0.2);
     }
 
-    #about p {
-        color: white;
-        background-color: hsla(0, 0% , 0%, 0.03);
-        padding: 2.5em 2.5em 0 2.5em;
-        margin: 1em;
-    }
+        .image img {
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+            max-width: 69%;
+            background-color: hsla(100, 100%, 100%, 1);
+            padding: 0.3em;
+            border-radius: 1em 0 0 0;
+            opacity: 33%;
+        }
 
-#philosophy {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 5em 0 5em 0;
-    text-align: left;
-}
-
-    #title_cont {
-        background-color: black;
-        background-image: url("blur.jpg");
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-origin: border-box;
-        background-attachment: scroll;
-        background-clip: border-box;
-        margin-bottom: 5em;
-    }
-
-    #philosophy h2 {
-        background-color: hsla(100, 0%, 0%, 0.33);
-        text-align: center;
-        font-style: italic;
-        color: white;
-        margin: 5vh 0;
-        padding: 0.5em 0.2em;
-        border-radius: 1em 0 1em 0;
-    }
-
-    #philosophy h3 {
-        color: #e8b130;
-        margin: 2vh 0;
-    }
-
-    #philosophy p {
-        color: white;
-    }
-
-#organizations {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 5.5em 0 5.5em 0;
-    text-align: center;
-    background-color: black;
-    background-image: url("blur.jpg");
-    background-position: 75% center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-origin: border-box;
-    background-attachment: scroll;
-    background-clip: border-box;
-}
-
-    .org-right {
-        display: flex;
-        flex-flow: row wrap;
-        background-color: hsla(100, 100% , 100%, 0.8);
-        border: solid black 1px;
-        border-radius: 0.5em;
-        padding: 0.1em;
-        margin: 0;
-    }
-
-    .org-pic-cont {
-        padding: 0 1em 0 0;
-        margin: 0;
-    }
-
-    .org-pic {
-        max-width: 100%;
-    }
-
-    .org_title {
-        margin: 0;
-        font-size: 1.5em;
-        color: forestgreen;
-        font-weight: bold;
-        margin-bottom: 0.5em;
-    }
-
-    .org_text {
-        margin: 0;
-        padding: 0.25em;
+    .container_box {
+        background-color: white;
         color: black;
+        padding: 0;
     }
 
-    .org_link {
-        margin-top: 1em;
-        background-color: forestgreen !important;
-    }
+        .title {
+            font-size: 2.5em;
+            font-style: italic;
+            text-align: center;
+        }
 
-    .org_section {
-        display: flex;
-        flex-flow: wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 1em;
-        margin: 1em 0;
-    }
-
-        #brpf {
-            padding: 0.4em;
-            background-color: white;
-            border-radius: 0.5em;
+        .description {
+            font-size: 1.2em;
         }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
