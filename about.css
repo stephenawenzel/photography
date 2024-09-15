@@ -80,9 +80,10 @@ header {
     position: -webkit-sticky; /*Safari*/
     position: sticky;
     top: 0;
-    border-bottom: white 0.2em solid;
+    border-bottom: white 0.1em solid;
     z-index: 10;
     background-color: black;
+    width: 100vw;
 }
 
     #header-right {
@@ -99,21 +100,13 @@ header {
 
             .sig {
                 position: relative;
-                max-height: 4em;
-                margin: 0 0 1vh 0;
-            }
-
-            #back-sig {
-                position: absolute;
-                top: 0.3em;
-                left: 2.3em;
-                z-index: -1;
-                height: 4.01em;
+                max-height: 3em;
+                margin: 0 0 0.1em 0;
             }
 
         h1 {
             color: white;
-            background-color: black;
+            font-size: 2em;
             padding: 0.2em;
             border-radius: 0 0 1em 0.2em;
             border-bottom: solid #e8b130 0.15em;
@@ -238,27 +231,76 @@ main {
     align-items: center;
 }
 
+.title_cont {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: url("blur.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-attachment: scroll;
+    background-clip: border-box;
+}
+
+    .section_title {
+        background-color: hsla(100, 0%, 0%, 0.33);
+        text-align: center;
+        font-style: italic;
+        color: white;
+        margin: 2em 0;
+        padding: 0.5em 0.2em;
+        border-radius: 1em 0 1em 0;
+        border: none;
+    }
+
+#philosophy {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: space-between;
+    padding: 0;
+    text-align: left;
+}
+
+    #philosophy article {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #philosophy h3 {
+        color: #e8b130;
+        margin: 1em 0;
+    }
+
+    #philosophy p {
+        color: white;
+    }
+
 #about {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    padding-bottom: 1em;
     text-align: left;
-    margin-top: 2em;
+    margin: 5em 0 5em 0;
 }
 
     #about h2 {
-        font-size: 3em;
-        color: white;
-        margin: 2em 0 2em 0;
+        font-size: 2em;
+        margin: 2em 0 1em 0;
         text-align: center;
-        padding: 0.2em 0.5em;
-        border-top: white solid 0.05em;
-        border-right: white solid 0.05em;
-        border-bottom: #e8b130 solid 0.05em;
-        border-left: #e8b130 solid 0.05em;
+        padding: 0.1em 0.5em;
+        border-bottom: #e8b130 solid 0.15em;
+        border-left: #e8b130 solid 0.15em;
         border-radius: 1em;
+        background-color: white;
+        color: black;
     }
 
     .about_img {
@@ -285,46 +327,6 @@ main {
         margin: 1em;
     }
 
-#philosophy {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 5em 0 5em 0;
-    text-align: left;
-}
-
-    #title_cont {
-        background-color: black;
-        background-image: url("blur.jpg");
-        background-position: center center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-origin: border-box;
-        background-attachment: scroll;
-        background-clip: border-box;
-        margin-bottom: 5em;
-    }
-
-    #philosophy h2 {
-        background-color: hsla(100, 0%, 0%, 0.33);
-        text-align: center;
-        font-style: italic;
-        color: white;
-        margin: 5vh 0;
-        padding: 0.5em 0.2em;
-        border-radius: 1em 0 1em 0;
-    }
-
-    #philosophy h3 {
-        color: #e8b130;
-        margin: 2vh 0;
-    }
-
-    #philosophy p {
-        color: white;
-    }
-
 #organizations {
     display: flex;
     flex-flow: row wrap;
@@ -345,16 +347,17 @@ main {
     .org-right {
         display: flex;
         flex-flow: row wrap;
-        background-color: hsla(100, 100% , 100%, 0.8);
+        background-color: hsla(0, 0% , 0%, 0.7);
         border: solid black 1px;
         border-radius: 0.5em;
-        padding: 0.1em;
+        padding: 0.5em;
         margin: 0;
     }
 
     .org-pic-cont {
         padding: 0 1em 0 0;
         margin: 0;
+        max-width: 20vh;
     }
 
     .org-pic {
@@ -364,7 +367,7 @@ main {
     .org_title {
         margin: 0;
         font-size: 1.5em;
-        color: forestgreen;
+        color: #e8b130;
         font-weight: bold;
         margin-bottom: 0.5em;
     }
@@ -372,12 +375,12 @@ main {
     .org_text {
         margin: 0;
         padding: 0.25em;
-        color: black;
+        color: white;
     }
 
     .org_link {
         margin-top: 1em;
-        background-color: forestgreen !important;
+        background-color: hsla(120, 61%, 34%, 0.7) !important;
     }
 
     .org_section {
@@ -413,7 +416,7 @@ main {
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
 @media screen and (min-width: 1400px) {
-
+    
 }
 
 
@@ -424,14 +427,13 @@ main {
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
 footer {
-    background-color: black;
-    border-top: white solid 0.2em;
     padding: 5em 1.5em 5em 1.5em;
     text-align: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: space-around;
+    background-color: black;
 }
 
     footer p {
@@ -439,7 +441,7 @@ footer {
     }
 
     .searchbar {
-        margin: 2em 0 1em 0;
+        margin: 2em 0 2em 0;
     }
     
     .searchbar input[type=text] {
@@ -452,7 +454,6 @@ footer {
     }
 
     .footer-social_media {
-        position: relative;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
@@ -465,10 +466,7 @@ footer {
     }
     
         .footer-social_media i {
-            padding-left: 0.5vh;
-            padding-right: 0.5vh;
-            padding-top: 1.5vw;
-            padding-bottom: 1.5vw;
+            padding: 0.5em;
             color: white;
             font-size: 1.5em;
             margin: 0.5em 0.2em;

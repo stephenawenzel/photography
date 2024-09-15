@@ -9,7 +9,6 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    height: 100%;
     background-color: black;
     color: white;
 }
@@ -28,8 +27,8 @@ body {
 }
 
 .btn:link, .btn:visited, .btn:hover, .btn:active {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border: none;
 }
 
@@ -80,9 +79,10 @@ header {
     position: -webkit-sticky; /*Safari*/
     position: sticky;
     top: 0;
-    border-bottom: white 0.2em solid;
+    border-bottom: white 0.1em solid;
     z-index: 10;
     background-color: black;
+    width: 100vw;
 }
 
     #header-right {
@@ -99,21 +99,13 @@ header {
 
             .sig {
                 position: relative;
-                max-height: 4em;
-                margin: 0 0 1vh 0;
-            }
-
-            #back-sig {
-                position: absolute;
-                top: 0.3em;
-                left: 2.3em;
-                z-index: -1;
-                height: 4.01em;
+                max-height: 3em;
+                margin: 0 0 0.1em 0;
             }
 
         h1 {
             color: white;
-            background-color: black;
+            font-size: 2em;
             padding: 0.2em;
             border-radius: 0 0 1em 0.2em;
             border-bottom: solid #e8b130 0.15em;
@@ -236,59 +228,77 @@ main {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    border-bottom: white solid 0.2em;
+}
+
+.banner {
+    background-color: gray;
+    font-size: 1em;
+    padding: 0.5em;
+    text-align: center;
 }
 
 .cont {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: space-between;
-    background-color: white;
-    height: 30em;
+    display: block;
+    width: 90vw;
+    padding: 0;
+    float: left;
+    margin: 3em 0 3em 0;
 }
 
-    .image {    
-        border: white solid 0.2em;
-        border-radius: 0.3em;
+    .image {
+        width: 100%;
         height: 20em;
-        max-width: 100%;
-        background-color: black;
-        background-image: url("blur.jpg");
         background-position: center center;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
-        background-origin: border-box;
+        background-origin: padding-box;
         background-attachment: scroll;
         background-clip: border-box;
-        box-shadow: 0 0 1em 1em hsla(100, 100%, 100%, 0.2);
-    }
-
-        .image img {
-            position: absolute;
-            bottom: 0%;
-            right: 0%;
-            max-width: 69%;
-            background-color: hsla(100, 100%, 100%, 1);
-            padding: 0.3em;
-            border-radius: 1em 0 0 0;
-            opacity: 33%;
-        }
-
-    .container_box {
-        background-color: white;
-        color: black;
         padding: 0;
     }
 
+    .container_box {
+        background-color: black;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: space-around;
+        border-right: solid hsla(42, 80%, 55%, 0.2) 0.3em;
+        border-top: solid hsla(42, 80%, 55%, 0.2)  0.3em;
+        border-radius: 100% 10% 100% 0;
+        color: white;
+        padding: 1em;
+    }
+
         .title {
-            font-size: 2.5em;
+            font-size: 1.3em;
             font-style: italic;
-            text-align: center;
+            text-align: right;
+            padding: 0.3em;
+            border-bottom: solid white 0.1em;
         }
 
         .description {
-            font-size: 1.2em;
+            font-size: 1.1em;
+            padding: 1em;
+            opacity: 100%;
+            text-align: justify;
         }
+
+            .fa-quote-left, .fa-quote-right {
+                color: #e8b130;
+                font-size: 1.1em;
+                opacity: 80%;
+            }
+
+            .fa-quote-left {
+                padding: 0 1em 0 0;
+            }
+
+            .fa-quote-right {
+                padding: 0 0 0 1em;
+            }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
@@ -296,14 +306,38 @@ main {
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
+
+    .image {
+        height: 40em;
+    }
         
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
+
+    .cont {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 90vw;
+        padding: 0;
+        float: left;
+        margin: 3em 0 3em 0;
+    }
+
+    .cont .btn {
+        margin-top: 2em;
+    }
     
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
+
+    .container_box {
+        border-right: solid hsla(42, 80%, 55%, 0.4) 0.2em;
+        border-top: solid hsla(42, 80%, 55%, 0.4)  0.2em;
+    }
     
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
@@ -319,14 +353,13 @@ main {
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
 footer {
-    background-color: black;
-    border-top: white solid 0.2em;
     padding: 5em 1.5em 5em 1.5em;
     text-align: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: space-around;
+    background-color: black;
 }
 
     footer p {
@@ -334,7 +367,7 @@ footer {
     }
 
     .searchbar {
-        margin: 2em 0 1em 0;
+        margin: 2em 0 2em 0;
     }
     
     .searchbar input[type=text] {
@@ -347,7 +380,6 @@ footer {
     }
 
     .footer-social_media {
-        position: relative;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
@@ -360,10 +392,7 @@ footer {
     }
     
         .footer-social_media i {
-            padding-left: 0.5vh;
-            padding-right: 0.5vh;
-            padding-top: 1.5vw;
-            padding-bottom: 1.5vw;
+            padding: 0.5em;
             color: white;
             font-size: 1.5em;
             margin: 0.5em 0.2em;
@@ -410,6 +439,16 @@ footer {
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+    /* Photos */
+ 
+    #ReachingfortheSky {        
+        background-image: url("Reaching_for_the_Sky.jpg");
+    }
+
+    #CascadeofTime {
+        background-image: url("Cascade_of_Time.jpg");
+    }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
