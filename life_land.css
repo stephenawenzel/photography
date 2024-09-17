@@ -440,14 +440,14 @@ footer {
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
-    /* Photos */
+    /* PHOTOS IN ALPHABETICAL ORDER */
  
-    #ReachingfortheSky {        
-        background-image: url("Reaching_for_the_Sky.jpg");
+    #A_Winters_Snack {        
+        background-image: url("/photography/Life_Landscapes/A_Winters_Snack.jpg");
     }
 
-    #CascadeofTime {
-        background-image: url("Cascade_of_Time.jpg");
+    #Adventure {
+        background-image: url("/photography/Life_Landscapes/Adventure.jpg");
     }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
