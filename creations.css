@@ -440,14 +440,220 @@ footer {
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
-    /* PHOTOS IN ALPHABETICAL ORDER */
+    /* PHOTOS IN ALPHABETICAL ORDER 
+    
+        #Image_Title {
+            background-image: url("/photography/Creations/Image_Title.jpg");
+        }
+    
+    */
  
     #A_Sea_of_Carolina_Blue {        
         background-image: url("/photography/Creations/A_Sea_of_Carolina_Blue.jpg");
     }
-
+    
     #Accessible_Traditions {
-        background-image: url("/photography/Creations/Accessible\ Traditions.jpg");
+        background-image: url("/photography/Creations/Accessible_Traditions.jpg");
+    }
+
+    #Ars_and_Scientia {
+        background-image: url("/photography/Creations/Ars_and_Scientia.jpg");
+    }
+
+    #Ascending_Fryingpan_Lookout {
+        background-image: url("/photography/Creations/Ascending_Fryingpan_Lookout.jpg");
+    }
+
+    #Blue_Cross {
+        background-image: url("/photography/Creations/Blue_Cross.jpg");
+    }
+
+    #Bran_Castle {
+        background-image: url("/photography/Creations/Bran_Castle.jpg");
+    }
+
+    #Brâncovenesc_Fresco {
+        background-image: url("/photography/Creations/Brâncovenesc_Fresco.jpg");
+    }
+
+    #Burst {
+        background-image: url("/photography/Creations/Burst.jpg");
+    }
+
+    #Cascade_of_Time {
+        background-image: url("/photography/Creations/Cascade_of_Time.jpg");
+    }
+
+    #Courtyard_from_Above {
+        background-image: url("/photography/Creations/Courtyard_from_Above.jpg");
+    }
+
+    #Dados_Legacy {
+        background-image: url("/photography/Creations/Dados_Legacy.jpg");
+    }
+
+    #Dandelion_Dreams {
+        background-image: url("/photography/Creations/Dandelion_Dreams.jpg");
+    }
+
+    #Echoes_of_the_Crash {
+        background-image: url("/photography/Creations/Echoes_of_the_Crash.jpg");
+    }
+
+    #Endurance {
+        background-image: url("/photography/Creations/Endurance.jpg");
+    }
+
+    #Energy {
+        background-image: url("/photography/Creations/Energy.jpg");
+    }
+
+    #Ethereal_Cascade_of_Light {
+        background-image: url("/photography/Creations/Ethereal_Cascade_of_Light.jpg");
+    }
+
+    #Final_Descent {
+        background-image: url("/photography/Creations/Final_Descent.jpg");
+    }
+
+    #Front_Facade_of_Sinaia_Monastery {
+        background-image: url("/photography/Creations/Front_Facade_of_Sinaia_Monastery.jpg");
+    }
+
+    #Golden {
+        background-image: url("/photography/Creations/Golden.jpg");
+    }
+
+    #Golden_Rapids {
+        background-image: url("/photography/Creations/Golden_Rapids.jpg");
+    }
+
+    #Groundbreaking_Ceiling {
+        background-image: url("/photography/Creations/Groundbreaking_Ceiling.jpg");
+    }
+
+    #Illumination {
+        background-image: url("/photography/Creations/Illumination.jpg");
+    }
+
+    #Intergalactic_Explosion {
+        background-image: url("/photography/Creations/Intergalactic_Explosion.jpg");
+    }
+
+    #Locks_of_Love {
+        background-image: url("/photography/Creations/Locks_of_Love.jpg");
+    }
+
+    #Majesty {
+        background-image: url("/photography/Creations/Majesty.jpg");
+    }
+
+    #Mathias_Rex {
+        background-image: url("/photography/Creations/Mathias_Rex.jpg");
+    }
+
+    #Modern_Devotion {
+        background-image: url("/photography/Creations/Modern_Devotion.jpg");
+    }
+
+    #Neon_Swan_in_Pink_Glow {
+        background-image: url("/photography/Creations/Neon_Swan_in_Pink_Glow.jpg");
+    }
+
+    #Radiant_Burst {
+        background-image: url("/photography/Creations/Radiant_Burst.jpg");
+    }
+
+    #Reaching_for_the_Sky {
+        background-image: url("/photography/Creations/Reaching_for_the_Sky.jpg");
+    }
+
+    #Regal_Presence {
+        background-image: url("/photography/Creations/Regal_Presence.jpg");
+    }
+
+    #Roof_of_Sinaia_Monastery {
+        background-image: url("/photography/Creations/Roof_of_Sinaia_Monastery.jpg");
+    }
+
+    #Roof_of_Sinaia_Monastery_Vertical {
+        background-image: url("/photography/Creations/Roof_of_Sinaia_Monastery_Vertical.jpg");
+    }
+
+    #Shadowed_Path {
+        background-image: url("/photography/Creations/Shadowed_Path.jpg");
+    }
+
+    #Shadows_of_the_Impaler {
+        background-image: url("/photography/Creations/Shadows_of_the_Impaler.jpg");
+    }
+
+    #Slither {
+        background-image: url("/photography/Creations/Slither.jpg");
+    }
+
+    #Sorcerers_Spell {
+        background-image: url("/photography/Creations/Sorcerers_Spell.jpg");
+    }
+
+    #South_Building {
+        background-image: url("/photography/Creations/South_Building.jpg");
+    }
+
+    #Spirals {
+        background-image: url("/photography/Creations/Spirals.jpg");
+    }
+
+    #Spire_of_the_Old_Sinaia_Church {
+        background-image: url("/photography/Creations/Spire_of_the_Old_Sinaia_Church.jpg");
+    }
+
+    #Television_Beacon {
+        background-image: url("/photography/Creations/Television_Beacon.jpg");
+    }
+
+    #The_Bell_Tower {
+        background-image: url("/photography/Creations/The_Bell_Tower.jpg");
+    }
+
+    #The_Hospitality_of_Abraham {
+        background-image: url("/photography/Creations/The_Hospitality_of_Abraham.jpg");
+    }
+
+    #The_Old_Well {
+        background-image: url("/photography/Creations/The_Old_Well.jpg");
+    }
+
+    #The_Old_Well_in_Radiance {
+        background-image: url("/photography/Creations/The_Old_Well_in_Radiance.jpg");
+    }
+
+    #Tower_of_Bran_Castle {
+        background-image: url("/photography/Creations/Tower_of_Bran_Castle.jpg");
+    }
+
+    #Towers_of_the_Holy_Trinity_Church {
+        background-image: url("/photography/Creations/Towers_of_the_Holy_Trinity_Church.jpg");
+    }
+
+    #Upward {
+        background-image: url("/photography/Creations/Upward.jpg");
+    }
+
+    #View_Through_History {
+        background-image: url("/photography/Creations/View_Through_History.jpg");
+    }
+
+    #White_Gold {
+        background-image: url("/photography/Creations/White_Gold.jpg");
+    }
+
+    #Winding_Road {
+        background-image: url("/photography/Creations/Winding_Road.jpg");
+    }
+
+    #Winters_Lookout {
+        background-image: url("/photography/Creations/Winters_Lookout.jpg");
     }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/

@@ -440,7 +440,13 @@ footer {
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
-    /* PHOTOS IN ALPHABETICAL ORDER */
+    /* PHOTOS IN ALPHABETICAL ORDER 
+    
+        #Image_Title {
+            background-image: url("/photography/Life_Landscapes/Image_Title.jpg");
+        }
+    
+    */
  
     #A_Winters_Snack {        
         background-image: url("/photography/Life_Landscapes/A_Winters_Snack.jpg");
@@ -448,6 +454,378 @@ footer {
 
     #Adventure {
         background-image: url("/photography/Life_Landscapes/Adventure.jpg");
+    }
+    
+    #American_Bald_Eagle {
+        background-image: url("/photography/Life_Landscapes/American_Bald_Eagle.jpg");
+    }
+    
+    #Appalachian_Allure {
+        background-image: url("/photography/Life_Landscapes/Appalachian_Allure.jpg");
+    }
+    
+    #Autumn_Majesty {
+        background-image: url("/photography/Life_Landscapes/Autumn_Majesty.jpg");
+    }
+    
+    #Autumns_Mosaic {
+        background-image: url("/photography/Life_Landscapes/Autumns_Mosaic.jpg");
+    }
+    
+    #Baraj_Valea_Drăganului {
+        background-image: url("/photography/Life_Landscapes/Baraj_Valea_Drăganului.jpg");
+    }
+    
+    #Bear_in_the_Clouds {
+        background-image: url("/photography/Life_Landscapes/Bear_in_the_Clouds.jpg");
+    }
+    
+    #Beauty_and_Grace {
+        background-image: url("/photography/Life_Landscapes/Beauty_and_Grace.jpg");
+    }
+    
+    #Beneath_the_Icy_Glow {
+        background-image: url("/photography/Life_Landscapes/Beneath_the_Icy_Glow.jpg");
+    }
+    
+    #Black_and_White {
+        background-image: url("/photography/Life_Landscapes/Black_and_White.jpg");
+    }
+    
+    #Black_Balsam {
+        background-image: url("/photography/Life_Landscapes/Black_Balsam.jpg");
+    }
+    
+    #Blooming_Mountain_Laurel {
+        background-image: url("/photography/Life_Landscapes/Blooming_Mountain_Laurel.jpg");
+    }
+    
+    #Brașov_from_Above {
+        background-image: url("/photography/Life_Landscapes/Brașov_from_Above.jpg");
+    }
+    
+    #Căpițe {
+        background-image: url("/photography/Life_Landscapes/Căpițe.jpg");
+    }
+    
+    #Castaway {
+        background-image: url("/photography/Life_Landscapes/Castaway.jpg");
+    }
+    
+    #Celestial_Convergence {
+        background-image: url("/photography/Life_Landscapes/Celestial_Convergence.jpg");
+    }
+    
+    #Crowned_in_Mist_Horizontal {
+        background-image: url("/photography/Life_Landscapes/Crowned_in_Mist_Horizontal.jpg");
+    }
+    
+    #Crowned_in_Mist_Vertical {
+        background-image: url("/photography/Life_Landscapes/Crowned_in_Mist_Vertical.jpg");
+    }
+    
+    #Curiosity {
+        background-image: url("/photography/Life_Landscapes/Curiosity.jpg");
+    }
+    
+    #Curious_Encounter {
+        background-image: url("/photography/Life_Landscapes/Curious_Encounter.jpg");
+    }
+    
+    #Dry_Falls {
+        background-image: url("/photography/Life_Landscapes/Dry_Falls.jpg");
+    }
+    
+    #Easters_Blessing {
+        background-image: url("/photography/Life_Landscapes/Easters_Blessing.jpg");
+    }
+    
+    #Emerald_Eyes {
+        background-image: url("/photography/Life_Landscapes/Emerald_Eyes.jpg");
+    }
+    
+    #Emergence {
+        background-image: url("/photography/Life_Landscapes/Emergence.jpg");
+    }
+    
+    #Emergence-2 {
+        background-image: url("/photography/Life_Landscapes/Emergence-2.jpg");
+    }
+    
+    #Feathered_Serenity {
+        background-image: url("/photography/Life_Landscapes/Feathered_Serenity.jpg");
+    }
+    
+    #Fiery_Sky-1 {
+        background-image: url("/photography/Life_Landscapes/Fiery_Sky-1.jpg");
+    }
+    
+    #Fiery_Sky-2 {
+        background-image: url("/photography/Life_Landscapes/Fiery_Sky-2.jpg");
+    }
+    
+    #Formidable_Height {
+        background-image: url("/photography/Life_Landscapes/Formidable_Height.jpg");
+    }
+    
+    #Frosted_Slope {
+        background-image: url("/photography/Life_Landscapes/Frosted_Slope.jpg");
+    }
+    
+    #Fryingpans_Warmth {
+        background-image: url("/photography/Life_Landscapes/Fryingpans_Warmth.jpg");
+    }
+    
+    #Galapagos_Sea_Lion {
+        background-image: url("/photography/Life_Landscapes/Galapagos_Sea_Lion.jpg");
+    }
+    
+    #Golden_Afterglow {
+        background-image: url("/photography/Life_Landscapes/Golden_Afterglow.jpg");
+    }
+    
+    #Golden_Grazing {
+        background-image: url("/photography/Life_Landscapes/Golden_Grazing.jpg");
+    }
+    
+    #Graceful_Glide {
+        background-image: url("/photography/Life_Landscapes/Graceful_Glide.jpg");
+    }
+    
+    #Gradient_Horizon {
+        background-image: url("/photography/Life_Landscapes/Gradient_Horizon.jpg");
+    }
+    
+    #Grazing_in_Drăgan {
+        background-image: url("/photography/Life_Landscapes/Grazing_in_Drăgan.jpg");
+    }
+    
+    #Hidden_Surprise {
+        background-image: url("/photography/Life_Landscapes/Hidden_Surprise.jpg");
+    }
+    
+    #Illuminated_Faith {
+        background-image: url("/photography/Life_Landscapes/Illuminated_Faith.jpg");
+    }
+    
+    #Kordofan_Giraffe_Profile {
+        background-image: url("/photography/Life_Landscapes/Kordofan_Giraffe_Profile.jpg");
+    }
+    
+    #Lake_Drăgan {
+        background-image: url("/photography/Life_Landscapes/Lake_Drăgan.jpg");
+    }
+    
+    #Legend_of_the_Dogwood {
+        background-image: url("/photography/Life_Landscapes/Legend_of_the_Dogwood.jpg");
+    }
+    
+    #Locals {
+        background-image: url("/photography/Life_Landscapes/Locals.jpg");
+    }
+    
+    #Lunar_Majesty {
+        background-image: url("/photography/Life_Landscapes/Lunar_Majesty.jpg");
+    }
+    
+    #Lush_Horizons {
+        background-image: url("/photography/Life_Landscapes/Lush_Horizons.jpg");
+    }
+    
+    #Majestic_Repose {
+        background-image: url("/photography/Life_Landscapes/Majestic_Repose.jpg");
+    }
+    
+    #Megahorn {
+        background-image: url("/photography/Life_Landscapes/Megahorn.jpg");
+    }
+    
+    #Mooney_Falls_in_Motion {
+        background-image: url("/photography/Life_Landscapes/Mooney_Falls_in_Motion.jpg");
+    }
+    
+    #Mount_Pisgah {
+        background-image: url("/photography/Life_Landscapes/Mount_Pisgah.jpg");
+    }
+    
+    #Navigating_the_Waves {
+        background-image: url("/photography/Life_Landscapes/Navigating_the_Waves.jpg");
+    }
+    
+    #Pathway_to_the_Smoky_Horizon {
+        background-image: url("/photography/Life_Landscapes/Pathway_to_the_Smoky_Horizon.jpg");
+    }
+    
+    #Peak_Autumn_Vibrance-1 {
+        background-image: url("/photography/Life_Landscapes/Peak_Autumn_Vibrance-1.jpg");
+    }
+    
+    #Peak_Autumn_Vibrance-2 {
+        background-image: url("/photography/Life_Landscapes/Peak_Autumn_Vibrance-2.jpg");
+    }
+    
+    #Perched_on_Tradition {
+        background-image: url("/photography/Life_Landscapes/Perched_on_Tradition.jpg");
+    }
+    
+    #Purple_Stripe_Jellyfish-1 {
+        background-image: url("/photography/Life_Landscapes/Purple_Stripe_Jellyfish-1.jpg");
+    }
+    
+    #Purple_Stripe_Jellyfish-2 {
+        background-image: url("/photography/Life_Landscapes/Purple_Stripe_Jellyfish-2.jpg");
+    }
+    
+    #Rainbows_Embrace {
+        background-image: url("/photography/Life_Landscapes/Rainbows_Embrace.jpg");
+    }
+    
+    #Red-backed_Shrike {
+        background-image: url("/photography/Life_Landscapes/Red-backed_Shrike.jpg");
+    }
+    
+    #Refreshing_Cascade {
+        background-image: url("/photography/Life_Landscapes/Refreshing_Cascade.jpg");
+    }
+    
+    #Restful_Moment {
+        background-image: url("/photography/Life_Landscapes/Restful_Moment.jpg");
+    }
+    
+    #Resting_Majesty {
+        background-image: url("/photography/Life_Landscapes/Resting_Majesty.jpg");
+    }
+    
+    #Retro_Glow {
+        background-image: url("/photography/Life_Landscapes/Retro_Glow.jpg");
+    }
+    
+    #Ripples_of_Dawn {
+        background-image: url("/photography/Life_Landscapes/Ripples_of_Dawn.jpg");
+    }
+    
+    #Rivers_Rhythm {
+        background-image: url("/photography/Life_Landscapes/Rivers_Rhythm.jpg");
+    }
+    
+    #Roaring_Waters {
+        background-image: url("/photography/Life_Landscapes/Roaring_Waters.jpg");
+    }
+    
+    #Shaded_Rest {
+        background-image: url("/photography/Life_Landscapes/Shaded_Rest.jpg");
+    }
+    
+    #Solitude {
+        background-image: url("/photography/Life_Landscapes/Solitude.jpg");
+    }
+    
+    #Solitude-2 {
+        background-image: url("/photography/Life_Landscapes/Solitude-2.jpg");
+    }
+    
+    #Solitude-3 {
+        background-image: url("/photography/Life_Landscapes/Solitude-3.jpg");
+    }
+    
+    #Summer_Sentinel {
+        background-image: url("/photography/Life_Landscapes/Summer_Sentinel.jpg");
+    }
+    
+    #Summer_Serenity {
+        background-image: url("/photography/Life_Landscapes/Summer_Serenity.jpg");
+    }
+    
+    #Sunbathing {
+        background-image: url("/photography/Life_Landscapes/Sunbathing.jpg");
+    }
+    
+    #Sunburst {
+        background-image: url("/photography/Life_Landscapes/Sunburst.jpg");
+    }
+    
+    #Sunflower_Serenade {
+        background-image: url("/photography/Life_Landscapes/Sunflower_Serenade.jpg");
+    }
+    
+    #Sunset_over_the_Blue_Ridge {
+        background-image: url("/photography/Life_Landscapes/Sunset_over_the_Blue_Ridge.jpg");
+    }
+    
+    #Sunsets_Icy_Veil {
+        background-image: url("/photography/Life_Landscapes/Sunsets_Icy_Veil.jpg");
+    }
+    
+    #Symphony_of_Color {
+        background-image: url("/photography/Life_Landscapes/Symphony_of_Color.jpg");
+    }
+    
+    #Tapestry_of_Churches {
+        background-image: url("/photography/Life_Landscapes/Tapestry_of_Churches.jpg");
+    }
+    
+    #The_M-Shaped_Falls {
+        background-image: url("/photography/Life_Landscapes/The_M-Shaped_Falls.jpg");
+    }
+    
+    #The_Watchful_Grazer {
+        background-image: url("/photography/Life_Landscapes/The_Watchful_Grazer.jpg");
+    }
+    
+    #Towers_Frame {
+        background-image: url("/photography/Life_Landscapes/Towers_Frame.jpg");
+    }
+    
+    #Tranquility {
+        background-image: url("/photography/Life_Landscapes/Tranquility.jpg");
+    }
+    
+    #Turkish_Cap_Lilies {
+        background-image: url("/photography/Life_Landscapes/Turkish_Cap_Lilies.jpg");
+    }
+    
+    #Twilights_Guardian {
+        background-image: url("/photography/Life_Landscapes/Twilights_Guardian.jpg");
+    }
+    
+    #Underwater_Ballet {
+        background-image: url("/photography/Life_Landscapes/Underwater_Ballet.jpg");
+    }
+    
+    #Whimsy_in_the_Marsh {
+        background-image: url("/photography/Life_Landscapes/Whimsy_in_the_Marsh.jpg");
+    }
+    
+    #Whispers_of_Willow {
+        background-image: url("/photography/Life_Landscapes/Whispers_of_Willow.jpg");
+    }
+    
+    #Winter_Twilight {
+        background-image: url("/photography/Life_Landscapes/Winter_Twilight.jpg");
+    }
+    
+    #Winter_Watchers {
+        background-image: url("/photography/Life_Landscapes/Winter_Watchers.jpg");
+    }
+    
+    #Winters_Echo {
+        background-image: url("/photography/Life_Landscapes/Winters_Echo.jpg");
+    }
+    
+    #Winters_Shadow_Over_Looking_Glass_Rock {
+        background-image: url("/photography/Life_Landscapes/Winters_Shadow_Over_Looking_Glass_Rock.jpg");
+    }
+    
+    #Winters_Solitude {
+        background-image: url("/photography/Life_Landscapes/Winters_Solitude.jpg");
+    }
+    
+    #Workers_of_the_Hive {
+        background-image: url("/photography/Life_Landscapes/Workers_of_the_Hive.jpg");
+    }
+    
+    #Zebras_Distinctive_Stripes {
+        background-image: url("/photography/Life_Landscapes/Zebras_Distinctive_Stripes.jpg");
     }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
