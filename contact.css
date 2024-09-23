@@ -3,12 +3,48 @@
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
 body {
+    position: relative;
+    font-family: 'Cairo', sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
     background-color: black;
+    color: white;
+}
+
+.btn {
+    height: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 15px;
+    border: none;
+    font-size: 1.1em;
+    background-color: white;
+    color: black;
+}
+
+.btn:link, .btn:visited, .btn:hover, .btn:active {
+    background-color: white;
+    color: black;
+    border: none;
 }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
-    
+
+    .btn:link, .btn:visited, .btn:active {
+        background-color: white;
+        color: black;
+    }
+
+    .btn:hover {
+        background-color: white;
+        color: #E8B130;
+    }
+
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
@@ -32,6 +68,87 @@ body {
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    padding: 1vh 0 1vh 0;
+    text-align: center;
+    position: -webkit-sticky; /*Safari*/
+    position: sticky;
+    top: 0;
+    border-bottom: white 0.1em solid;
+    z-index: 10;
+    background-color: black;
+    width: 100vw;
+}
+
+    #header-right {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        height: 100%;
+        align-content: space-around;
+    }
+
+        #sig-box {
+            display:block;
+        }
+
+            .sig {
+                position: relative;
+                max-height: 3em;
+                margin: 0 0 0.1em 0;
+            }
+
+        h1 {
+            color: white;
+            font-size: 2em;
+            padding: 0.2em;
+            border-radius: 0 0 1em 0.2em;
+            border-bottom: solid #e8b130 0.15em;
+        }
+
+    .header-social_media {
+        position: relative;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        padding: 0;
+        align-content: center;
+        font-size: 1.1em;
+        border-right: 1px white solid;
+    }
+    
+        .header-social_media i {
+            padding-top: 0.5vh;
+            padding-bottom: 0.5vh;
+            padding-right: 1.5vw;
+            padding-left: 1.5vw;
+            color: white;
+            font-size: 1.5em;
+            margin: 0.2em 0.5em;
+        }
+      
+        .header-social_media i:link, .header-social_media i:visited, .header-social_media i:active{
+            cursor:pointer;
+            color: white;
+        }
+        
+        .header-social_media i:hover{
+            cursor:pointer;
+            color: #E8B130;
+        }
+
+        .home i {
+            background-color: white;
+            color: black;
+            border-radius: 100%;
+            padding: 0.2em;
+        }
+
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
     
@@ -49,98 +166,7 @@ body {
     
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {   
-
-    #title {
-        text-shadow: white 2px 2px 10px;
-        color: white;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-    }
-
-    #title span {
-        color: #e8b130;
-    }
-
-    header {
-        padding: 3vh 0 1vh 0; 
-        margin: 0;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-        align-content: center;
-        background-color: hsla(255, 100%, 0%, 0.8);
-    }
-    
-    header a:link {
-        margin: 0 1vw;
-        padding: 0;
-        color: white;
-        font-size: 1.4em;
-        text-decoration: none;
-        transition-property: color;
-        transition-duration: 500ms;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-    }
-    header a:visited {
-        margin: 0 1vw;
-        padding: 0;
-        color: white;
-        font-size: 1.4em;
-        text-decoration: none;
-        transition-property: color;
-        transition-duration: 500ms;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-    }
-    header a:hover {
-        margin: 0 1vw;
-        padding: 0;
-        color: white;
-        font-size: 1.4em;
-        transition-property: color;
-        color: #e8b130;
-        transition-duration: 500ms;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-    }
-    header a:active {
-        margin: 0 1vw;
-        padding: 0;
-        color: white;
-        font-size: 1.4em;
-        text-decoration: none;
-        transition-property: color;
-        transition-duration: 500ms;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-    }
-    
-    header a i {
-        transition-property: color;
-        color: white;
-        transition-duration: 500ms;
-        font-size: 1.4em;
-        margin: 0 1vw ;
-        padding: 0;
-    }
-    
-    header a i:hover {
-        transition-property: color;
-        color: #e8b130;
-        transition-duration: 500ms;
-    }
+@media screen and (min-width: 1400px) {
 
 }
 /*====================================================== NAVIGATION PANE ================================================================*/
@@ -196,14 +222,203 @@ body {
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ MAIN \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
 main {
-    color: white;
-    background-color: hsla(255, 100%, 0%, 0.3);
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    align-content: center;
+    padding: 1em 0 0 0;
+}
+
+.form_container {
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     align-content: center;
 }
+
+#general_inquiries {
+    border: white solid 0.1em;
+    margin: 0 0 2em 0;
+    background-color: hsla(100, 100%, 100%, 0.05);
+}
+
+#your_session {
+    border: white solid 0.1em;
+    margin: 0 0 2em 0;
+    background-color: hsla(100, 100%, 100%, 0.05);
+}
+
+#experience {
+    border: white solid 0.1em;
+    margin: 0;
+    background-color: hsla(100, 100%, 100%, 0.05);
+}
+
+.form_section {
+    padding: 2em 1em 2em 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.section_title {
+    margin: 0 0 1em 0;
+    text-align: center;
+    padding: 0.5em 0.5em;
+    background-color: white;
+    color: black;
+}
+
+    .section_subtitle {
+        text-align: center;
+        padding: 0.1em 0.5em;
+        border-bottom: #e8b130 solid 0.1em;
+    }
+
+.section_of_form {
+    padding: 0.5em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.form_label {
+    margin-top: 1em;
+}
+
+.form_text {
+    padding: 0.5em 0;
+}
+
+.question_group {
+    padding: 0.2em;
+    margin: 0;
+}
+
+.question {
+    margin: 1em 0 2em 0;
+    padding: 0.5em 0;
+    text-align: center;
+    font-size: 1.2em;
+    background-color: white;
+    color: #e8b130;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-right: solid #e8b130 0.5em;
+    border-left: solid #e8b130 0.5em;
+}
+
+.dropdown {
+    border: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+}
+        
+    .dropdown::-webkit-scrollbar {
+        width: 0.5em;
+    }
+    
+        .dropdown::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Scrollbar thumb */
+        .dropdown::-webkit-scrollbar-thumb {
+            background-color: #e8b130;  /* Darker color for the scrollbar thumb */
+            border-radius: 0.1em;  /* Rounded edges for scrollbar */
+        }
+
+input[type="date"],
+input[type="time"],
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 0.2em solid white;
+    border-radius: 0.5em;
+}
+
+.session_details {
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin: 0 0 3em 0;
+    background-color: hsla(100, 100%, 100%, 0.05);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+    .session_title {
+        color: white;
+        padding: 0.5em;
+        text-align: center;
+        margin: 0;
+        cursor: pointer;
+    }
+
+    .session_description {
+        background-color: white;
+        color: black;
+        padding: 0.5em;
+        margin: 0.5em 0 0.5em 0;
+        border-radius: 0.5em;
+        text-align: center;
+    }
+
+    .session_info {
+        list-style: none;
+        padding: 1em 0 0 0;
+        text-align: center;
+    }
+
+        .session_info li {
+            line-height: 2em;
+        }
+
+        .discount_credit {
+            font-style: italic;
+            margin: 1em 0 0 0.5em;
+            border-top: solid 0.1em #e8b130;
+            padding: 0.5em;
+        }
+
+        .section_specific {
+            color: #e8b130;
+        }
+
+        .event_options {
+            margin: 1em 0 1em 0;
+        }
+
+    .travel_zones {
+        padding: 0;
+        text-align: center;
+        margin: 0 0 1em 0;
+    }
+
+        .zone_cont {
+            padding: 0;
+            margin: 1em 0 1em 0;
+        }
+
+            .zone_title {
+                color: #e8b130;
+                font-weight: bold;
+                margin: 0;
+            }
+
+            .zone_description {
+                margin: 0;
+            }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
@@ -211,14 +426,17 @@ main {
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
+    
         
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
     
+    
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
+    
     
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
@@ -232,6 +450,66 @@ main {
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ FOOTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+footer {
+    padding: 5em 1.5em 5em 1.5em;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: space-around;
+    background-color: black;
+}
+
+    footer p {
+        padding: 0;
+    }
+
+    .searchbar {
+        margin: 2em 0 2em 0;
+    }
+    
+    .searchbar input[type=text] {
+        padding: 0.3em 1em 0.3em 1em;
+        font-size: 1em;
+        background-color: black;
+        color: white;
+        border: 0.1em dashed white;
+        border-radius: 1em;
+    }
+
+    .footer-social_media {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        margin: 1em 0;
+        align-content: center;
+        font-size: 1.1em;
+        border-top: 0.2em white solid;
+        border-bottom: 0.2em white solid;
+        border-radius: 1em 0;
+    }
+    
+        .footer-social_media i {
+            padding: 0.5em;
+            color: white;
+            font-size: 1.5em;
+            margin: 0.5em 0.2em;
+        }
+        
+        .footer-social_media i:link, .header-social_media i:visited, .header-social_media i:active{
+            cursor:pointer;
+            color: white;
+        }
+        
+        .footer-social_media i:hover{
+            cursor:pointer;
+            color: #E8B130;
+        }
+
+        .footer-social_media .home i {
+            color: black;
+        }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
@@ -260,6 +538,7 @@ main {
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {

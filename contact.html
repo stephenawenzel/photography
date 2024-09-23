@@ -5,9 +5,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Conact</title>
+    <title>Nature - Stephen Wenezel</title>
     <link rel="shortcut icon" type="image/jpg" 
-    href="#"/>
+    href="BRP_Fall_Portrait.jpg"/>
 
     <!-- Link to Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
@@ -26,7 +26,7 @@
     Any rules you put in your custom stylesheet will override any styling applied to any elements of
     the same name in Bootstrap, as long as your custom stylesheet link comes AFTER your Bootstrap CSS 
     link, the way it does here. -->
-    <link rel="stylesheet" type="text/css" href="about.css">
+    <link rel="stylesheet" type="text/css" href="contact.css">
 
     <!--Copyright notice when clicking image-->
     <script language="JavaScript" Type="text/javascript">
@@ -39,26 +39,306 @@
 <body class="container-fluid">
 
     <header class="row">
-        <a href="index.html" id="title"><span>s</span>tephen<span>w</span>enzel<span>p</span>hotography</a>
-        <a href="about.html">about</a>
-        <a href="contact.html"><span style="color: #e8b130">schedule/contact</span></a>
-        <a href="contact.html">portraits</a>
-        <a href="contact.html">landscapes</a>
-        <a href="contact.html">wildlife</a>
-        <a href="about.html">client galleries</a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-500px"></i></a>
+        <article class="header-social_media col-2 col-sm-2">
+            <a class="home" href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i id="Instagram" class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/stephenwenzelphotography/" target="_blank"><i id="Facebook" class="fab fa-facebook-square"></i></a>
+            <a href="https://youtube.com/@stephenwenzelphotography?si=eXc3JMnLoyuAF7ax" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </article>
+        <section id="header-right" class="col-10 col-sm-10">
+            <article id="sig-box">
+                <img class="sig m-0" src="white_signature.png" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
+            </article>
+            <h2 style="font-size: 1em" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
+            <h1 class="col-12 col-sm-9 col-lg-5">Contact / Schedule</h1>
+        </section>
     </header>
 
     <main class="row">
-        <script id="jotform" type="text/javascript" src="https://form.jotform.com/jsform/221043959027051"></script>
+
+        <!-- General Contact Form -->
+        <section class="form_container col-11 col-sm-11">
+            <section id="general_inquiries" class="form_section col-12 col-sm-9">
+                <h2 class="section_title col-12 col-sm-12 col-xl-12">General Contact Form</h2>
+                <form action="#" method="post" class="section_of_form col-12 col-sm-12">
+                    <!-- Name Field -->
+                    <article class="question_group col-12 col-sm-12 col-lg-12">
+                        <label class="question col-12 col-sm-12" for="name">Name</label>
+                        <input class="col-12 col-sm-12" type="text" id="name" name="name" placeholder="Your full name" required>
+                    </article>
+                    <!-- Email Field -->
+                    <article class="question_group col-12 col-sm-12 col-lg-12">
+                        <label class="question col-12 col-sm-12" for="email">Email</label>
+                        <input class="col-12 col-sm-12" type="email" id="email" name="email" placeholder="Your email address" required>                        
+                    </article>
+                    <!-- Message Field -->
+                    <article class="question_group col-12 col-sm-12 col-lg-12">
+                        <label class="question col-12 col-sm-12" for="message">Message</label>
+                        <textarea class="col-12 col-sm-12" id="message" name="message" placeholder="Type your message here..." required></textarea>                        
+                    </article>
+                    <!-- Submit Button -->
+                    <button class="btn col-12 col-sm-12 col-lg-12" type="submit">Send Message</button>
+                </form>
+            </section>
+        </section>  
+
+        <!-- Designing Your Session -->
+        <section class="form_container col-11 col-sm-11">
+            <section id="your_session" class="form_section col-12 col-sm-9">
+                <h2 class="section_title col-12 col-sm-12">Designing Your Session</h2>
+                <form  class="section_of_form col-12 col-sm-12" action="#" method="post">
+                    <!-- Other Logistics -->
+                    <section class="form_section col-12 col-sm-11">
+                        <h3 class="section_subtitle col-12 col-sm-12">Quick Photoshoot Information</h3>
+                        <p class="col-12 col-sm-12">Images are provided through Pixieset. Download fully-edited, high-resolution images and purchase prints, canvases, and cards via the following link:</p>
+                        <a style="margin: 0.5em 0 2em 0;" class="btn col-6 col-sm-6" href="https://stephenwenzelphotography.pixieset.com/" target="_blank">Pixieset Collection</a>
+                        <p class="col-12 col-sm-12">Guaranteed two-week image delivery after confirmation of images to be edited.</p>
+                        <p class="col-12 col-sm-12">Sessions must be booked at least two weeks in advance. For best results, schedule one month before the session date.</p>
+                    </section>
+                    <!-- Policies -->
+                    <section class="form_section col-12 col-sm-11">
+                        <h2 class="section_subtitle col-12 col-sm-12">Policies</h2>
+                        <p class="col-12 col-sm-12"><strong>Cancellation Policy:</strong> Notify me at least two weeks before your session for a full refund of your deposit.</p>
+                        <p class="col-12 col-sm-12"><strong>Weather Policy:</strong> We can discuss alternative arrangements or rescheduling in case of inclement weather.</p>
+                        <p class="col-12 col-sm-12"><strong>Cancellation Fee:</strong> $50 if canceled within 48 hours of the session.</p>
+                        <p class="col-12 col-sm-12"><strong>Rescheduling Fee:</strong> $25 if rescheduled within 48 hours of the session.</p>
+                        <p class="col-12 col-sm-12"><strong>Expedited Editing:</strong> $100 for delivery within 3 days.</p>
+                        <p class="col-12 col-sm-12"><strong>Additional Images:</strong> $15 for each additional image.</p>
+                    </section>
+                    <!-- Payment -->
+                    <section class="form_section col-12 col-sm-11">
+                        <h2 class="section_subtitle col-12 col-sm-12">Accepted Payments</h2>
+                        <p class="col-12 col-sm-12">Cash, Venmo, CashApp, Zelle, and Square.</p>
+                    </section>
+                    <!-- Choose a Package -->
+                    <label id="question_1" class="question col-12 col-sm-12" for="form_label session-type">Choose a Package</label>
+                    <p class="question_info col-12 col-sm-12">Please select the type of session from the dropdown menu. Information about each session follows below.</p>
+                    <select class="dropdown col-12 col-sm-12" id="session-type" name="session-type" required>
+                        <option class="col-12 col-sm-12" value="traditional">Traditional Package</option>
+                        <optgroup class="col-12 col-sm-12" label="Graduation Packages">
+                            <option class="col-12 col-sm-12" value="graduation">Individuals - Graduation</option>
+                            <option class="col-12 col-sm-12" value="graduation">Small Group - Graduation</option>
+                            <option class="col-12 col-sm-12" value="graduation">Mid-Size Group - Graduation</option>
+                            <option class="col-12 col-sm-12" value="graduation">Large Group - Graduation</option>
+                            <option class="col-12 col-sm-12" value="graduation">Very Large Group - Graduation</option>
+                        </optgroup>
+                        <option class="col-12 col-sm-12" value="mini">Mini Package</option>
+                        <optgroup class="col-12 col-sm-12" label="Headshot Packages">
+                            <option class="col-12 col-sm-12" value="graduation">Quick - Headshot</option>
+                            <option class="col-12 col-sm-12" value="graduation">Long - Headshot</option>
+                        </optgroup>
+                        <optgroup class="col-12 col-sm-12" label="Full Professional Packages">
+                            <option class="col-12 col-sm-12" value="graduation">Short - Full Professional</option>
+                            <option class="col-12 col-sm-12" value="graduation">Long - Full Professional</option>
+                        </optgroup>
+                        <option class="col-12 col-sm-12" value="talent">Talent Package</option>
+                        <!-- not in Asheville right now
+                        <option class="col-12 col-sm-12" value="adventure">Adventure Session</option>
+                        -->
+                        <optgroup class="col-12 col-sm-12" label="Event Options">
+                            <option class="col-12 col-sm-12" value="graduation">Small Gathering</option>
+                            <option class="col-12 col-sm-12" value="graduation">Small Wedding / Elopement</option>
+                            <option class="col-12 col-sm-12" value="graduation">Large Wedding</option>
+                            <option class="col-12 col-sm-12" value="graduation">Festival / Large Event</option>
+                        </optgroup>
+                    </select>
+                    <!-- Session Types -->
+                        <section class="form_section col-12 col-sm-12 col-xl-7">
+                            <!-- Traditional Package -->
+                            <div class="session_details col-12 col-sm-12">
+                                <h3 class="session_title col-12 col-sm-12">Traditional Package</h3>
+                                <p class="session_description col-11 col-sm-11">
+                                    Enjoy a professional yet relaxed atmosphere while capturing authentic moments with this classic photoshoot style.
+                                </p>
+                                <ul class="session_info col-12 col-sm-12">
+                                    <li>Duration: 45-60 minutes</li>
+                                    <li>Number of Images: 10-15</li>
+                                    <li>Starting Price: $250</li>
+                                </ul>
+                            </div>
+                            <!-- Graduation Package -->
+                            <div class="session_details col-12 col-sm-12">
+                                <h3 class="session_title col-12 col-sm-12">Graduation Packages</h3>
+                                <p class="session_description col-11 col-sm-11">
+                                    Commemorate your graduation with vibrant portraits tailored to your journey and style. Sessions can be intimate or include groups.
+                                </p>
+                                <ul class="session_info col-12 col-sm-12">
+                                    <li><span style="color: #e8b130; font-weight: bold;">Individual</span><br> 15 images<br> $250 (1.5 hours)</li>
+                                    <li><span style="color: #e8b130; font-weight: bold;">Small Group</span><br> People: 2 - 3<br> 6 individual images<br> 10 group pictures<br> $400 (1.5 hours)</li>
+                                    <li><span style="color: #e8b130; font-weight: bold;">Mid-Size Group</span><br> People: 4 - 6<br> 5 individual images<br> 10 group pictures<br> $550 (2 hours)</li>
+                                    <li><span style="color: #e8b130; font-weight: bold;">Large Group</span><br> People: 7 - 10<br> 4 individual images<br> 15 group pictures<br> $700 (2.5 hours)</li>
+                                    <li><span style="color: #e8b130; font-weight: bold;">Very Large Group</span><br> People: More than 10<br> This would be a special request</li>
+                                    <li class="discount_credit">Referral Credit: $75 off your next Graduation Session if you refer someone who books a session</li>
+                                    <li class="section_specific discount_credit">Additional Images: $20 each for this package</li>
+                                </ul>
+                            </div>
+                            <!-- Mini Package -->
+                            <div class="session_details col-12 col-sm-12">
+                                <h3 class="session_title col-12 col-sm-12">Mini Package</h3>
+                                <p class="session_description col-11 col-sm-11">
+                                    Capture life's beautiful moments in a brief yet impactful time frame. Ideal for those needing quick and artistic snapshots.
+                                </p>
+                                <ul class="session_info col-12 col-sm-12">
+                                    <li>Duration: 15-60 minutes</li>
+                                    <li>Number of Images: 3-7</li>
+                                    <li>Starting Price: $60</li>
+                                </ul>
+                            </div>
+                            <!-- Headshot Package -->
+                            <div class="session_details col-12 col-sm-12">
+                                <h3 class="session_title col-12 col-sm-12">Headshot Packages</h3>
+                                <p class="session_description col-11 col-sm-11">
+                                    Make a professional statement with clean and simple headshots.
+                                </p>
+                                <ul class="session_info col-12 col-sm-12">
+                                    <li><span style="color: #e8b130; font-weight: bold;">Quick</span><br> 30 minutes<br> 3 images<br> $80</li>
+                                    <li><span style="color: #e8b130; font-weight: bold;">Long</span><br> One hour<br> 6 images<br> $140</li>
+                                    <li class="section_specific discount_credit">Additional Images: $30 each for this package</li>
+                                </ul>
+                            </div>
+                            <!-- Full Professional Package -->
+                            <div class="session_details col-12 col-sm-12">
+                                <h3 class="session_title col-12 col-sm-12">Full Professional Packages</h3>
+                                <p class="session_description col-11 col-sm-11">
+                                    Showcase your professional image with a combination of headshots and full-body photos.
+                                </p>
+                                <ul class="session_info col-12 col-sm-12">
+                                    <li><span style="color: #e8b130; font-weight: bold;">Short</span><br> 45 minutes<br> 3 simple headshots<br> 3 full-body<br> $150</li>
+                                    <li><span style="color: #e8b130; font-weight: bold;">Long</span><br> 90 minutes<br> 3 simple headshots<br> 6 full-body<br> $200</li>
+                                    <li class="section_specific discount_credit">Additional Images: $30 each for this package</li>
+                                </ul>
+                            </div>
+                            <!-- Talent Package -->
+                            <div class="session_details col-12 col-sm-12">
+                                <h3 class="session_title col-12 col-sm-12">Talent Package</h3>
+                                <p class="session_description col-11 col-sm-11">
+                                    Showcase your unique skills with a personalized session designed to highlight what makes you special.
+                                </p>
+                                <ul class="session_info col-12 col-sm-12">
+                                    <li>Number of Images: 5-10</li>
+                                    <li>Duration: 30-90 minutes</li>
+                                    <li>Starting Price: $200</li>
+                                </ul>
+                            </div>
+                            <!-- Events -->
+                            <div class="session_details col-12 col-sm-12">
+                                <h3 class="session_title col-12 col-sm-12">Event Options</h3>
+                                <p class="session_description col-11 col-sm-11">
+                                    From weddings to festivals and parties, I specialize in documenting every precious moment with creativity and expertise.
+                                </p>
+                                <ul class="session_info col-12 col-sm-12">
+                                    <li class="event_options"><span style="color: #e8b130; font-weight: bold;">Large Weddings</span><br> Starting Price: $1000 (4 hours coverage)<br> Additional Hours: $200/hour<br> Number of Images: 300-500</li>
+                                    <li class="event_options"><span style="color: #e8b130; font-weight: bold;">Festivals & Large Events</span><br> Starting Price: $700 (3 hours coverage)<br> Additional Hours: $250/hour<br> Number of Images: 200-400</li>
+                                    <li class="event_options"><span style="color: #e8b130; font-weight: bold;">Small Weddings & Elopements</span><br> Starting Price: $800 (4 hours coverage)<br> Additional Hours: $200/hour<br> Number of Images: 250-400</li>
+                                    <li class="event_options"><span style="color: #e8b130; font-weight: bold;">Small Gathering</span><br> Starting Price: $300 (2 hours coverage)<br> Additional Hours: $150/hour<br> Number of Images: 100-200</li>
+                                    <li class="discount_credit">Referral Discount: Receive a $100 discount on your next session if you refer someone who books an Event Session</li>
+                                </ul>
+                            </div>
+                            <!-- Adventure Sessions *HIDDEN RIGHT NOW BECAUSE I'M NOT IN ASHEVILLE*
+                            <div class="session_details col-12 col-sm-12">
+                                <h3 class="session_title col-12 col-sm-12">Adventure Sessions</h3>
+                                <p class="session_description col-11 col-sm-11">
+                                    Explore the Great Smoky Mountains and Blue Ridge Parkway with a guided hiking adventure session, capturing your adventurous spirit amid stunning landscapes.
+                                </p>
+                                <ul class="session_info col-12 col-sm-12">
+                                    <li>Number of Images: 15-20</li>
+                                    <li>Duration: 2-4 hours</li>
+                                    <li>Starting Price: $400</li>
+                                </ul>
+                            </div>
+                            -->
+                        </section>
+                    
+                    <label class="question col-12 col-sm-12" for="form_label preferred-date">Choose a Date</label>
+                    <p class="question_info col-12 col-sm-12">Choose your preferred date from the calendar. I am only available on Saturdays and Sundays. The further you book ahead, the better we can collaborate to achieve what you would like!</p>
+                    <input class="col-12 col-sm-12" type="date" id="preferred-date" name="preferred-date" required>
+                    
+                    <label class="question col-12 col-sm-12" for="form_label preferred-time">Choose a Time</label>
+                    <p class="question_info col-12 col-sm-12">Specify the start time for your session. I am available on Saturdays between 9:00 AM and 9:00 PM, and Sundays after 12:00 PM. All sessions have a 10 minute buffer for setup, pictures, etc.</p>
+                    <input class="col-12 col-sm-12" type="time" id="start-time" name="start-time" required>
+                    
+                    <label class="question col-12 col-sm-12" for="form_label preferred-locations">Choose Your Location</label>
+                    <p class="question_info col-12 col-sm-12">List your preferred location for this session.</p>
+                    <textarea class="col-12 col-sm-12" id="preferred-locations" name="preferred-locations" rows="4" required>Type here...</textarea>
+                        <!-- Travel Information -->
+                        <section class="form_section travel_zones col-12 col-sm-12">
+                            <article class="zone_cont col-12 col-sm-12">
+                                <p class="zone_title col-12 col-sm-12">Zone 1</p>
+                                <p class="zone_description col-12 col-sm-12">Within 25 miles of Durham<br> No Fee<br> Includes: Chapel Hill, Cary, Raleigh, Apex, Hillsborough</p>
+                            </article>
+                            <article class="zone_cont col-12 col-sm-12">
+                                <p class="zone_title col-12 col-sm-12">Zone 2</p>
+                                <p class="zone_description col-12 col-sm-12">26-50 miles from Durham<br> Fee: $50<br> Includes: Greensboro, Burlington, Roxboro, Henderson</p>
+                            </article>
+                            <article class="zone_cont col-12 col-sm-12">
+                                <p class="zone_title col-12 col-sm-12">Zone 3</p>
+                                <p class="zone_description col-12 col-sm-12">51-75 miles from Durham<br> Fee: $75<br> Includes: Winston-Salen, Asheboro, Goldsboro, Fayetteville, Rocky Mount</p>
+                            </article>
+                            <article class="zone_cont col-12 col-sm-12">
+                                <p class="zone_title col-12 col-sm-12">Zone 4</p>
+                                <p class="zone_description col-12 col-sm-12">Fee: $150<br> Includes Only: Asheville, Charlotte, Waynesville</p>
+                            </article>
+                            <article class="zone_cont col-12 col-sm-12">
+                                <p class="zone_title col-12 col-sm-12">Zone 5</p>
+                                <p class="zone_description col-12 col-sm-12">Fee depends on location<br> Special Reqeusts Only</p>
+                            </article>
+                        </section>
+                    <label class="question col-12 col-sm-12" for="form_label participants">Participants</label>
+                    <p class="question_info col-12 col-sm-12">Please include the names and ages of all participants, including pets. Let me know how they behave and any other details necessary for a smooth session.</p>
+                    <textarea class="col-12 col-sm-12" id="participants" name="participants" rows="4" required>Type here...</textarea>
+                    <label class="question col-12 col-sm-12" for="form_label outfit-accessories">Outfit and Accessories</label>
+                    <p class="question_info col-12 col-sm-12">I welcome all kinds of props and outfits during the photoshoot. Please describe what you are bringing to help me prepare. Do you need recommendations for outfits? Are there any props or accessories you need help sourcing?</p>
+                    <textarea class="col-12 col-sm-12" id="outfit-accessories" name="outfit-accessories" rows="4" required>Type here...</textarea>
+                    <label class="question col-12 col-sm-12" for="form_label reference-photos">Reference Photos</label>
+                    <p class="question_info col-12 col-sm-12">Upload any reference photos or ideas you have for the session. You can also search my social media content for inspiration and take screenshots to upload here.</p>
+                    <input class="col-12 col-sm-12" type="file" id="reference-photos" name="reference-photos" accept="image/*" multiple>
+                    <label class="question col-12 col-sm-12" for="form_label additional-info">Additional Information</label>
+                    <p class="question_info col-12 col-sm-12">Any specific poses or shots you have in mind? How did you hear about my services? Do you have any other details or special requests?</p>
+                    <textarea class="col-12 col-sm-12" id="additional-info" name="additional-info" rows="4">Type here...</textarea>
+                    <button class="btn col-12 col-sm-12" type="submit">Submit</button>
+                </form>
+            </section>
+        </section>
+        <!-- Share Your Experience -->
+        <section class="form_container col-11 col-sm-11">
+            <section id="experience" class="form_section col-12 col-sm-9">
+                <h2 class="section_title col-12 col-sm-12">Share Your Experience</h2>
+                <p class="form_text col-12 col-sm-12">I’d love to hear about your experience! Please leave a review on Google by clicking the link below:</p>
+                <a class="btn col-12 col-sm-12" href="https://g.page/r/CaE4FzPgdc4iEAI/review" target="_blank">Leave a Google Review</a> <!-- Insert the link to your Google review page -->
+        </section>        
+         
     </main>
 
     <footer class="row">
+        <section class="col-12 col-sm-11">
+
+            <p class="col-12 col-sm-12">Durham, NC</p>
+            <p class="col-12 col-sm-12">Serving: Raleigh / Durham / Chapel Hill</p>
+            <p class="col-12 col-sm-12">Alternate locations available upon request</p>
+            <p class="col-12 col-sm-12">Contact for additional information</p>
+            
+            <p class="col-12 col-sm-12">e. <a href="mailto:swenzelphotography@gmail.com">swenzelphotography@gmail.com</a></p>
+            <p class="col-12 col-sm-12">© <a href="index.html">Stephen Wenzel</a></p>
+            <p class="col-12 col-sm-12">All Rights Reserved</p>
+            <p class="col-12 col-sm-12"><a href="#">Privacy Policy</a></p>
+
+            <article class="searchbar col-12">
+                <input class="col-12 col-sm-12" type="text" placeholder="Search...">
+            </article>
+
+            <article class="footer-social_media col-12">
+                <a class="home" href="index.html"><i class="fa-solid fa-house"></i></a>
+                <a href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i id="Instagram" class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/stephenwenzelphotography/" target="_blank"><i id="Facebook" class="fab fa-facebook-square"></i></a>
+                <a href="https://youtube.com/@stephenwenzelphotography?si=eXc3JMnLoyuAF7ax" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </article>
+
+        </section>
 
     </footer>
     
     <!-- Optional JavaScript -->
+     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

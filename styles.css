@@ -24,10 +24,14 @@
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ GENERAL SETTINGS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     position: relative;
     font-family: 'Cairo', sans-serif;
-    background: black url("https://drscdn.500px.org/photo/1058173890/m%3D900/v2?sig=8c9c51b742bfbcd4a2a98f340b75a1c2d70c4669215b479a7c37050bd31d78c0") local no-repeat 10%/cover;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -35,6 +39,50 @@ body {
     height: 100%;
     overflow-y: hidden;
 }
+
+#cover {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    z-index: 5;
+    opacity: 70%;
+}
+
+#slideshow {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slideshow 50s infinite;
+    transition: background-image 0.25s ease-in-out;
+}
+
+    /* Animation keyframes to switch between images */
+    @keyframes slideshow {
+        0%    { background-image: url('/photography/Portraits/20200727-Lucie_Patten-5.jpg'); }
+        5.88%  { background-image: url('/photography/Portraits/20200820-Oriet_Hemenway-19.jpg'); }
+        11.76% { background-image: url('/photography/Portraits/20191114-Downtime-3.jpg'); }
+        17.64% { background-image: url('/photography/Portraits/20231104-Blue_Dragon_TKD-2.jpg'); }
+        23.52% { background-image: url('/photography/Portraits/20240911-Marching_Bands-7.jpg'); }
+        29.41% { background-image: url('/photography/Portraits/20191125-Joe_Figliolo-3.jpg'); }
+        35.29% { background-image: url('/photography/Portraits/20240407-J_Creek_Cloggers-4.jpg'); }
+        41.17% { background-image: url('/photography/Portraits/20191204-Alex_Baker-2.jpg'); }
+        47.05% { background-image: url('/photography/Portraits/20191116-Kelly_Connelly-4.jpg'); }
+        52.94% { background-image: url('/photography/Portraits/20191202-Madeline_Yara-2.jpg'); }
+        58.82% { background-image: url('/photography/Life_Landscapes/Ripples_of_Dawn.jpg'); }
+        64.70% { background-image: url('/photography/Creations/Reaching_for_the_Sky.jpg'); }
+        70.58% { background-image: url('/photography/Life_Landscapes/Black_and_White.jpg'); }
+        76.47% { background-image: url('/photography/Life_Landscapes/American_Bald_Eagle.jpg'); }
+        82.35% { background-image: url('/photography/Creations/The_Old_Well_in_Radiance.jpg'); }
+        88.23% { background-image: url('/photography/Creations/The_Bell_Tower.jpg'); }
+        94.11% { background-image: url('/photography/Life_Landscapes/Rainbows_Embrace.jpg'); }
+        100%  { background-image: url('/photography/Life_Landscapes/.jpg'); }
+    }
 
 .btn {
     height: 2em;
@@ -55,10 +103,6 @@ body {
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
-    
-    body {
-        background: url("https://drscdn.500px.org/photo/1057434294/m%3D900/v2?sig=2436428e873c7e0b4a40806382e4eedecc55957a33d4ab024aabf6c0eca66511") local no-repeat 20%/cover;
-    }
 
     .btn:link, .btn:visited, .btn:active {
         background-color: black;
@@ -73,18 +117,42 @@ body {
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
-    
-    body {
-        background: black url("https://drscdn.500px.org/photo/1058173923/m%3D900/v2?sig=e32003ff76774dc0e712a64471d49dbd4e449e507bb0d1b7cdfcf25dd1f442e4") local no-repeat right/contain;
+
+    #slideshow {
+        animation: slideshow 75s infinite;
+    }
+
+    @keyframes slideshow {
+        0%     { background-image: url('/photography/Portraits/20200820-Oriet_Hemenway-11.jpg'); }
+        4.55%  { background-image: url('/photography/Portraits/20200727-Lucie_Patten-4.jpg'); }
+        9.09%  { background-image: url('/photography/Portraits/20191203-Kathryn_Henrikson-2.jpg'); }
+        13.64% { background-image: url('/photography/Portraits/20191202-Madeline_Yara-1.jpg'); }
+        18.18% { background-image: url('/photography/Portraits/20190929-Marcus_Richardson-3.jpg'); }
+        22.73% { background-image: url('/photography/Portraits/20191204-Alex_Baker-1.jpg'); }
+        27.27% { background-image: url('/photography/Portraits/20231104-Blue_Dragon_TKD-5.jpg'); }
+        31.82% { background-image: url('/photography/Portraits/20191121-Downtime-4.jpg'); }
+        36.36% { background-image: url('/photography/Portraits/20240601-Ryan_Mooney-2.jpg'); }
+        40.91% { background-image: url('/photography/Portraits/20240407-J_Creek_Cloggers-6.jpg'); }
+        45.45% { background-image: url('/photography/Portraits/20240911-Marching_Bands-6.jpg'); }
+        50%    { background-image: url('/photography/Portraits/20240831-Marching_Bands-1.jpg'); }
+        54.55% { background-image: url('/photography/Creations/White_Gold.jpg'); }
+        59.09% { background-image: url('/photography/Life_Landscapes/Illuminated_Faith.jpg'); }
+        63.64% { background-image: url('/photography/Life_Landscapes/Beauty_and_Grace.jpg'); }
+        68.18% { background-image: url('/photography/Life_Landscapes/Rivers_Rhythm.jpg'); }
+        72.73% { background-image: url('/photography/Life_Landscapes/Mooney_Falls_in_Motion.jpg'); }
+        77.27% { background-image: url('/photography/Creations/Shadowed_Path.jpg'); }
+        81.82% { background-image: url('/photography/Life_Landscapes/Tranquility.jpg'); }
+        86.36% { background-image: url('/photography/Life_Landscapes/Fryingpans_Warmth.jpg.jpg'); }
+        90.91% { background-image: url('/photography/Echoes_of_the_Crash.jpg'); }
+        95.45% { background-image: url('/photography/Life_Landscapes/Zebras_Distinctive_Stripes.jpg'); }
+        100%   { background-image: url('/photography/Life_Landscapes/Whimsy_in_the_Marsh.jpg.jpg'); }
     }
     
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+
 @media screen and (min-width: 992px) {
-    body {
-        background: black url("https://drscdn.500px.org/photo/1058173896/m%3D900/v2?sig=a07a9a9d380f7fdc568518f26a9d94fa86b949d2cbb1d6f8e05bedbf3bd6256d") local no-repeat center/cover;
-    }
-    
+
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
@@ -262,6 +330,7 @@ header {
     font-size: 0.9em;
     margin-bottom: 5vh;
     padding: 0;
+    z-index: 8;
 }
 
 .footer-content {
