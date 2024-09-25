@@ -240,30 +240,34 @@ main {
 }
 
 #general_inquiries {
-    border: white solid 0.1em;
-    margin: 0 0 2em 0;
+    border: white solid 0.5em;
+    margin: 0 0 6em 0;
     background-color: hsla(100, 100%, 100%, 0.05);
 }
 
 #your_session {
-    border: white solid 0.1em;
-    margin: 0 0 2em 0;
+    border: #e8b130 solid 0.5em;
+    margin: 0 0 6em 0;
     background-color: hsla(100, 100%, 100%, 0.05);
 }
 
 #experience {
-    border: white solid 0.1em;
+    border: white solid 0.5em;
     margin: 0;
     background-color: hsla(100, 100%, 100%, 0.05);
 }
 
 .form_section {
-    padding: 2em 1em 2em 1em;
+    padding: 2em 0.7em 2em 0.7em;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
 }
+
+    .form_section p {
+        padding: 0;
+    }
 
 .section_title {
     margin: 0 0 1em 0;

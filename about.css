@@ -231,7 +231,6 @@ main {
     align-items: center;
 }
 
-
 .title_cont {
     display: flex;
     flex-flow: row wrap;
@@ -254,8 +253,8 @@ main {
         text-align: center;
         font-style: italic;
         color: white;
-        margin: 1em 0;
-        padding: 0.5em 0.2em;
+        margin: 0;
+        padding: 1.5em 0.2em;
         border-radius: initial;
         border: none;
     }
