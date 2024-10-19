@@ -64,24 +64,24 @@ body {
 
     /* Animation keyframes to switch between images */
     @keyframes slideshow {
-        0%    { background-image: url('/photography/Portraits/20200727-Lucie_Patten-5.jpg'); }
-        5.88%  { background-image: url('/photography/Portraits/20200820-Oriet_Hemenway-19.jpg'); }
-        11.76% { background-image: url('/photography/Portraits/20191114-Downtime-3.jpg'); }
-        17.64% { background-image: url('/photography/Portraits/20231104-Blue_Dragon_TKD-2.jpg'); }
-        23.52% { background-image: url('/photography/Portraits/20240911-Marching_Bands-7.jpg'); }
-        29.41% { background-image: url('/photography/Portraits/20191125-Joe_Figliolo-3.jpg'); }
-        35.29% { background-image: url('/photography/Portraits/20240407-J_Creek_Cloggers-4.jpg'); }
-        41.17% { background-image: url('/photography/Portraits/20191204-Alex_Baker-2.jpg'); }
-        47.05% { background-image: url('/photography/Portraits/20191116-Kelly_Connelly-4.jpg'); }
-        52.94% { background-image: url('/photography/Portraits/20191202-Madeline_Yara-2.jpg'); }
-        58.82% { background-image: url('/photography/Life_Landscapes/Ripples_of_Dawn.jpg'); }
-        64.70% { background-image: url('/photography/Creations/Reaching_for_the_Sky.jpg'); }
-        70.58% { background-image: url('/photography/Life_Landscapes/Black_and_White.jpg'); }
-        76.47% { background-image: url('/photography/Life_Landscapes/American_Bald_Eagle.jpg'); }
-        82.35% { background-image: url('/photography/Creations/The_Old_Well_in_Radiance.jpg'); }
-        88.23% { background-image: url('/photography/Creations/The_Bell_Tower.jpg'); }
-        94.11% { background-image: url('/photography/Life_Landscapes/Rainbows_Embrace.jpg'); }
-        100%  { background-image: url('/photography/Life_Landscapes/.jpg'); }
+        0%    { background-image: url('https://drscdn.500px.org/photo/1102445430/q%3D80_m%3D600/v2?sig=25b9bef5502f7529fce11922be2895c8fb98e8e5bab713cdd4d93f968b5ecff0'); }
+        5.88%  { background-image: url('https://drscdn.500px.org/photo/1102445324/q%3D80_m%3D600/v2?sig=000a7be462d745011120f03305c3c1d21c26a6502bc949224bc478300338e08d'); }
+        11.76% { background-image: url('https://drscdn.500px.org/photo/1102445363/q%3D80_m%3D600/v2?sig=13d741fbc0fabbce2a1c2118cc9307f49512b6f06a09bd4b6d4506a302c27159'); }
+        17.64% { background-image: url('https://drscdn.500px.org/photo/1102445325/q%3D80_m%3D600/v2?sig=ca13779af8955929fb8d8038717febfb2d44a9878d8514850192dfd9f8110281'); }
+        23.52% { background-image: url('https://drscdn.500px.org/photo/1102445379/q%3D80_m%3D600/v2?sig=0f883e14788a24f3ba60f626bc660dab72ebfca1f0dc5330f7b54885994ab55a'); }
+        29.41% { background-image: url('https://drscdn.500px.org/photo/1102445405/q%3D80_m%3D600/v2?sig=92574662534e6b7a709797ebfda1d01018d8bfc76a04c0ec27e9716b8405c175'); }
+        35.29% { background-image: url('https://drscdn.500px.org/photo/1102445381/q%3D80_m%3D600/v2?sig=f02238f78109bb2e6b0aa4ad23a4f66a456035deae5d45b9516e732ad2c0d3f0'); }
+        41.17% { background-image: url('https://drscdn.500px.org/photo/1102445366/q%3D80_m%3D600/v2?sig=1ca432d74359713fb105da4ac53f60e84ac57c42f0e78184a9cfb8043edaeac1'); }
+        47.05% { background-image: url('https://drscdn.500px.org/photo/1102445399/q%3D80_m%3D600/v2?sig=c50779e748ba59a22c19c34985f30311a63476c55ffddb4f8d231a69ec332d4f'); }
+        52.94% { background-image: url('https://drscdn.500px.org/photo/1102445423/q%3D80_m%3D600/v2?sig=a31f1f6d4d3d47b22911edc07a933d9513b8a7a089c999fb9ace84f46d2c9335'); }
+        58.82% { background-image: url('https://drscdn.500px.org/photo/1102445407/q%3D80_m%3D600/v2?sig=9989965fe762f8cf0ffda007569e64df037e8c70f7e21c92702bab7beb9ae919'); }
+        64.70% { background-image: url('https://drscdn.500px.org/photo/1102445375/q%3D80_m%3D600/v2?sig=a191bb6632912852cdfc297c8fd59f71cf0877b24b4d90cdd2bf994c70bfebd1'); }
+        70.58% { background-image: url('https://drscdn.500px.org/photo/1102445337/q%3D80_m%3D600/v2?sig=7a4273277ecb4e0bb959e8ff432e6d2e80f8c59a088a2086b7aa7724d1743f06'); }
+        76.47% { background-image: url('https://drscdn.500px.org/photo/1102445339/q%3D80_m%3D600/v2?sig=382b1b0f0d4472efe35a54c2260a60db47c6efc2eeafa9c92aebd55c0651d40a'); }
+        82.35% { background-image: url('https://drscdn.500px.org/photo/1102445385/q%3D80_m%3D600/v2?sig=47f39e2392de2c305e07e9ea1f872387d3178220c6cb398e158ccc07a700c329'); }
+        88.23% { background-image: url('https://drscdn.500px.org/photo/1102445406/q%3D80_m%3D600/v2?sig=f9fa3e26a2048b6d5111f8c5f21eeb7b563c68e92742cdbf5be4a72fff239fd5'); }
+        94.11% { background-image: url('https://drscdn.500px.org/photo/1102445332/q%3D80_m%3D600/v2?sig=b130212d0038ccc6b2f39c1e793fa67a7bc164d6966f7b1a4d33b28336652c40'); }
+        100%  { background-image: url('https://drscdn.500px.org/photo/1102445430/q%3D80_m%3D600/v2?sig=25b9bef5502f7529fce11922be2895c8fb98e8e5bab713cdd4d93f968b5ecff0'); }
     }
 
 .btn {
@@ -124,14 +124,14 @@ body {
 
     @keyframes slideshow {
         0%     { background-image: url('/photography/Portraits/20200820-Oriet_Hemenway-11.jpg'); }
-        4.55%  { background-image: url('/photography/Portraits/20200727-Lucie_Patten-4.jpg'); }
+        4.55%  { background-image: url('https://drscdn.500px.org/photo/1102445725/q%3D80_m%3D600/v2?sig=9c99ac22b2cf21556b10833f87c36b351862488f0e70894e0a56d80701f3c8a4'); }
         9.09%  { background-image: url('/photography/Portraits/20191203-Kathryn_Henrikson-2.jpg'); }
         13.64% { background-image: url('/photography/Portraits/20191202-Madeline_Yara-1.jpg'); }
-        18.18% { background-image: url('/photography/Portraits/20190929-Marcus_Richardson-3.jpg'); }
-        22.73% { background-image: url('/photography/Portraits/20191204-Alex_Baker-1.jpg'); }
+        18.18% { background-image: url('https://drscdn.500px.org/photo/1102445740/q%3D80_m%3D600/v2?sig=054c89e1d78c790b232ddd355befc27d66201851f6e6deb20b52a646152fee2a'); }
+        22.73% { background-image: url('https://drscdn.500px.org/photo/1102445744/q%3D80_m%3D600/v2?sig=701c04df074b9d2cf29f73514fac9619120a0664de536960e87564eb7b7d397a'); }
         27.27% { background-image: url('/photography/Portraits/20231104-Blue_Dragon_TKD-5.jpg'); }
         31.82% { background-image: url('/photography/Portraits/20191121-Downtime-4.jpg'); }
-        36.36% { background-image: url('/photography/Portraits/20240601-Ryan_Mooney-2.jpg'); }
+        36.36% { background-image: url('https://drscdn.500px.org/photo/1102445754/q%3D80_m%3D600/v2?sig=903df1ea03888252e2aaa027f6ef94a78b44bc44519a0b78ffa484f75d62efc0'); }
         40.91% { background-image: url('/photography/Portraits/20240407-J_Creek_Cloggers-6.jpg'); }
         45.45% { background-image: url('/photography/Portraits/20240911-Marching_Bands-6.jpg'); }
         50%    { background-image: url('/photography/Portraits/20240831-Marching_Bands-1.jpg'); }

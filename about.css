@@ -300,7 +300,7 @@ main {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    margin: 2em 0;
+    margin: 0 0 2em 0;
     padding: 0;
     background-color: black;
     background-image: url("Life_Landscapes/Whimsy_in_the_Marsh.jpg");

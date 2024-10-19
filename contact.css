@@ -391,17 +391,17 @@ select {
     }
 
         #traditional_pic {
-            background-image: url(Portraits/20200727-Lucie_Patten-4.jpg);
+            background-image: url('https://drscdn.500px.org/photo/1102445725/q%3D80_m%3D600/v2?sig=9c99ac22b2cf21556b10833f87c36b351862488f0e70894e0a56d80701f3c8a4');
             background-position: 50% 100%;
         }
 
         #grad_pic {
-            background-image: url(Portraits/20240601-Ryan_Mooney-2.jpg);
+            background-image: url('https://drscdn.500px.org/photo/1102445754/q%3D80_m%3D600/v2?sig=903df1ea03888252e2aaa027f6ef94a78b44bc44519a0b78ffa484f75d62efc0');
             background-position: 50% 100%;
         }
 
         #mini_pic {
-            background-image: url(Portraits/20190929-Marcus_Richardson-3.jpg);
+            background-image: url('https://drscdn.500px.org/photo/1102445740/q%3D80_m%3D600/v2?sig=054c89e1d78c790b232ddd355befc27d66201851f6e6deb20b52a646152fee2a');
             background-position: 50% 100%;
         }
 
@@ -416,7 +416,7 @@ select {
         }
 
         #talent_pic {
-            background-image: url(Portraits/20191204-Alex_Baker-1.jpg);
+            background-image: url('https://drscdn.500px.org/photo/1102445744/q%3D80_m%3D600/v2?sig=701c04df074b9d2cf29f73514fac9619120a0664de536960e87564eb7b7d397a');
             background-position: 50% 80%;
         }
 
