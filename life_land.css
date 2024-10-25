@@ -617,6 +617,10 @@ input[type="submit"]:hover {
         background-image: url("/photography/Life_Landscapes/Baraj_Valea_Drăganului.jpg");
     }
     
+    #Barracks {
+        background-image: url("/photography/Life_Landscapes/Barracks.jpg");
+    }
+    
     #Bear_in_the_Clouds {
         background-image: url("/photography/Life_Landscapes/Bear_in_the_Clouds.jpg");
     }
@@ -661,8 +665,16 @@ input[type="submit"]:hover {
         background-image: url("/photography/Life_Landscapes/Crowned_in_Mist_Horizontal.jpg");
     }
     
+    #Congaree_Boardwalk {
+        background-image: url("/photography/Life_Landscapes/Congaree_Boardwalk.jpg");
+    }
+    
     #Crowned_in_Mist_Vertical {
         background-image: url("/photography/Life_Landscapes/Crowned_in_Mist_Vertical.jpg");
+    }
+    
+    #Cumberland {
+        background-image: url("/photography/Life_Landscapes/Cumberland.jpg");
     }
     
     #Curiosity {
@@ -745,6 +757,10 @@ input[type="submit"]:hover {
         background-image: url("/photography/Life_Landscapes/Hidden_Surprise.jpg");
     }
     
+    #Highland_Whispers {
+        background-image: url("/photography/Life_Landscapes/Highland_Whispers.jpg");
+    }
+    
     #Illuminated_Faith {
         background-image: url("/photography/Life_Landscapes/Illuminated_Faith.jpg");
     }
@@ -791,6 +807,10 @@ input[type="submit"]:hover {
     
     #Navigating_the_Waves {
         background-image: url("/photography/Life_Landscapes/Navigating_the_Waves.jpg");
+    }
+    
+    #Northern_Flicker {
+        background-image: url("/photography/Life_Landscapes/Northern_Flicker.jpg");
     }
     
     #Pathway_to_the_Smoky_Horizon {
@@ -855,6 +875,10 @@ input[type="submit"]:hover {
     
     #Shaded_Rest {
         background-image: url("/photography/Life_Landscapes/Shaded_Rest.jpg");
+    }
+    
+    #Smoke_on_the_Water {
+        background-image: url("/photography/Life_Landscapes/Smoke_on_the_Water.jpg");
     }
     
     #Solitude {
