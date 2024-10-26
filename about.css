@@ -74,6 +74,7 @@ header {
     flex-flow: row wrap;
     justify-content: center;
     align-content: space-around;
+    align-items: center;
     padding: 1vh 0 1vh 0;
     text-align: center;
     position: -webkit-sticky; /*Safari*/
@@ -100,6 +101,7 @@ header {
             .sig {
                 position: relative;
                 max-height: 3em;
+                margin: 0 0 0.1em 0;
             }
 
         h1 {
@@ -158,72 +160,6 @@ header {
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
-
-    header {
-        flex-flow: row wrap;
-        justify-content: space-around;
-        align-content: center;
-    }
-    
-        #header-right {
-            display: flex;
-            flex-flow: column wrap;
-            justify-content: flex-end;
-            align-content: flex-end;
-            height: initial;
-        }
-
-            #header-right * {
-                background-color: purple;
-                margin: 0;
-                padding: 0;
-            }
-
-            #header-right h1 {
-                display: flex;
-                flex-flow: row wrap;
-                justify-content: center;
-                align-items: center;
-                background-color: red;
-                height: 1em;
-            }
-
-            #header-right h2 {
-                background-color: aqua;
-                height: 1em;
-            }
-    
-        .header-social_media {
-            flex-flow: row wrap;
-            justify-content: space-around;
-            align-content: center;
-            background-color: blue;
-        }
-        
-            .header-social_media i {
-                padding: 0 0.5em;
-                background-color: green;
-                color: white;
-                font-size: 1.5em;
-                margin: 0.2em 0.5em;
-            }
-          
-            .header-social_media i:link, .header-social_media i:visited, .header-social_media i:active{
-                cursor:pointer;
-                color: white;
-            }
-            
-            .header-social_media i:hover{
-                cursor:pointer;
-                color: #E8B130;
-            }
-    
-            .home i {
-                background-color: white;
-                color: black;
-                border-radius: 100%;
-                padding: 0.2em;
-            }
     
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
@@ -300,7 +236,7 @@ main {
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    margin: 0 0 2em 0;
+    margin: 0;
     padding: 0;
     background-color: black;
     background-image: url("Life_Landscapes/Whimsy_in_the_Marsh.jpg");
@@ -313,12 +249,13 @@ main {
 }
 
     .section_title {
+        font-size: 2.8em;
         background-color: hsla(100, 0%, 0%, 0.3);
         text-align: center;
         font-style: italic;
         color: white;
         margin: 0;
-        padding: 1.5em 0.2em;
+        padding: 2.3em 0.2em;
         border-radius: initial;
         border: none;
     }
@@ -340,6 +277,7 @@ main {
 
     #philosophy h3 {
         color: #e8b130;
+        font-size: 1.5em;
         margin: 1em 0;
     }
 
@@ -382,24 +320,35 @@ main {
     padding: 0;
 }
 
+    .about_div {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 0.75em;
+    }
+
     #about h2 {
-        max-width: 75%;
-        font-size: 2em;
-        margin: 0 0 1em 0;
+        font-size: 3em;
         text-align: center;
-        padding: 0.1em 0.5em;
+        padding: 2em 0;
+        margin-bottom: 0.5em 0;
         border-bottom: #e8b130 solid 0.15em;
         border-left: #e8b130 solid 0.15em;
         border-radius: 1em;
-        background-color: white;
-        color: black;
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-origin: border-box;
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-color: hsla(0, 0% , 0%, 0.3);
+        background-blend-mode:overlay;
+        color: white;
     }
 
-        #durham {
-            margin-bottom: 2em;
-        }
-
     .about_img {
+        margin: 2em;
         border: white solid 0.2em;
         border-radius: 0.3em;
         display: block;
@@ -413,11 +362,10 @@ main {
         background-attachment: scroll;
         background-clip: border-box;
         box-shadow: 0 0 1em 1em hsla(100, 100%, 100%, 0.2);
-        margin-bottom: 2em;
     }
 
         #starting_img {
-            background-image: url('slideshows/grandcanyon.JPG');
+            background-image: url('slideshows/Pisgah-Profile.jpg');
         }
 
         #folkmoot {
@@ -444,11 +392,17 @@ main {
             background-image: url('slideshows/sunset.jpeg');
         }
 
-    #about p {
+            #connect_sm {
+                border: none;
+                margin: 0;
+            }
+
+        #durham {
+            background-image: url('Life_Landscapes/Rivers_Rhythm.jpg');
+        }
+
+    .about_div p {
         color: white;
-        background-color: hsla(0, 0% , 0%, 0.03);
-        padding: 0 2.5em 0 2.5em;
-        margin: 0 1em 4em 1em;
     }
 
 #organizations {
@@ -536,9 +490,37 @@ main {
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
+
+    .phil {
+        margin: 1em 0 1em 0;
+    }
+
+    #philosophy h3 {
+        text-align: center;
+        margin: 0;
+    }
+
+    #philosophy p {
+        text-align: left;
+        border-left: solid #e8b130 0.2em;
+        margin: 0;
+    }
     
     #philosophy_slideshow {
-        height: 25em;
+        height: 40em;
+    }
+
+    #about h2 {
+        margin: 1em 0.2em;
+    }
+
+    .about_img {
+        height: 20em;
+        width: 30em;
+    }
+
+    #about p {
+        margin: 0;
     }
     
 }
