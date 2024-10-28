@@ -224,265 +224,163 @@ header {
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
 main {
+    padding: 1em 0;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.form_container {
-    padding: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-#general_inquiries {
-    padding: 2em 1em 1em;
-    background-image: url("Creations/Burst.jpg");
-    background-color: hsla(100, 100%, 100%, 0..1);
-    background-position: 0%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: overlay;
-    text-align: center;
-}
-
-#experience {
-    margin: 3em 0 3em 0;
-    background-image: url("Portraits/20190929-Marcus_Richardson-2.jpg");
-    background-color: hsla(0, 0%, 0%, 0.8);
-    background-position: 0%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: overlay;
-    text-align: center;
-}
-
-#your_session {
-    margin: 0 0 2em 0;
-    background-color: black;
-}
-
-.form_section {
-    padding: 2em 0.7em 2em 0.7em;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-    .form_section p {
-        padding: 0;
-    }
-
-.section_title {
-    background-color: hsla(100, 100%, 100%, 0.1);
-    text-align: center;
-    padding: 0.25em;
-    color: white;
-}
-
-    .section_subtitle {
-        padding: 0.1em 0;
-        border-bottom: #e8b130 solid 0.1em;
-    }
-
-.section_of_form {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    padding: 0;
-}
-
-.form_label {
-    margin-top: 1em;
-}
-
-.form_text {
-    padding: 0.5em 0;
-}
-
-.question_group {
-    padding: 0;
-    margin: 0;
-}
-
-.question {
-    text-align: left;
-    font-size: 1.2em;
-    color: white;
-    font-weight: bold;
-    margin: 0;
-}
-
-    .portrait_question {
-        text-transform: uppercase;
-        font-size: 2em;
-        color: white;
-        background-color: hsla(100, 100%, 100%, 0.1);
-        border-bottom: #e8b130 solid 0.25em;
-        padding: 0.5em;
-        margin: 0.5em;
-        text-align: center;
-    }
-
-.dropdown {
-    border: none;
-    overflow-y: auto;
-    overflow-x: hidden;
-    position: relative;
-}
-        
-    .dropdown::-webkit-scrollbar {
-        width: 0.5em;
-    }
-    
-        .dropdown::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        /* Scrollbar thumb */
-        .dropdown::-webkit-scrollbar-thumb {
-            background-color: #e8b130;  /* Darker color for the scrollbar thumb */
-            border-radius: 0.1em;  /* Rounded edges for scrollbar */
-        }
-
-input[type="date"],
-input[type="time"],
-input[type="text"],
-input[type="email"],
-textarea,
-select {
-    padding: 0.5em;
-    border: 0.2em solid white;
-    margin-bottom: 1em;
-}
-
-.session_details {
-    padding: 0.5em;
-    border-radius: 0.5em;
-    margin: 0 0 3em 0;
-    background-color: hsla(100, 100%, 100%, 0.05);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-    .session_title {
-        height: 8em;
+    .main_category {
+        background-color: hsla(100, 100%, 100%, 0.07);
+        margin: 1em 0;
+        padding: 2em 1em;
+        display: flex;
         flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-        border: white solid 0.1em;
-        border-radius: 0.5em;
-        padding: 1em;
-        margin: 0.5em;
-        color: white;
-        text-align: center;
-        cursor: pointer;
-        background-color: hsla(0, 0%, 0%, 0.5);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-blend-mode: overlay;
+        justify-content: space-around;
+        align-items: center;
     }
 
-        #traditional_pic {
-            background-image: url(Portraits/20200727-Lucie_Patten-4.jpg);
-            background-position: 50% 100%;
+        .main_title {
+            background-color: hsla(100, 100%, 100%, 0.07);
+            font-size: 4em;
+            border-radius: 0.2em 0.2em 1em 1em;
+            border-top: solid 0.05em #e8b130;
+            text-align: center;
         }
 
-        #grad_pic {
-            background-image: url(Portraits/20240601-Ryan_Mooney-2.jpg);
-            background-position: 50% 100%;
+        .overview {
+            font-size: 1.3em;
+            padding: 6em 0.5em;
+            margin: 1em 0;
+            text-align: center;
+            border: solid 0.1em white;
+            background-color: hsla(100, 100%, 0%, 0.7) ;
+            background-image: url("https://drscdn.500px.org/photo/1102901111/q%3D80_m%3D600/v2?sig=7066590d22869f2406abb0dfa6915dac4ac32ea1cef3fa6ca47ba7974227a5e2");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-blend-mode:overlay;
         }
 
-        #mini_pic {
-            background-image: url(Portraits/20190929-Marcus_Richardson-3.jpg);
-            background-position: 50% 100%;
-        }
-
-        #headshot_pic {
-            background-image: url(Portraits/20190923-Mallory_Storrie-1.jpg);
-            background-position: 50% 100%;
-        }
-
-        #full_prof_pic {
-            background-image: url(Portraits/20240831-Marching_Bands-1.jpg);
-            background-position: 50% 100%;
-        }
-
-        #talent_pic {
-            background-image: url(Portraits/20191204-Alex_Baker-1.jpg);
-            background-position: 50% 80%;
-        }
-
-        #event_pic {
-            background-image: url(Portraits/20240406-J_Creek_Cloggers-2.jpg);
-            background-position: 50% 100%;
-        }
-
-    .session_description {
-        color: white;
-        font-size: 1.2em;
-        padding: 1em;
-        text-align: center;
-    }
-
-    .session_info {
-        list-style: none;
-        padding: 1em 0 0 0;
-        text-align: center;
-    }
-
-        .session_info li {
-            line-height: 2em;
-        }
-
-        .discount_credit {
-            font-style: italic;
-            margin: 1em 0 0 0.5em;
-            border-top: solid 0.1em #e8b130;
-            padding: 0.5em;
-        }
-
-        .section_specific {
-            color: #e8b130;
-        }
-
-        .event_options {
-            margin: 1em 0 1em 0;
-        }
-
-    .travel_zones {
-        padding: 0;
-        text-align: center;
-        margin: 0 0 1em 0;
-    }
-
-        .zone_cont {
-            padding: 0;
-            margin: 1em 0 1em 0;
-        }
-
-            .zone_title {
+            .overview span {
                 color: #e8b130;
-                font-weight: bold;
-                margin: 0;
             }
 
-            .zone_description {
-                margin: 0;
-            }
-
-    #session_submit {
-        height: 2em;
-        margin-top: 1em;
-        font-size: 1.3em;
+    .specific_category {
+        padding: 0 0 1em 0;
+        margin: 2em 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 1em;
+        border-top: 0.3em dotted hsla(100, 100%, 100%, 0.2);
+        border-bottom: 0.3em dotted hsla(100, 100%, 100%, 0.2);
+        border-right: 0.25em dotted hsla(100, 100%, 100%, 0.2);
+        border-left: 0.25em dotted hsla(100, 100%, 100%, 0.2);
     }
+
+        .specific_title {
+            border-bottom: solid white 0.1em;
+            background-color: hsla(100, 100%, 100%, 0.05);
+            text-align: center;
+            font-size: 2.5em;
+            padding: 0.5em 0 0.5em 0;
+            margin-bottom: 0;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .description {
+            padding: 4em 1em;
+            font-size: 1.1em;
+            margin-top: 0;
+            background-color: hsla(100, 100%, 0%, 0.7) ;
+            background-image: url("https://drscdn.500px.org/photo/1102901111/q%3D80_m%3D600/v2?sig=7066590d22869f2406abb0dfa6915dac4ac32ea1cef3fa6ca47ba7974227a5e2");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-blend-mode:overlay;
+        }
+
+            .description span {
+                color: #e8b130;
+            }
+
+    .subcat {
+        padding: 0 0 1em 0;
+        margin: 1em 0;
+        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        background-color: hsla(100, 100%, 100%, 0.07)
+    }
+
+        .subcat_title {
+            padding: 0.5em 0;
+            margin: 0;
+            border-bottom: 0.1em solid #e8b130;
+        }
+
+            .best {
+                font-family: "Luxurious Script", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 2.5em;
+            }
+
+        .subcat_desc {
+            padding: 2em;
+            margin: 0;
+            background-color: hsla(100, 100%, 0%, 0.7);
+            background-image: url("https://drscdn.500px.org/photo/1102901111/q%3D80_m%3D600/v2?sig=7066590d22869f2406abb0dfa6915dac4ac32ea1cef3fa6ca47ba7974227a5e2");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-blend-mode: overlay;
+        }
+
+        .special {
+            background-color: red;
+            padding: 1em;
+        }
+
+        .images {
+            padding: 1em 0 0 0;
+        }
+
+        .duration {
+            padding: 1em 0 0 0;
+        }
+
+        .price {
+            padding: 1em 0 0 0;
+        }
+
+        .subcat .btn {
+            margin-top: 1em;
+        }
+
+
+
+
+
+
+
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
@@ -527,19 +425,6 @@ footer {
 
     footer p {
         padding: 0;
-    }
-
-    .searchbar {
-        margin: 2em 0 2em 0;
-    }
-    
-    .searchbar input[type=text] {
-        padding: 0.3em 1em 0.3em 1em;
-        font-size: 1em;
-        background-color: black;
-        color: white;
-        border: 0.1em dashed white;
-        border-radius: 1em;
     }
 
     .footer-social_media {
@@ -603,6 +488,20 @@ footer {
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    background:#000; 
+}
+  
+::-webkit-scrollbar-track{
+    background:#f4f4f4;
+}
+  
+::-webkit-scrollbar-thumb{
+    background: #e8b130;
+    background-image: -webkit-linear-gradient(20deg, rgba(255,255,255,.5) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.5) 50%, rgba(255,255,255,.5) 75%, transparent 75%);
+}
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
