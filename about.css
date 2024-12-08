@@ -333,8 +333,8 @@ main {
         text-align: center;
         padding: 2em 0;
         margin-bottom: 0.5em 0;
-        border-bottom: #e8b130 solid 0.15em;
-        border-left: #e8b130 solid 0.15em;
+        border-bottom: #e8b130 solid 0.05em;
+        border-left: #e8b130 solid 0.05em;
         border-radius: 1em;
         background-position: center center;
         background-size: cover;
