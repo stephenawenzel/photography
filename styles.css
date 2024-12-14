@@ -38,6 +38,7 @@ body {
     align-content: center;
     height: 100%;
     overflow-y: hidden;
+    cursor: default;
 }
 
 #cover {
@@ -58,30 +59,23 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    animation: slideshow 50s infinite;
+    animation: slideshow 20s infinite;
     transition: background-image 0.25s ease-in-out;
 }
 
     /* Animation keyframes to switch between images */
     @keyframes slideshow {
-        0%    { background-image: url('https://drscdn.500px.org/photo/1102445430/q%3D80_m%3D600/v2?sig=25b9bef5502f7529fce11922be2895c8fb98e8e5bab713cdd4d93f968b5ecff0'); }
-        5.88%  { background-image: url('https://drscdn.500px.org/photo/1102445324/q%3D80_m%3D600/v2?sig=000a7be462d745011120f03305c3c1d21c26a6502bc949224bc478300338e08d'); }
-        11.76% { background-image: url('https://drscdn.500px.org/photo/1102445363/q%3D80_m%3D600/v2?sig=13d741fbc0fabbce2a1c2118cc9307f49512b6f06a09bd4b6d4506a302c27159'); }
-        17.64% { background-image: url('https://drscdn.500px.org/photo/1102445325/q%3D80_m%3D600/v2?sig=ca13779af8955929fb8d8038717febfb2d44a9878d8514850192dfd9f8110281'); }
-        23.52% { background-image: url('https://drscdn.500px.org/photo/1102445379/q%3D80_m%3D600/v2?sig=0f883e14788a24f3ba60f626bc660dab72ebfca1f0dc5330f7b54885994ab55a'); }
-        29.41% { background-image: url('https://drscdn.500px.org/photo/1102445405/q%3D80_m%3D600/v2?sig=92574662534e6b7a709797ebfda1d01018d8bfc76a04c0ec27e9716b8405c175'); }
-        35.29% { background-image: url('https://drscdn.500px.org/photo/1102445381/q%3D80_m%3D600/v2?sig=f02238f78109bb2e6b0aa4ad23a4f66a456035deae5d45b9516e732ad2c0d3f0'); }
-        41.17% { background-image: url('https://drscdn.500px.org/photo/1102445366/q%3D80_m%3D600/v2?sig=1ca432d74359713fb105da4ac53f60e84ac57c42f0e78184a9cfb8043edaeac1'); }
-        47.05% { background-image: url('https://drscdn.500px.org/photo/1102445399/q%3D80_m%3D600/v2?sig=c50779e748ba59a22c19c34985f30311a63476c55ffddb4f8d231a69ec332d4f'); }
-        52.94% { background-image: url('https://drscdn.500px.org/photo/1102445423/q%3D80_m%3D600/v2?sig=a31f1f6d4d3d47b22911edc07a933d9513b8a7a089c999fb9ace84f46d2c9335'); }
-        58.82% { background-image: url('https://drscdn.500px.org/photo/1102445407/q%3D80_m%3D600/v2?sig=9989965fe762f8cf0ffda007569e64df037e8c70f7e21c92702bab7beb9ae919'); }
-        64.70% { background-image: url('https://drscdn.500px.org/photo/1102445375/q%3D80_m%3D600/v2?sig=a191bb6632912852cdfc297c8fd59f71cf0877b24b4d90cdd2bf994c70bfebd1'); }
-        70.58% { background-image: url('https://drscdn.500px.org/photo/1102445337/q%3D80_m%3D600/v2?sig=7a4273277ecb4e0bb959e8ff432e6d2e80f8c59a088a2086b7aa7724d1743f06'); }
-        76.47% { background-image: url('https://drscdn.500px.org/photo/1102445339/q%3D80_m%3D600/v2?sig=382b1b0f0d4472efe35a54c2260a60db47c6efc2eeafa9c92aebd55c0651d40a'); }
-        82.35% { background-image: url('https://drscdn.500px.org/photo/1102445385/q%3D80_m%3D600/v2?sig=47f39e2392de2c305e07e9ea1f872387d3178220c6cb398e158ccc07a700c329'); }
-        88.23% { background-image: url('https://drscdn.500px.org/photo/1102445406/q%3D80_m%3D600/v2?sig=f9fa3e26a2048b6d5111f8c5f21eeb7b563c68e92742cdbf5be4a72fff239fd5'); }
-        94.11% { background-image: url('https://drscdn.500px.org/photo/1102445332/q%3D80_m%3D600/v2?sig=b130212d0038ccc6b2f39c1e793fa67a7bc164d6966f7b1a4d33b28336652c40'); }
-        100%  { background-image: url('https://drscdn.500px.org/photo/1102445430/q%3D80_m%3D600/v2?sig=25b9bef5502f7529fce11922be2895c8fb98e8e5bab713cdd4d93f968b5ecff0'); }
+        0% /*Gradient Horizon*/ { background-image: url('https://drscdn.500px.org/photo/1105280310/q%3D80_m%3D600/v2?sig=9cb3d4bd383a30dc605757f4a31d2b5b3cc0c4fb9c7f917cf42e8205709e2924'); }
+        10% /*Rainbow's Embrace*/ { background-image: url('https://drscdn.500px.org/photo/1105613666/q%3D80_m%3D600/v2?sig=067f021598adc64c6e580b03db9ff0e23f11da725929e5791886f7aa113df0ef'); }
+        20% /*Resting Majesty*/ { background-image: url('https://drscdn.500px.org/photo/1105613670/q%3D80_m%3D600/v2?sig=3f6309bd7536163046de9a86732178266a725d45cc1c06691c7ad15c4b461287'); }
+        30% /*Reaching for the Sky*/ { background-image: url('https://drscdn.500px.org/photo/1105613741/q%3D80_m%3D600/v2?sig=728e4597fafb7a48be1e4b9170d838ad8693ec43ed1677c564851a0ef90b8d7a'); }
+        40% /*Lucie*/ { background-image: url('https://drscdn.500px.org/photo/1105618183/q%3D80_m%3D600/v2?sig=0d3896bfc73b1297ab05482e7c2e69b58259d3845a2d66ed454bf13ae79d7b0f'); }
+        50% /*Oriet*/ { background-image: url('https://drscdn.500px.org/photo/1105618187/q%3D80_m%3D600/v2?sig=bdaa14d6192ef129890ce6f1d9b90f3052e6a8899c6f4ce773358ef5b32eb264'); }
+        60% /*Alex*/ { background-image: url('https://drscdn.500px.org/photo/1105618182/q%3D80_m%3D600/v2?sig=a5fe47e6700c7056493f25f7f4ff517a16b5e8e2d775a53f455d2d1bd2e15f49'); }
+        70% /*Madeline*/ { background-image: url('https://drscdn.500px.org/photo/1105618328/q%3D80_m%3D600/v2?sig=42f4ff4a58eda73f8a25eee13ef2ba960d9844961c0dc79dff32614fcbebe392'); }
+        80% /*Downtime*/ { background-image: url('https://drscdn.500px.org/photo/1105618325/q%3D80_m%3D600/v2?sig=aa5700bbff5bb276ff8e99b02b680e4b6ace6597162fd2eecbab4d2546db468d'); }
+        90% /*J Creek Cloggers*/ { background-image: url('https://drscdn.500px.org/photo/1105618188/q%3D80_m%3D600/v2?sig=9a0595f353d39453c2aa36dd316006539bce13c9409712b648e7bfe676ad4708'); }
+        100% /* Same as start! */{ background-image: url('https://drscdn.500px.org/photo/1105280310/q%3D80_m%3D600/v2?sig=9cb3d4bd383a30dc605757f4a31d2b5b3cc0c4fb9c7f917cf42e8205709e2924'); }
     }
 
 .btn {
@@ -119,33 +113,22 @@ body {
 @media screen and (min-width: 768px) {
 
     #slideshow {
-        animation: slideshow 75s infinite;
+        animation: slideshow 20s infinite;
     }
 
+    /* Animation keyframes to switch between images */
     @keyframes slideshow {
-        0%     { background-image: url('/photography/Portraits/20200820-Oriet_Hemenway-11.jpg'); }
-        4.55%  { background-image: url('https://drscdn.500px.org/photo/1102445725/q%3D80_m%3D600/v2?sig=9c99ac22b2cf21556b10833f87c36b351862488f0e70894e0a56d80701f3c8a4'); }
-        9.09%  { background-image: url('/photography/Portraits/20191203-Kathryn_Henrikson-2.jpg'); }
-        13.64% { background-image: url('/photography/Portraits/20191202-Madeline_Yara-1.jpg'); }
-        18.18% { background-image: url('https://drscdn.500px.org/photo/1102445740/q%3D80_m%3D600/v2?sig=054c89e1d78c790b232ddd355befc27d66201851f6e6deb20b52a646152fee2a'); }
-        22.73% { background-image: url('https://drscdn.500px.org/photo/1102445744/q%3D80_m%3D600/v2?sig=701c04df074b9d2cf29f73514fac9619120a0664de536960e87564eb7b7d397a'); }
-        27.27% { background-image: url('/photography/Portraits/20231104-Blue_Dragon_TKD-5.jpg'); }
-        31.82% { background-image: url('/photography/Portraits/20191121-Downtime-4.jpg'); }
-        36.36% { background-image: url('https://drscdn.500px.org/photo/1102445754/q%3D80_m%3D600/v2?sig=903df1ea03888252e2aaa027f6ef94a78b44bc44519a0b78ffa484f75d62efc0'); }
-        40.91% { background-image: url('/photography/Portraits/20240407-J_Creek_Cloggers-6.jpg'); }
-        45.45% { background-image: url('/photography/Portraits/20240911-Marching_Bands-6.jpg'); }
-        50%    { background-image: url('/photography/Portraits/20240831-Marching_Bands-1.jpg'); }
-        54.55% { background-image: url('/photography/Creations/White_Gold.jpg'); }
-        59.09% { background-image: url('https://drscdn.500px.org/photo/1105280311/q%3D80_m%3D600/v2?sig=88e3152a8a586ab8bbf3e6b2800763ce22f03c3334c4b388abb83ce838357abf'); }
-        63.64% { background-image: url('https://drscdn.500px.org/photo/1102901136/q%3D80_m%3D600/v2?sig=d2a6f667bf2fc372cd318ba61030cc16a6f874eed6ca25bd5a50ad54e0000025'); }
-        68.18% { background-image: url('/photography/Life_Landscapes/Rivers_Rhythm.jpg'); }
-        72.73% { background-image: url('https://drscdn.500px.org/photo/1102901116/q%3D80_m%3D600/v2?sig=3a02fde9a3fda1f0431b50023c73ea2b5589cdba9da16a7857e00b8976d7a35a'); }
-        77.27% { background-image: url('/photography/Creations/Shadowed_Path.jpg'); }
-        81.82% { background-image: url('/photography/Life_Landscapes/Tranquility.jpg'); }
-        86.36% { background-image: url('https://drscdn.500px.org/photo/1105280307/q%3D80_m%3D600/v2?sig=5621303a616dc8322af5d87ac6bb824007d0e8985343ceeacbf219591377f5fa'); }
-        90.91% { background-image: url('/photography/Creations/Echoes_of_the_Crash'); }
-        95.45% { background-image: url('/photography/Life_Landscapes/Zebras_Distinctive_Stripes.jpg'); }
-        100%   { background-image: url('https://drscdn.500px.org/photo/1102901111/q%3D80_m%3D600/v2?sig=7066590d22869f2406abb0dfa6915dac4ac32ea1cef3fa6ca47ba7974227a5e2'); }
+        0% /*Gradient Horizon*/ { background-image: url('https://drscdn.500px.org/photo/1105613671/q%3D80_m%3D600/v2?sig=4b6c2bde352fa86a0420604afa22bcec1f9c9e5fe90c77c161eae108121e50fb'); }
+        10% /*Peak Autumn Vibrance*/ { background-image: url('https://drscdn.500px.org/photo/1105615248/q%3D80_m%3D600/v2?sig=52646cfb466eb612823f61d153426d3cf102771295a1ecb7e447c3e528888459'); }
+        20% /*Semipalmated Plover*/ { background-image: url('https://drscdn.500px.org/photo/1105613675/q%3D80_m%3D600/v2?sig=d2fd3093043c180a70c9dd775e815102ca87b3d41f7e2019d7a3f539126642e9'); }
+        30% /*Intergalactic Explosion*/ { background-image: url('https://drscdn.500px.org/photo/1105613734/q%3D80_m%3D600/v2?sig=ecb8825f199d129d7319674eaec92f715c0ee827abc2d516621ce7ad5a30e830'); }
+        40% /*Lucie*/ { background-image: url('https://drscdn.500px.org/photo/1105618184/q%3D80_m%3D600/v2?sig=44cda1db5e11a7c5ba912d8e2ec0ab2a761cd258a564f1aa4d6f861722762aec'); }
+        50% /*Oriet*/ { background-image: url('https://drscdn.500px.org/photo/1105618185/q%3D80_m%3D600/v2?sig=6abefefb84cac815c5c306d04525dff2c12de583570355141740847d5507deeb'); }
+        60% /*Alex*/ { background-image: url('https://drscdn.500px.org/photo/1105618186/q%3D80_m%3D600/v2?sig=5770248a93f40ab1ddf437abf246acd007441a19aed98b197639fd86ad3a87ea'); }
+        70% /*Madeline*/ { background-image: url('https://drscdn.500px.org/photo/1105618327/q%3D80_m%3D600/v2?sig=dccbe0734ba79df0b17f5fe6d13fe26fab393f01798b58cb1fca20e213985d7f'); }
+        80% /*Downtime*/ { background-image: url('https://drscdn.500px.org/photo/1105618326/q%3D80_m%3D600/v2?sig=ea25d7702274d9d0a73e28721363da4e7897651ff4f643b372374c2cb41bd67f'); }
+        90% /*THS Marching Band*/ { background-image: url('https://drscdn.500px.org/photo/1105618190/q%3D80_m%3D600/v2?sig=1078c69fdd0c16d6da065d9211a0da0d7ea94ef3326414ae0542bfdfa461cc58'); }
+        100% /* Same as start! */ { background-image: url('https://drscdn.500px.org/photo/1105613671/q%3D80_m%3D600/v2?sig=4b6c2bde352fa86a0420604afa22bcec1f9c9e5fe90c77c161eae108121e50fb'); }
     }
     
 }
@@ -219,24 +202,12 @@ header {
     }
 
         .sig {
-            max-height: 4em;
-        }
-
-        .sig-box p {
-            font-size: 1.2em;
+            max-height: 3em;
         }
 
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-
-    .sig {
-        max-height: 5em;
-    }
-
-    .sig-box p {
-        font-size: 1.5em;
-    }
+@media screen and (min-width: 992px) and (max-height: 1366px){
     
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
@@ -294,23 +265,23 @@ header {
 @media screen and (min-width: 768px) {
 
     .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active {
-        font-size: 1.2em;
+        font-size: 0.9em;
     }
         
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
 
-    .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active {
-        font-size: 1.5em;
-    }
-
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
-    .nav-item a:link, .nav-item a:visited, .nav-item a:hover, .nav-item a:active{
-        width: 40%;
-    }    
+    .nav-item a:link, .nav-item a:visited, .nav-item a:active{
+        width: 30%;
+        border-bottom: solid hsla(0, 100%, 100%, 0) 0.1em;
+    }
+    .nav-item a:hover{
+        border-bottom: solid white 0.1em;
+    }
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
 @media screen and (min-width: 1400px) {
@@ -407,12 +378,10 @@ header {
     .footer-info {
         justify-content: flex-start;
         text-align: left;
-        font-size: 1.2em;
     }
 
     .footer-social_media {
         justify-content: center;
-        font-size: 1.2em;
     }
 
 }
@@ -422,12 +391,10 @@ header {
     .footer-info {
         justify-content: flex-start;
         text-align: left;
-        font-size: 1.8em;
     }
 
     .footer-social_media {
         justify-content: center;
-        font-size: 1.8em;
     }
 
 }
