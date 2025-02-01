@@ -108,11 +108,8 @@ header {
             color: white;
             font-size: 2em;
             padding: 0.2em;
-            margin-top: 0.2em;
-            border-top: 0.01em solid white;
-            border-bottom: 0.01em solid white;
-            border-left: 0.2em double white;
-            border-right: 0.2em double white;
+            border-radius: 0 0 1em 0.2em;
+            border-bottom: solid #e8b130 0.15em;
         }
 
     .header-social_media {
@@ -152,22 +149,6 @@ header {
             border-radius: 100%;
             padding: 0.2em;
         }
-
-    #header-back {
-        background-color: black;
-        position: absolute;
-        bottom: 60%;
-        left: 3%;
-        border: white solid 0.1em;
-    }
-
-    #schedule-btn {
-        background-color: black;
-        position: absolute;
-        bottom: 60%;
-        right: 3%;
-        border: white solid 0.1em;
-    }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
@@ -277,14 +258,10 @@ main {
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: center;
+        border-bottom: 0.3em solid black;
         padding-bottom: 2em;
         margin-bottom: 3em;
     }
-
-        .specific_category a:link, a:visited, a:hover, a:active {
-            color: white !important;
-            text-decoration: none;
-        }
 
         .description {
             padding: 1em;
@@ -307,26 +284,26 @@ main {
             .description span {
                 display: block;
                 color: white;
-                margin-bottom: 15em;
+                margin-bottom: 10em;
                 font-size: 1.5em;
                 text-transform: uppercase;
                 font-weight: bold;
             }
 
-            #traditional {
-                background-image: url("https://drscdn.500px.org/photo/1105618183/q%3D80_m%3D600/v2?sig=0d3896bfc73b1297ab05482e7c2e69b58259d3845a2d66ed454bf13ae79d7b0f");                
-            }
-
-            #career {
-                background-image: url("https://drscdn.500px.org/photo/1105618182/q%3D80_m%3D600/v2?sig=a5fe47e6700c7056493f25f7f4ff517a16b5e8e2d775a53f455d2d1bd2e15f49");                
-            }
-
-            #talent {
-                background-image: url("https://drscdn.500px.org/photo/1105618325/q%3D80_m%3D600/v2?sig=aa5700bbff5bb276ff8e99b02b680e4b6ace6597162fd2eecbab4d2546db468d");                
-            }
-
             #events {
+                background-image: url("https://drscdn.500px.org/photo/1105618190/q%3D80_m%3D600/v2?sig=1078c69fdd0c16d6da065d9211a0da0d7ea94ef3326414ae0542bfdfa461cc58");                
+            }
+
+            #large {
                 background-image: url("https://drscdn.500px.org/photo/1105618188/q%3D80_m%3D600/v2?sig=9a0595f353d39453c2aa36dd316006539bce13c9409712b648e7bfe676ad4708");                
+            }
+
+            #small {
+                background-image: url("https://drscdn.500px.org/photo/1105618326/q%3D80_m%3D600/v2?sig=ea25d7702274d9d0a73e28721363da4e7897651ff4f643b372374c2cb41bd67f");                
+            }
+
+            #wed {
+                background-image: url("https://drscdn.500px.org/photo/1108080215/q%3D80_m%3D600/v2?sig=36e5d42518c1ab9e687ae473a7a33ea977654d07a54909174de115da961bbe6b");                
             }
 
 
@@ -339,8 +316,39 @@ main {
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: center;
+        border: solid black 0.1em;
+        border-top: solid black 0.5em;
         border-radius: 0.5em;
     }
+
+        .subcat_title {
+            padding: 0.5em 0;
+            margin: 0;
+            background-color: salmon;
+        }
+
+            .best {
+                font-family: "Luxurious Script", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 2.5em;
+                background-color: aqua;
+            }
+
+        .subcat_desc {
+            padding: 2em;
+            margin: 0;
+            background-color: hsla(100, 100%, 0%, 0.7);
+            background-image: url("https://drscdn.500px.org/photo/1102901111/q%3D80_m%3D600/v2?sig=7066590d22869f2406abb0dfa6915dac4ac32ea1cef3fa6ca47ba7974227a5e2");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-blend-mode: overlay;
+            background-color: darkslateblue;
+        }
 
         .special {
             background-color: red;

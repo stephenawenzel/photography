@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Sessions</title>
+
     <link rel="shortcut icon" type="image/jpg" 
     href="BRP_Fall_Portrait.jpg"/>
 
@@ -27,7 +28,7 @@
     Any rules you put in your custom stylesheet will override any styling applied to any elements of
     the same name in Bootstrap, as long as your custom stylesheet link comes AFTER your Bootstrap CSS 
     link, the way it does here. -->
-    <link rel="stylesheet" type="text/css" href="portraits.css">
+    <link rel="stylesheet" type="text/css" href="gallery.css">
 
     <!--Copyright notice when clicking image-->
     <script language="JavaScript" Type="text/javascript">
@@ -49,15 +50,12 @@
             <a href="https://youtube.com/@stephenwenzelphotography?si=eXc3JMnLoyuAF7ax" target="_blank"><i class="fa-brands fa-youtube"></i></a>
         </article>
         -->
-        <section id="header-right" class="col-12 col-sm-12">
+        <section id="header-right" class="col-10 col-sm-10">
             <article id="sig-box">
                 <img class="sig m-0" src="white_signature.png" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
             </article>
-            <h2 style="font-size: 1em;" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
-            <h2 style="font-size: 1em; color: #e8b130;" class="col-12 col-sm-12"><i>Portraits & Nature Photography</i></h2>
-            <h1 class="col-12 col-sm-9 col-lg-5">PORTRAITS</h1>
-            <a id="header-back" class="btn" href="https://www.stephenwenzelphotography.com/"><i class="fa-solid fa-arrow-left"></i></a>
-            <a id="schedule-btn" class="btn" href="https://form.jotform.com/221043959027051" target="_blank"><i class="fa-solid fa-clock"></i></a>
+            <h2 style="font-size: 1em" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
+            <h1 class="col-12 col-sm-9 col-lg-5">Gallery</h1>
         </section>
     </header>
 
@@ -71,55 +69,42 @@
 
     <main class="row">
         <section class="main_category col-12 col-sm-12">
-            <h1 class="main_title col-12 col-sm-12">Available Sessions</h1>
+            <h1 class="main_title col-12 col-sm-12">The Classics</h1>
             
             <article class="specific_category col-12 col-sm-12 col-lg-3">
-                <a href="classic.html" id="traditional" class="description col-12 col-sm-12">
-                    <span>Classic Sessions</span><br>
-                    Celebrate timeless moments with family or friends, celebrating a graduation, or with traditional photography.
-                </a>
+                <p id="basic" class="description col-12 col-sm-12">
+                    <span>Session Name</span><br>
+                    Session caption
+                </p>
                 <article class="subcat col-11 col-sm-11">
                     <!--
                     <p class="special col-12 col-sm-12">Special Offer!<br> (Available when scheduled prior to MMDDYYYY) </p>                    
                     -->
+                    <p class="duration col-4 col-sm-4"><i class="fa-regular fa-clock"></i><br> 30 minutes</p>
+                    <p class="images col-4 col-sm-4"><i class="fa-solid fa-camera"></i><br>3 edited</p>
+                    <p class="price col-4 col-sm-4"><i class="fa-solid fa-dollar-sign"></i><br> $100</p> 
                 </article>
+                <a href="https://form.jotform.com/221043959027051" class="btn col-12 col-sm-12">Schedule Your Session</a>
             </article>
             
-            <article class="specific_category col-12 col-sm-12 col-lg-3">
-                <a href="career.html" id="career" class="description col-12 col-sm-12">
-                    <span>Career Sessions</span><br>
-                    Make a professional statement with standard or with a unique style suited to who you are.
-                </a>
-                <article class="subcat col-11 col-sm-11">
-                    <!--
-                    <p class="special col-12 col-sm-12">Special Offer!<br> (Available when scheduled prior to MMDDYYYY) </p>                    
-                    -->
-                </article>
+            <article id="gallery" class="col-12 col-sm-12">
+                <!--
+                <div class="image w" style="background-image: url('')"></div>
+                <div class="image h" style="background-image: url('')"></div>
+                -->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
             </article>
+        
+            <!-- Popup Overlay -->
+            <div id="popup" class="popup" onclick="closePopup()">
+                <div id="popup-img" class="popup-image"></div>
+            </div>
             
-            <article class="specific_category col-12 col-sm-12 col-lg-3">
-                <a href="talent.html" id="talent" class="description col-12 col-sm-12">
-                    <span>Talent Sessions</span><br>
-                    Showcase your unique talent with stunning, high-quality images.
-                </a>
-                <article class="subcat col-11 col-sm-11">
-                    <!--
-                    <p class="special col-12 col-sm-12">Special Offer!<br> (Available when scheduled prior to MMDDYYYY) </p>                    
-                    -->
-                </article>
-            </article>
-            
-            <article class="specific_category col-12 col-sm-12 col-lg-3">
-                <a href="events.html" id="events" class="description col-12 col-sm-12">
-                    <span>Events</span><br>
-                    Professional event photography for parties, festivals, weddings, and elopements.
-                </a>
-                <article class="subcat col-11 col-sm-11">
-                    <!--
-                    <p class="special col-12 col-sm-12">Special Offer!<br> (Available when scheduled prior to MMDDYYYY) </p>                    
-                    -->
-                </article>
-            </article>
         </section>
     </main>
 
@@ -142,6 +127,21 @@
     </footer>
     
     <!-- Optional JavaScript -->
+
+    <script>
+        function openPopup(imageElement) {
+            const popup = document.getElementById("popup");
+            const popupImg = document.getElementById("popup-img");
+
+            popupImg.style.backgroundImage = imageElement.style.backgroundImage;
+            popup.classList.add("show");
+        }
+
+        function closePopup() {
+            document.getElementById("popup").classList.remove("show");
+        }
+    </script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

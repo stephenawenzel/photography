@@ -29,7 +29,7 @@ body {
 .btn:link, .btn:visited, .btn:hover, .btn:active {
     background-color: white;
     color: black;
-    border: none;
+    border: solid black 0.2em;
 }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
@@ -108,11 +108,8 @@ header {
             color: white;
             font-size: 2em;
             padding: 0.2em;
-            margin-top: 0.2em;
-            border-top: 0.01em solid white;
-            border-bottom: 0.01em solid white;
-            border-left: 0.2em double white;
-            border-right: 0.2em double white;
+            border-radius: 0 0 1em 0.2em;
+            border-bottom: solid #e8b130 0.15em;
         }
 
     .header-social_media {
@@ -152,22 +149,6 @@ header {
             border-radius: 100%;
             padding: 0.2em;
         }
-
-    #header-back {
-        background-color: black;
-        position: absolute;
-        bottom: 60%;
-        left: 3%;
-        border: white solid 0.1em;
-    }
-
-    #schedule-btn {
-        background-color: black;
-        position: absolute;
-        bottom: 60%;
-        right: 3%;
-        border: white solid 0.1em;
-    }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
@@ -269,7 +250,6 @@ main {
             background-color: white;
             border: solid black 0.05em;
             border-left: black solid 0.2em;
-            z-index: 1;
         }
 
     .specific_category {
@@ -277,14 +257,10 @@ main {
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: center;
+        border-bottom: 0.3em solid black;
         padding-bottom: 2em;
         margin-bottom: 3em;
     }
-
-        .specific_category a:link, a:visited, a:hover, a:active {
-            color: white !important;
-            text-decoration: none;
-        }
 
         .description {
             padding: 1em;
@@ -307,26 +283,26 @@ main {
             .description span {
                 display: block;
                 color: white;
-                margin-bottom: 15em;
+                margin-bottom: 10em;
                 font-size: 1.5em;
                 text-transform: uppercase;
                 font-weight: bold;
             }
 
-            #traditional {
-                background-image: url("https://drscdn.500px.org/photo/1105618183/q%3D80_m%3D600/v2?sig=0d3896bfc73b1297ab05482e7c2e69b58259d3845a2d66ed454bf13ae79d7b0f");                
+            #basic {
+                background-image: url("https://drscdn.500px.org/photo/1108079316/q%3D80_m%3D600/v2?sig=87621f25df5536ab3ade4c5f3780b233e571c759f025322d71f2059162b0cfb0");                
             }
 
-            #career {
-                background-image: url("https://drscdn.500px.org/photo/1105618182/q%3D80_m%3D600/v2?sig=a5fe47e6700c7056493f25f7f4ff517a16b5e8e2d775a53f455d2d1bd2e15f49");                
+            #upgrade {
+                background-image: url("https://drscdn.500px.org/photo/1108078632/q%3D80_m%3D600/v2?sig=bffdb1445fcb58c7d38caa1c67c2adc99eea21b11d6c680f1b74ce6127782d9a");                
             }
 
-            #talent {
+            #standard {
+                background-image: url("https://drscdn.500px.org/photo/1105618328/q%3D80_m%3D600/v2?sig=42f4ff4a58eda73f8a25eee13ef2ba960d9844961c0dc79dff32614fcbebe392");                
+            }
+
+            #level_up {
                 background-image: url("https://drscdn.500px.org/photo/1105618325/q%3D80_m%3D600/v2?sig=aa5700bbff5bb276ff8e99b02b680e4b6ace6597162fd2eecbab4d2546db468d");                
-            }
-
-            #events {
-                background-image: url("https://drscdn.500px.org/photo/1105618188/q%3D80_m%3D600/v2?sig=9a0595f353d39453c2aa36dd316006539bce13c9409712b648e7bfe676ad4708");                
             }
 
 
@@ -339,8 +315,39 @@ main {
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: center;
+        border: solid black 0.1em;
+        border-top: solid black 0.5em;
         border-radius: 0.5em;
     }
+
+        .subcat_title {
+            padding: 0.5em 0;
+            margin: 0;
+            background-color: salmon;
+        }
+
+            .best {
+                font-family: "Luxurious Script", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: 2.5em;
+                background-color: aqua;
+            }
+
+        .subcat_desc {
+            padding: 2em;
+            margin: 0;
+            background-color: hsla(100, 100%, 0%, 0.7);
+            background-image: url("https://drscdn.500px.org/photo/1102901111/q%3D80_m%3D600/v2?sig=7066590d22869f2406abb0dfa6915dac4ac32ea1cef3fa6ca47ba7974227a5e2");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-blend-mode: overlay;
+            background-color: darkslateblue;
+        }
 
         .special {
             background-color: red;
@@ -508,4 +515,72 @@ footer {
 /*---------------------- PRINTING -------------------------------*/
 @media print {
 
+}
+
+
+
+
+#gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    z-index: 0;
+}
+
+.image {
+    display: block;
+    float: inline-start;
+    margin-bottom: 0.8em;
+    box-shadow: black 0 0.5em 0.5em;
+    border: black solid 0.01em;
+    cursor: pointer;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-blend-mode:overlay;
+    transition: 0.3s ease;
+}
+
+    .image:hover {
+        transform: scale(1.05);
+    }
+
+    .popup {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        z-index: 8;
+    }
+
+    .popup-image {
+        width: 80%;
+        aspect-ratio: 2 / 3;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .popup.show {
+        display: flex;
+    }
+
+.h {
+    aspect-ratio: 2 / 3;
+    width: 38%;
+}
+
+.w {
+    aspect-ratio: 3 / 2;
+    width: 57%;
 }
