@@ -264,12 +264,19 @@ main {
 
         .main_title {
             font-size: 4em;
-            margin: 1em 0;
+            margin: 1em 0 0.3em 0;
+            text-align: center;
             color: black;
             background-color: white;
             border: solid black 0.05em;
             border-left: black solid 0.2em;
             z-index: 1;
+        }
+
+        .call {
+            font-style: italic;
+            margin-bottom: 3em;
+            text-align: center;
         }
 
     .specific_category {

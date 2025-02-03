@@ -294,6 +294,11 @@ main {
                 background-image: url("https://drscdn.500px.org/photo/1105618325/q%3D80_m%3D600/v2?sig=aa5700bbff5bb276ff8e99b02b680e4b6ace6597162fd2eecbab4d2546db468d");                
             }
 
+            .specific_category a:link, a:visited, a:hover, a:active {
+                color: white !important;
+                text-decoration: none;
+            }
+
 
 
     .subcat {

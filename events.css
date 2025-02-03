@@ -290,6 +290,11 @@ main {
                 font-weight: bold;
             }
 
+            .specific_category a:link, a:visited, a:hover, a:active {
+                color: white !important;
+                text-decoration: none;
+            }
+
             #events {
                 background-image: url("https://drscdn.500px.org/photo/1105618190/q%3D80_m%3D600/v2?sig=1078c69fdd0c16d6da065d9211a0da0d7ea94ef3326414ae0542bfdfa461cc58");                
             }

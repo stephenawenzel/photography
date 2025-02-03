@@ -246,10 +246,10 @@ main {
         .main_title {
             font-size: 4em;
             margin: 1em 0;
-            color: black;
-            background-color: white;
-            border: solid black 0.05em;
-            border-left: black solid 0.2em;
+            color: white;
+            background-color: black;
+            border: solid #e8b130 0.05em;
+            border-left: #e8b130 solid 0.2em;
         }
 
     .specific_category {
@@ -259,7 +259,7 @@ main {
         align-items: center;
         border-bottom: 0.3em solid black;
         padding-bottom: 2em;
-        margin-bottom: 3em;
+        margin: 3em 0 0 0;
     }
 
         .description {
@@ -305,7 +305,17 @@ main {
                 background-image: url("https://drscdn.500px.org/photo/1105618325/q%3D80_m%3D600/v2?sig=aa5700bbff5bb276ff8e99b02b680e4b6ace6597162fd2eecbab4d2546db468d");                
             }
 
+    
 
+    .subspecific_category {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: 0.3em solid black;
+        padding: 2em;
+        text-align: center;
+    }
 
     .subcat {
         padding: 0;
@@ -323,7 +333,6 @@ main {
         .subcat_title {
             padding: 0.5em 0;
             margin: 0;
-            background-color: salmon;
         }
 
             .best {
@@ -517,14 +526,12 @@ footer {
 
 }
 
-
-
-
 #gallery {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    margin: 3em 0 3em 0;
     gap: 1em;
     z-index: 0;
 }
@@ -553,10 +560,10 @@ footer {
     .popup {
         display: none;
         position: fixed;
-        top: 0;
+        bottom: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 85%;
         background: rgba(0, 0, 0, 0.8);
         justify-content: center;
         align-items: center;
