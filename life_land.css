@@ -64,6 +64,7 @@ body {
 
 }
 
+
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 /*====================================================== MAIN CONTENT ===================================================================*/
 
@@ -75,7 +76,7 @@ header {
     justify-content: center;
     align-content: space-around;
     align-items: center;
-    padding: 1vh 0 1vh 0;
+    padding: 1vh 0 0 0;
     text-align: center;
     position: -webkit-sticky; /*Safari*/
     position: sticky;
@@ -84,6 +85,7 @@ header {
     z-index: 10;
     background-color: black;
     width: 100vw;
+    color: white;
 }
 
     #header-right {
@@ -104,51 +106,44 @@ header {
                 margin: 0 0 0.1em 0;
             }
 
-        h1 {
+        header h1 {
             color: white;
             font-size: 2em;
             padding: 0.2em;
-            border-radius: 0 0 1em 0.2em;
-            border-bottom: solid #e8b130 0.15em;
+            margin-top: 0.2em;
+            border-top: 0.01em solid white;
         }
 
-    .header-social_media {
-        position: relative;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        padding: 0;
-        align-content: center;
-        font-size: 1.1em;
-        border-right: 1px white solid;
+    #header-back {
+        background-color: black;
+        position: absolute;
+        bottom: 60%;
+        left: 3%;
+        border: white solid 0.1em;
+        color: white;
     }
-    
-        .header-social_media i {
-            padding-top: 0.5vh;
-            padding-bottom: 0.5vh;
-            padding-right: 1.5vw;
-            padding-left: 1.5vw;
-            color: white;
-            font-size: 1.5em;
-            margin: 0.2em 0.5em;
-        }
-      
-        .header-social_media i:link, .header-social_media i:visited, .header-social_media i:active{
-            cursor:pointer;
-            color: white;
-        }
-        
-        .header-social_media i:hover{
-            cursor:pointer;
-            color: #E8B130;
-        }
 
-        .home i {
-            background-color: white;
-            color: black;
-            border-radius: 100%;
-            padding: 0.2em;
+    #schedule-btn {
+        background-color: black;
+        position: absolute;
+        bottom: 60%;
+        right: 3%;
+        border: white solid 0.1em;
+        color: white;
+    }
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+    
+        #header-back {
+            color: white;
         }
+    
+        #schedule-btn {
+            color: white;
+        }
+    
+}
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
@@ -346,41 +341,27 @@ main {
 
 }
 
-
-
-
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ FOOTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
 footer {
-    padding: 5em 1.5em 5em 1.5em;
+    padding: 3em 1.5em 3em 1.5em;
     text-align: center;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: space-around;
     background-color: black;
+    color: white;
 }
 
     footer p {
         padding: 0;
     }
 
-    .searchbar {
-        margin: 2em 0 2em 0;
-    }
-    
-    .searchbar input[type=text] {
-        padding: 0.3em 1em 0.3em 1em;
-        font-size: 1em;
-        background-color: black;
-        color: white;
-        border: 0.1em dashed white;
-        border-radius: 1em;
-    }
-
     .footer-social_media {
+        max-width: 70%;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
@@ -393,7 +374,7 @@ footer {
     }
     
         .footer-social_media i {
-            padding: 0.5em;
+            padding: 0.5em auto;
             color: white;
             font-size: 1.5em;
             margin: 0.5em 0.2em;
@@ -408,38 +389,73 @@ footer {
             cursor:pointer;
             color: #E8B130;
         }
-
-        .footer-social_media .home i {
-            color: black;
+        
+        #footer_home {
+            color: white;
         }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
-    
+    .footer-social_media {
+        max-width: 40%;
+    }    
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
-        
+    .footer-social_media {
+        max-width: 30%;
+    }
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
-    
+    footer {
+        padding: 2em 1em;
+    }    
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
-    
+    .footer-social_media {
+        max-width: 20%;
+    }
 }
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
-
-}
-
-
-
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
-/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+::-webkit-scrollbar {
+    width: 0.5em;
+    background: black; 
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e8b130;
+    background-image: -webkit-linear-gradient(
+        20deg, 
+        rgba(255,255,255,.8) 25%, 
+        transparent 25%, 
+        transparent 50%, 
+        rgba(255,255,255,.8) 50%, 
+        rgba(255,255,255,.8) 75%, 
+        transparent 75%
+    );
+    border-radius: 0.5em;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d9a020;
+}
+
+/*---------------------- PRINTING -------------------------------*/
+@media print {
+    body {
+        display: none !important;
+    }
+}
 
 
 

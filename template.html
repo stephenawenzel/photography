@@ -6,7 +6,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Sessions</title>
-
     <link rel="shortcut icon" type="image/jpg" 
     href="BRP_Fall_Portrait.jpg"/>
 
@@ -28,9 +27,9 @@
     Any rules you put in your custom stylesheet will override any styling applied to any elements of
     the same name in Bootstrap, as long as your custom stylesheet link comes AFTER your Bootstrap CSS 
     link, the way it does here. -->
-    <link rel="stylesheet" type="text/css" href="gallery.css">
+    <link rel="stylesheet" type="text/css" href="sessions.css">
 
-    <!--Copyright notice when clicking image-->
+    <!--copyright notice clicking images-->
     <script language="JavaScript" Type="text/javascript">
         function popupMsg(theMsg) {
         alert(theMsg);
@@ -41,50 +40,66 @@
 <body class="container-fluid">
 
     <header class="row">
-        <!-- Temporarily hidden for current website
-         
-        <article class="header-social_media col-2 col-sm-2">
-            <a class="home" href="index.html"><i class="fa-solid fa-house"></i></a>
-            <a href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i id="Instagram" class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/stephenwenzelphotography/" target="_blank"><i id="Facebook" class="fab fa-facebook-square"></i></a>
-            <a href="https://youtube.com/@stephenwenzelphotography?si=eXc3JMnLoyuAF7ax" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        </article>
-        -->
-        <section id="header-right" class="col-10 col-sm-10">
+        <section id="header-right" class="col-12 col-sm-12">
             <article id="sig-box">
                 <img class="sig m-0" src="white_signature.png" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
             </article>
-            <h2 style="font-size: 1em" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
-            <h1 class="col-12 col-sm-9 col-lg-5">Gallery</h1>
+            <h2 style="font-size: 1em;" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
+            <h2 style="font-size: 1em; color: #e8b130;" class="col-12 col-sm-12">Portraits & Nature Photography</h2>
+            <h1 class="col-12 col-sm-12">Classics (Template)</h1>
+            <a id="header-back" class="btn" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></a>
+            <a id="schedule-btn" class="btn" href="https://form.jotform.com/221043959027051" target="_blank"><i class="fa-solid fa-clock"></i></a>
         </section>
     </header>
-
-    <!--Items to include when about to publish: 
-
-        - *Booking is confirmed when a contract is signed for the session.
-        - all sessions include a free consultation
-        - all sessions have resources sent to you to help to best prepare for your session
-    
-    -->
 
     <main class="row">
         <section class="main_category col-12 col-sm-12">
             
-            <article class="specific_category col-12 col-sm-12 col-lg-3">
-                <p id="basic" class="description col-12 col-sm-12">
-                    <span>Session Name</span><br>
-                    Session caption
-                </p>
-                <article class="subcat col-11 col-sm-11">
-                    <!--
-                    <p class="special col-12 col-sm-12">Special Offer!<br> (Available when scheduled prior to MMDDYYYY) </p>                    
-                    -->
-                    <p class="duration col-4 col-sm-4"><i class="fa-regular fa-clock"></i><br> 30 minutes</p>
-                    <p class="images col-4 col-sm-4"><i class="fa-solid fa-camera"></i><br>3 edited</p>
+            <article class="specific_category col-11 col-sm-12 col-xl-3">
+                <a id="mini" href="mini.html" class="description col-12 col-sm-12">
+                    <span>Mini Session</span><br>
+                    Life moves at a fast pace, and sometimes, you just need a quick snapshot of the beautiful moments that unfold. My Mini Sessions 
+                    are designed with you in mind – a perfect blend of efficiency and artistic expression, capturing the essence of your story 
+                    in a brief yet impactful time frame.
+                </a>
+                <article class="subcat col-12 col-sm-12">
+                    <a class="btn col-12 col-sm-12">Schedule Your Mini Session</a>
+                    <div id="line" class="col-12 col-sm-12"></div>
+                    <p class="duration col-4 col-sm-4"><i class="fa-regular fa-clock"></i><br> 30 min</p>
+                    <p class="images col-4 col-sm-4"><i class="fa-solid fa-camera"></i><br> 5 edited</p>
                     <p class="price col-4 col-sm-4"><i class="fa-solid fa-dollar-sign"></i><br> $100</p> 
                 </article>
-                <a href="https://form.jotform.com/221043959027051" class="btn col-12 col-sm-12">Schedule Your Session</a>
             </article>
+            
+            <article class="specific_category col-11 col-sm-12 col-xl-3">
+                <a id="trad" href="gallery-template.html" class="description col-12 col-sm-12">
+                    <span>Classic Sessions</span><br>
+                    Capture authentic moments with my classic photography sessions, tailored for couples, families, or individuals. Experience timeless elegance in a professional yet relaxed atmosphere.
+                </a>
+                <article class="subcat col-12 col-sm-12">
+                    <a class="btn col-12 col-sm-12">Classic. Click here!</a>
+                    <div id="line" class="col-12 col-sm-12"></div>
+                    <p class="duration col-4 col-sm-4"><i class="fa-regular fa-clock"></i><br>2 hr</p>
+                    <p class="images col-4 col-sm-4"><i class="fa-solid fa-camera"></i><br>15 edited</p>
+                    <p class="price col-4 col-sm-4"><i class="fa-solid fa-dollar-sign"></i><br> $200</p>
+                </article>
+            </article>
+            
+            <article class="specific_category col-11 col-sm-12 col-xl-3">
+                <a href="graduation.html" id="grad" class="description col-12 col-sm-12">
+                    <span>Graduation Sessions</span><br>
+                    Commemorate your graduation with vibrant portraits capturing your unique journey and style. Sessions vary from intimate to group settings. 
+                </a>
+                <article class="subcat col-12 col-sm-12">
+                    <a class="btn col-12 col-sm-12">Click to Celebrate!</a>
+                    <div id="line" class="col-12 col-sm-12"></div>
+                    <p class="duration col-4 col-sm-4"><i class="fa-regular fa-clock"></i><br> Varies</p>
+                    <p class="images col-4 col-sm-4"><i class="fa-solid fa-camera"></i><br> Varies</p>
+                    <p class="price col-4 col-sm-4"><i class="fa-solid fa-dollar-sign"></i><br> $300+</p>
+                </article>
+            </article>
+
+            
             
             <article id="gallery" class="col-12 col-sm-12">
                 <!--
@@ -105,27 +120,29 @@
             </div>
             
         </section>
+        
     </main>
 
     <footer class="row">
-        <section class="col-12 col-sm-12">
-            <p class="col-12 col-sm-12">Located in Durham, NC</p>
-            <p class="col-12 col-sm-12">Serving: Raleigh / Durham / Chapel Hill</p>
-            <p class="col-12 col-sm-12">Alternate locations available upon request</p>
-            <p class="col-12 col-sm-12"><a href="https://form.jotform.com/221043959027051">Contact / Schedule Here</a></p>
-            <p class="col-12 col-sm-12">e. <a href="mailto:swenzelphotography@gmail.com?subject=Website%20Visitor%20Email">swenzelphotography@gmail.com</a></p>
-            <p class="col-12 col-sm-12">© <a href="#">Stephen Wenzel</a></p>
-            <p class="col-12 col-sm-12">All Rights Reserved</p>
-            <article class="footer-social_media col-12">
-                <a class="home" href="https://www.stephenwenzelphotography.com/"><i class="fa-solid fa-house"></i></a>
-                <a href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i id="Instagram" class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/stephenwenzelphotography/" target="_blank"><i id="Facebook" class="fab fa-facebook-square"></i></a>
-                <a href="https://youtube.com/@stephenwenzelphotography?si=eXc3JMnLoyuAF7ax" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            </article>
-        </section>
+        <p class="col-12 col-sm-12">Capturing moments in Durham, NC, and beyond.</p>
+        <p class="col-12 col-sm-12">s. <a href="https://form.jotform.com/221043959027051" target="_blank">Schedule Your Session</a></p>
+        <p class="col-12 col-sm-12">c. <a href="https://form.jotform.com/243628591101150" target="_blank">General Contact Form</a></p>
+        <p class="col-12 col-sm-12">e. <a href="mailto:swenzelphotography@gmail.com?subject=Website%20Visitor%20Email">swenzelphotography@gmail.com</a></p>
+        <p class="col-12 col-sm-12">©2025 Stephen Wenzel</p>
+        <p class="col-12 col-sm-12">All Rights Reserved</p>
+        <article class="footer-social_media col-12 col-sm-12">
+            <a id="footer_home" href="https://www.stephenwenzelphotography.com/"><i class="fa-solid fa-house"></i></a>
+            <a href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i id="Instagram" class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@stephenwenzelphotography?si=eXc3JMnLoyuAF7ax" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </article>
     </footer>
     
     <!-- Optional JavaScript -->
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
 
     <script>
         function openPopup(imageElement) {
@@ -140,7 +157,6 @@
             document.getElementById("popup").classList.remove("show");
         }
     </script>
-
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

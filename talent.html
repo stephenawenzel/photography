@@ -5,14 +5,14 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Sessions</title>
+    <title>Portraits: Talent</title>
     <link rel="shortcut icon" type="image/jpg" 
     href="BRP_Fall_Portrait.jpg"/>
 
     <!-- Link to Bootstrap 4 CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
- 
+
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,9 +27,9 @@
     Any rules you put in your custom stylesheet will override any styling applied to any elements of
     the same name in Bootstrap, as long as your custom stylesheet link comes AFTER your Bootstrap CSS 
     link, the way it does here. -->
-    <link rel="stylesheet" type="text/css" href="talent.css">
+    <link rel="stylesheet" type="text/css" href="sessions.css">
 
-    <!--Copyright notice when clicking image-->
+    <!--copyright notice clicking images-->
     <script language="JavaScript" Type="text/javascript">
         function popupMsg(theMsg) {
         alert(theMsg);
@@ -40,72 +40,91 @@
 <body class="container-fluid">
 
     <header class="row">
-        <!-- Temporarily hidden for current website
-         
-        <article class="header-social_media col-2 col-sm-2">
-            <a class="home" href="index.html"><i class="fa-solid fa-house"></i></a>
-            <a href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i id="Instagram" class="fab fa-instagram"></i></a>
-            <a href="https://www.facebook.com/stephenwenzelphotography/" target="_blank"><i id="Facebook" class="fab fa-facebook-square"></i></a>
-            <a href="https://youtube.com/@stephenwenzelphotography?si=eXc3JMnLoyuAF7ax" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-        </article>
-        -->
-        <section id="header-right" class="col-10 col-sm-10">
+        <section id="header-right" class="col-12 col-sm-12">
             <article id="sig-box">
                 <img class="sig m-0" src="white_signature.png" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
             </article>
-            <h2 style="font-size: 1em" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
-            <h1 class="col-12 col-sm-9 col-lg-5">Sessions</h1>
+            <h2 style="font-size: 1em;" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
+            <h2 style="font-size: 1em; color: #e8b130;" class="col-12 col-sm-12">Portraits & Nature Photography</h2>
+            <h1 class="col-12 col-sm-12">Talent: Editing (pics)</h1>
+            <a id="header-back" class="btn" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></a>
+            <a id="schedule-btn" class="btn" href="https://form.jotform.com/221043959027051" target="_blank"><i class="fa-solid fa-clock"></i></a>
         </section>
     </header>
 
-    <!--Items to include when about to publish: 
-
-        - *Booking is confirmed when a contract is signed for the session.
-        - all sessions include a free consultation
-        - all sessions have resources sent to you to help to best prepare for your session
-    
-    -->
-
     <main class="row">
         <section class="main_category col-12 col-sm-12">
-            <h1 class="main_title col-12 col-sm-12">Talent</h1>
             
-            <article class="specific_category col-12 col-sm-12 col-lg-3">
-                <p id="talent" class="description col-12 col-sm-12">
-                    <span>The talent Session</span><br>
-                Showcase your unique skills with a personalized talent photography session. I specialize in capturing the essence of your abilities, whether they're extraordinary or everyday. Enjoy a fun and relaxed atmosphere while we highlight what makes you special. Book now to celebrate your talents with stunning, high-quality images!
-                </p>
-                <article class="subcat col-11 col-sm-11">
-                    <!--
-                    <p class="special col-12 col-sm-12">Special Offer!<br> (Available when scheduled prior to MMDDYYYY) </p>                    
-                    -->
-                    <p class="duration col-4 col-sm-4"><i class="fa-regular fa-clock"></i><br> 1.5 hours</p>
+            <article class="specific_category col-11 col-sm-12 col-xl-3">
+                <a id="talent" href="https://form.jotform.com/221043959027051" class="description col-12 col-sm-12">
+                    <span>The Talent Session</span><br>
+                    Showcase your unique skills with a personalized talent photography session. I specialize in capturing the essence of your abilities, whether they're extraordinary or everyday. Enjoy a fun and relaxed atmosphere while we highlight what makes you special. Book now to celebrate your talents with stunning, high-quality images!
+                </a>
+                <article class="subcat col-12 col-sm-12">
+                    <a class="btn col-12 col-sm-12">Schedule Your Mini Session</a>
+                    <div id="line" class="col-12 col-sm-12"></div>
+                    <p class="duration col-4 col-sm-4"><i class="fa-regular fa-clock"></i><br> 1.5 hrs</p>
                     <p class="images col-4 col-sm-4"><i class="fa-solid fa-camera"></i><br> 10 edited</p>
                     <p class="price col-4 col-sm-4"><i class="fa-solid fa-dollar-sign"></i><br> $250+</p> 
                 </article>
+            </article>            
+            
+            <article id="gallery" class="col-12 col-sm-12">
+                <!--
+                <div class="image w" style="background-image: url('')"></div>
+                <div class="image h" style="background-image: url('')"></div>
+                -->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
             </article>
+        
+            <!-- Popup Overlay -->
+            <div id="popup" class="popup" onclick="closePopup()">
+                <div id="popup-img" class="popup-image"></div>
+            </div>
+            
         </section>
+        
     </main>
 
     <footer class="row">
-        <section class="col-12 col-sm-12">
-            <p class="col-12 col-sm-12">Located in Durham, NC</p>
-            <p class="col-12 col-sm-12">Serving: Raleigh / Durham / Chapel Hill</p>
-            <p class="col-12 col-sm-12">Alternate locations available upon request</p>
-            <p class="col-12 col-sm-12"><a href="https://form.jotform.com/221043959027051">Contact / Schedule Here</a></p>
-            <p class="col-12 col-sm-12">e. <a href="mailto:swenzelphotography@gmail.com?subject=Website%20Visitor%20Email">swenzelphotography@gmail.com</a></p>
-            <p class="col-12 col-sm-12">© <a href="#">Stephen Wenzel</a></p>
-            <p class="col-12 col-sm-12">All Rights Reserved</p>
-            <article class="footer-social_media col-12">
-                <a class="home" href="https://www.stephenwenzelphotography.com/"><i class="fa-solid fa-house"></i></a>
-                <a href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i id="Instagram" class="fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/stephenwenzelphotography/" target="_blank"><i id="Facebook" class="fab fa-facebook-square"></i></a>
-                <a href="https://youtube.com/@stephenwenzelphotography?si=eXc3JMnLoyuAF7ax" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-            </article>
-        </section>
+        <p class="col-12 col-sm-12">Capturing moments in Durham, NC, and beyond.</p>
+        <p class="col-12 col-sm-12">s. <a href="https://form.jotform.com/221043959027051" target="_blank">Schedule Your Session</a></p>
+        <p class="col-12 col-sm-12">c. <a href="https://form.jotform.com/243628591101150" target="_blank">General Contact Form</a></p>
+        <p class="col-12 col-sm-12">e. <a href="mailto:swenzelphotography@gmail.com?subject=Website%20Visitor%20Email">swenzelphotography@gmail.com</a></p>
+        <p class="col-12 col-sm-12">©2025 Stephen Wenzel</p>
+        <p class="col-12 col-sm-12">All Rights Reserved</p>
+        <article class="footer-social_media col-12 col-sm-12">
+            <a id="footer_home" href="https://www.stephenwenzelphotography.com/"><i class="fa-solid fa-house"></i></a>
+            <a href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i id="Instagram" class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@stephenwenzelphotography?si=eXc3JMnLoyuAF7ax" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </article>
     </footer>
     
     <!-- Optional JavaScript -->
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
+    <script>
+        function openPopup(imageElement) {
+            const popup = document.getElementById("popup");
+            const popupImg = document.getElementById("popup-img");
+
+            popupImg.style.backgroundImage = imageElement.style.backgroundImage;
+            popup.classList.add("show");
+        }
+
+        function closePopup() {
+            document.getElementById("popup").classList.remove("show");
+        }
+    </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

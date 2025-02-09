@@ -168,11 +168,20 @@ header {
         flex-flow: row wrap;
         justify-content: flex-start;
         align-items: center;
-        height: 6.5em;
+        height: 8em;
     }
 
         .sig {
             max-height: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        .sig-box h1 {
+            padding: 0;
+        }
+
+        .sig-box h2 {
+            padding: 0;
         }
 
         .sig-box p {
@@ -256,11 +265,6 @@ header {
         max-width: 50%;
     }
 
-/*
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
-    /* no adjustments needed*/
-}
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
 
@@ -268,24 +272,6 @@ header {
         font-size: 0.9em;
     }
         
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-
-}
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
-    .nav-item a:link, .nav-item a:visited, .nav-item a:active{
-        width: 30%;
-        border-bottom: solid hsla(0, 100%, 100%, 0) 0.1em;
-    }
-    .nav-item a:hover{
-        border-bottom: solid white 0.1em;
-    }
-}
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
-    /*no additional edits*/
 }
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ FOOTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
@@ -407,13 +393,6 @@ header {
         bottom: initial;
     }    
 }
-/*[END] -------- ENORMOUS SCREENS (COL-XXL-) ----------------------*/
-@media screen and (min-width: 1400px) {
-    /*no additional edits needed*/
-}
-
-
-
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 

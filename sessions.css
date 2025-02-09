@@ -19,17 +19,28 @@ body {
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    border-radius: 15px;
-    border: none;
+    border-radius: 0;
     font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 30%;
     background-color: white;
     color: black;
 }
 
 .btn:link, .btn:visited, .btn:hover, .btn:active {
+    height: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 30%;
     background-color: white;
     color: black;
-    border: none;
 }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
@@ -46,22 +57,14 @@ body {
     }
 
 }
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-        
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-    
-}
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
-    
-}
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
 
+@media screen and (min-width: 1200px) {
+    main {
+        width: 100vw;
+        margin: 0;
+    }
 }
+
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 /*====================================================== MAIN CONTENT ===================================================================*/
@@ -74,7 +77,7 @@ header {
     justify-content: center;
     align-content: space-around;
     align-items: center;
-    padding: 1vh 0 1vh 0;
+    padding: 1vh 0 0 0;
     text-align: center;
     position: -webkit-sticky; /*Safari*/
     position: sticky;
@@ -108,117 +111,40 @@ header {
             color: white;
             font-size: 2em;
             padding: 0.2em;
-            border-radius: 0 0 1em 0.2em;
-            border-bottom: solid #e8b130 0.15em;
+            margin-top: 0.2em;
+            border-top: 0.01em solid white;
         }
 
-    .header-social_media {
-        position: relative;
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        padding: 0;
-        align-content: center;
-        font-size: 1.1em;
-        border-right: 1px white solid;
+    #header-back {
+        background-color: black;
+        position: absolute;
+        bottom: 60%;
+        left: 3%;
+        border: white solid 0.1em;
+        color: white;
     }
+
+    #schedule-btn {
+        background-color: black;
+        position: absolute;
+        bottom: 60%;
+        right: 3%;
+        border: white solid 0.1em;
+        color: white;
+    }
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
     
-        .header-social_media i {
-            padding-top: 0.5vh;
-            padding-bottom: 0.5vh;
-            padding-right: 1.5vw;
-            padding-left: 1.5vw;
+        #header-back {
             color: white;
-            font-size: 1.5em;
-            margin: 0.2em 0.5em;
         }
-      
-        .header-social_media i:link, .header-social_media i:visited, .header-social_media i:active{
-            cursor:pointer;
+    
+        #schedule-btn {
             color: white;
         }
-        
-        .header-social_media i:hover{
-            cursor:pointer;
-            color: #E8B130;
-        }
-
-        .home i {
-            background-color: white;
-            color: black;
-            border-radius: 100%;
-            padding: 0.2em;
-        }
-
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
     
 }
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-        
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-    
-}
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
-    
-}
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
-
-}
-/*====================================================== NAVIGATION PANE ================================================================*/
-
-/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
-
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
-    
-}
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-        
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-    
-}
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
-    
-}
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
-
-}
-/*====================================================== SOCIAL MEDIA AND CONTACT =======================================================*/
-
-/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
-
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
-    
-}
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-        
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-    
-}
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
-    
-}
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
-
-}
-
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ MAIN \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
@@ -234,7 +160,7 @@ main {
 }
 
     .main_category {
-        padding: 0 0.5em;
+        padding: 0;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around; 
@@ -243,32 +169,33 @@ main {
         border-right: dashed 0.5em black;
     }
 
-        .main_title {
-            font-size: 4em;
-            margin: 1em 0;
-            color: black;
-            background-color: white;
-            border: solid black 0.05em;
-            border-left: black solid 0.2em;
-            z-index: 1;
-        }
-
     .specific_category {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: center;
-        border-bottom: 0.3em solid black;
-        padding-bottom: 2em;
-        margin-bottom: 3em;
+        padding: 2em 0;
+        max-width: 40ch;
+    }    
+        
+    .specific_category a:link a:visited, a:hover, a:active {
+        color: white;
+        text-decoration: none;
+        border: none;
     }
 
         .description {
+            height: 55vh;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-content: space-between;
             padding: 1em;
-            color: white;
+            box-shadow: black 0px 0px 30px;
+            border-radius: 0.5em;
             font-size: 1.1em;
-            margin-top: 0;
-            background-color: hsla(100, 100%, 0%, 0.7) ;
+            color: white;
+            background-color: hsla(100, 100%, 0%, 0.7);
             background-image: url("https://drscdn.500px.org/photo/1102901111/q%3D80_m%3D600/v2?sig=7066590d22869f2406abb0dfa6915dac4ac32ea1cef3fa6ca47ba7974227a5e2");
             background-position: center center;
             background-size: cover;
@@ -277,22 +204,18 @@ main {
             background-attachment: scroll;
             background-clip: border-box;
             background-blend-mode:overlay;
-            box-shadow: black 0px 0px 30px;
-            border-radius: 0.5em;
         }
 
             .description span {
                 display: block;
                 color: white;
-                margin-bottom: 10em;
                 font-size: 1.5em;
                 text-transform: uppercase;
                 font-weight: bold;
             }
 
-            .specific_category a:link, a:visited, a:hover, a:active {
-                color: white !important;
-                text-decoration: none;
+            .description:hover {
+                transform: scale(1.05);
             }
 
             #trad {
@@ -327,104 +250,141 @@ main {
                 background-image: url("https://drscdn.500px.org/photo/1105618187/q%3D80_m%3D600/v2?sig=bdaa14d6192ef129890ce6f1d9b90f3052e6a8899c6f4ce773358ef5b32eb264");                
             }
 
-
-
     .subcat {
         padding: 0;
-        margin: 1em 0;
+        margin: 1.5em 0;
         text-align: center;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
         align-items: center;
         border: solid black 0.1em;
-        border-top: solid black 0.5em;
         border-radius: 0.5em;
     }
 
-        .subcat_title {
-            padding: 0.5em 0;
+        .subcat p {
             margin: 0;
-            background-color: salmon;
+            padding: 1em 0.5em;
         }
 
-            .best {
-                font-family: "Luxurious Script", cursive;
-                font-weight: 400;
-                font-style: normal;
-                font-size: 2.5em;
-                background-color: aqua;
-            }
+        #line {
+            background-color: black;
+            height: 0.1em;
+        }
 
-        .subcat_desc {
-            padding: 2em;
-            margin: 0;
-            background-color: hsla(100, 100%, 0%, 0.7);
-            background-image: url("https://drscdn.500px.org/photo/1102901111/q%3D80_m%3D600/v2?sig=7066590d22869f2406abb0dfa6915dac4ac32ea1cef3fa6ca47ba7974227a5e2");
+    #gallery {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        margin: 3em 0 3em 0;
+        gap: 1em;
+        z-index: 0;
+    }
+    
+        .image {
+            display: block;
+            float: inline-start;
+            margin-bottom: 0.8em;
+            box-shadow: black 0 0.5em 0.5em;
+            border: black solid 0.01em;
+            cursor: pointer;
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
             background-origin: border-box;
             background-attachment: scroll;
             background-clip: border-box;
-            background-blend-mode: overlay;
-            background-color: darkslateblue;
+            background-blend-mode:overlay;
+            transition: 0.3s ease;
         }
-
-        .special {
-            background-color: red;
-            padding: 1em;
-        }
-
-        .images {
-            padding: 1em 0 0 0;
-        }
-
-        .duration {
-            padding: 1em 0 0 0;
-        }
-
-        .price {
-            padding: 1em 0 0 0;
-        }
-
-        .subcat .btn {
-            margin-top: 1em;
-        }
-
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
-    
-}
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-    
         
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
+            .image:hover {
+                transform: scale(1.05);
+            }
+        
+            .popup {
+                display: none;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 85%;
+                background-color: rgba(255, 255, 255, 0.9);
+                justify-content: center;
+                align-items: center;
+                z-index: 8;
+            }
+        
+            .popup-image {
+                border-radius: 0.5em;
+                width: 80%;
+                aspect-ratio: 2 / 3;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+        
+            .popup.show {
+                display: flex;
+            }
+        
+        .h {
+            aspect-ratio: 2 / 3;
+            width: 38%;
+        }
+        
+        .w {
+            aspect-ratio: 3 / 2;
+            width: 57%;
+        }
     
+/*------------- iPad Air & Pro -----------------------*/
+@media screen and (min-height: 1100px) {
+    .description {
+        max-height: 40vh;
+    }
+        
+    .h {
+        aspect-ratio: 2 / 3;
+        width: 28.5%;
+    }
+    
+    .w {
+        aspect-ratio: 3 / 2;
+        width: 42.75%;
+    }
+
+    .popup {
+        height: 90%;
+    }
+
+    .popup-image {
+        max-height: 50%;
+    }
+}
+
+/* ------------- My Samsung Monitor ------------------------*/
+@media screen and (min-width: 1000px) {
+        
+    .h {
+        aspect-ratio: 2 / 3;
+        width: 19%;
+    }
+    
+    .w {
+        aspect-ratio: 3 / 2;
+        width: 28.5%;
+    }
     
 }
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
-    
-    
-}
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
-
-}
-
-
-
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ FOOTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
 footer {
-    padding: 5em 1.5em 5em 1.5em;
+    padding: 3em 1.5em 3em 1.5em;
     text-align: center;
     display: flex;
     flex-flow: row wrap;
@@ -439,6 +399,7 @@ footer {
     }
 
     .footer-social_media {
+        max-width: 70%;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
@@ -451,7 +412,7 @@ footer {
     }
     
         .footer-social_media i {
-            padding: 0.5em;
+            padding: 0.5em auto;
             color: white;
             font-size: 1.5em;
             margin: 0.5em 0.2em;
@@ -466,75 +427,70 @@ footer {
             cursor:pointer;
             color: #E8B130;
         }
-
-        .footer-social_media .home i {
-            color: black;
+        
+        #footer_home {
+            color: white;
         }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
-    
+    .footer-social_media {
+        max-width: 40%;
+    }    
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
-        
+    .footer-social_media {
+        max-width: 30%;
+    }
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
-    
+    footer {
+        padding: 2em 1em;
+    }    
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
-    
+    .footer-social_media {
+        max-width: 20%;
+    }
 }
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
-
-}
-
-
-
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
-/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
-
-/* Scrollbar */
-
-::-webkit-scrollbar{
-    background:#000; 
+::-webkit-scrollbar {
+    width: 0.5em;
+    background: black; 
 }
-  
-::-webkit-scrollbar-track{
-    background:#f4f4f4;
+
+::-webkit-scrollbar-track {
+    background: black;
+    border-radius: 0.5em;
 }
-  
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background: #e8b130;
-    background-image: -webkit-linear-gradient(20deg, rgba(255,255,255,.5) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.5) 50%, rgba(255,255,255,.5) 75%, transparent 75%);
+    background-image: -webkit-linear-gradient(
+        20deg, 
+        rgba(255,255,255,.8) 25%, 
+        transparent 25%, 
+        transparent 50%, 
+        rgba(255,255,255,.8) 50%, 
+        rgba(255,255,255,.8) 75%, 
+        transparent 75%
+    );
+    border-radius: 0.5em;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
-    
+::-webkit-scrollbar-thumb:hover {
+    background: #d9a020;
 }
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-        
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-    
-}
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
-    
-}
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
 
-}
 /*---------------------- PRINTING -------------------------------*/
 @media print {
-
+    body {
+        display: none !important;
+    }
 }
