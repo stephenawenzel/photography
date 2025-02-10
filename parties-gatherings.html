@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Portraits: Classics</title>
+    <title>Parties & Gatherings</title>
     <link rel="shortcut icon" type="image/jpg" 
     href="BRP_Fall_Portrait.jpg"/>
 
@@ -46,7 +46,7 @@
             </article>
             <h2 style="font-size: 1em;" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
             <h2 style="font-size: 1em; color: #e8b130;" class="col-12 col-sm-12">Portraits & Nature Photography</h2>
-            <h1 class="col-12 col-sm-12">Classic Sessions</h1>
+            <h1 class="col-12 col-sm-12">Parties & Gatherings</h1>
             <a id="header-back" class="btn" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></a>
             <a id="schedule-btn" class="btn" href="https://form.jotform.com/221043959027051" target="_blank"><i class="fa-solid fa-clock"></i></a>
         </section>
@@ -56,26 +56,36 @@
         <section class="main_category col-12 col-sm-12">
             
             <article class="specific_category col-11 col-sm-12 col-xl-3">
-                <a id="mini" href="mini.html" class="description col-12 col-sm-12">
-                    <span>Mini Session</span><br>
-                    Life moves fast, and sometimes, you just need a quick snapshot of the beautiful moments that unfold. My mini sessions are designed for efficiency and artistic expression, capturing your story in a brief yet impactful time frame.
+                <a id="parties-gatherings" href="https://form.jotform.com/221043959027051" target="_blank" class="description col-12 col-sm-12">
+                    <span>Parties & Gatherings</span><br>
+                    Celebrate life’s special moments with stunning photography that keeps the memories alive. From birthdays to corporate events, book now to capture the fun, laughter, and unforgettable moments!
                 </a>
-            </article>
+                <article class="subcat col-12 col-sm-12">
+                    <a class="btn col-12 col-sm-12">Book Your Celebration</a>
+                    <div id="line" class="col-12 col-sm-12"></div>
+                    <p class="duration col-4 col-sm-4"><i class="fa-regular fa-clock"></i><br> 3 hours</p>
+                    <p class="images col-4 col-sm-4"><i class="fa-solid fa-camera"></i><br> 200+ edited</p>
+                    <p class="price col-4 col-sm-4"><i class="fa-solid fa-dollar-sign"></i><br> $1200+</p> 
+                </article>
+            </article>            
             
-            <article class="specific_category col-11 col-sm-12 col-xl-3">
-                <a id="signature" href="signature.html" class="description col-12 col-sm-12">
-                    <span>Signature Session</span><br>
-                    Capture authentic moments with a Signature Session designed for individuals, couples, and families. Experience timeless elegance in a relaxed, professional setting, creating portraits you'll cherish forever.
-                </a>
-                
+            <article id="gallery" class="col-12 col-sm-12">
+                <!--
+                <div class="image w" style="background-image: url('')"></div>
+                <div class="image h" style="background-image: url('')"></div>
+                -->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
             </article>
-            
-            <article class="specific_category col-11 col-sm-12 col-xl-3">
-                <a id="grad" href="graduation.html" class="description col-12 col-sm-12">
-                    <span>Graduation Sessions</span><br>
-                    Celebrate your achievements with a graduation session that reflects your journey and style. Whether solo or with friends, choose the perfect session to capture this unforgettable milestone!
-                </a>
-            </article>
+        
+            <!-- Popup Overlay -->
+            <div id="popup" class="popup" onclick="closePopup()">
+                <div id="popup-img" class="popup-image"></div>
+            </div>
             
         </section>
         

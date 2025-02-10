@@ -218,33 +218,81 @@ main {
                 transform: scale(1.05);
             }
 
-            #trad {
-                background-image: url("https://drscdn.500px.org/photo/1105618184/q%3D80_m%3D600/v2?sig=44cda1db5e11a7c5ba912d8e2ec0ab2a761cd258a564f1aa4d6f861722762aec");                
+            #classics {
+                background-image: url('https://drscdn.500px.org/photo/1105618183/q%3D80_m%3D600/v2?sig=0d3896bfc73b1297ab05482e7c2e69b58259d3845a2d66ed454bf13ae79d7b0f');    
             }
 
-            #mini {
-                background-image: url("https://drscdn.500px.org/photo/1108078237/q%3D80_m%3D600/v2?sig=8c77b348e15daf7a0e80d7f05deb7a44469e14cd36b9446ed88a6e27efe6ee8c");                
+                #mini {
+                    background-image: url("https://drscdn.500px.org/photo/1105618184/q%3D80_m%3D600/v2?sig=44cda1db5e11a7c5ba912d8e2ec0ab2a761cd258a564f1aa4d6f861722762aec");                
+                }
+
+                #signature {
+                    background-image: url("https://drscdn.500px.org/photo/1108078237/q%3D80_m%3D600/v2?sig=8c77b348e15daf7a0e80d7f05deb7a44469e14cd36b9446ed88a6e27efe6ee8c");
+                }
+
+                #grad {
+                    background-image: url("https://drscdn.500px.org/photo/1108078633/q%3D80_m%3D600/v2?sig=c6cac1fcb5d66bca014388ef16370cc9699d20f7cf1fe1742755279dd7a3ec7c");                
+                }
+
+                    #grad1 {
+                        background-image: url("https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b");                
+                    }
+        
+                    #grad2 {
+                        background-image: url("https://drscdn.500px.org/photo/1108079861/q%3D80_m%3D600/v2?sig=6902964c7c4232ad0d6b7a689abea9601ce9ca4364b935c09f5208c5145c2907");                
+                    }
+        
+                    #grad4 {
+                        background-image: url("https://drscdn.500px.org/photo/1108078636/q%3D80_m%3D600/v2?sig=cddaf02e859fa1b160f6f548bf4c923dac88e28a06357a4d9c391f2ae0b40e7f");                
+                    }
+        
+                    #grad7 {
+                        background-image: url("https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e");                
+                    }
+
+            #career {
+                background-image: url('https://drscdn.500px.org/photo/1108078632/q%3D80_m%3D600/v2?sig=bffdb1445fcb58c7d38caa1c67c2adc99eea21b11d6c680f1b74ce6127782d9a');    
             }
 
-            #grad {
-                background-image: url("https://drscdn.500px.org/photo/1108078633/q%3D80_m%3D600/v2?sig=c6cac1fcb5d66bca014388ef16370cc9699d20f7cf1fe1742755279dd7a3ec7c");                
+                #standard {
+                    background-image: url('https://drscdn.500px.org/photo/1108078632/q%3D80_m%3D600/v2?sig=bffdb1445fcb58c7d38caa1c67c2adc99eea21b11d6c680f1b74ce6127782d9a');
+                }
+
+                #upgrade {
+                    background-image: url('https://drscdn.500px.org/photo/1108540455/q%3D80_m%3D600/v2?sig=6552eacce3718da1f08fa6028268afbda0558fd4c04ca922ba1b63ec5da233e4');
+                }
+
+                #level-up {
+                    background-image: url('https://drscdn.500px.org/photo/1108540575/q%3D80_m%3D600/v2?sig=5073a18cfb68ab4f4a1aebacfc83681c1bdc44e24504a71fddeef6aff824d4d7');
+                }
+
+                #professionalist {
+                    background-image: url('https://drscdn.500px.org/photo/1105618182/q%3D80_m%3D600/v2?sig=a5fe47e6700c7056493f25f7f4ff517a16b5e8e2d775a53f455d2d1bd2e15f49');
+                }
+
+            #talent {
+                background-image: url('https://drscdn.500px.org/photo/1108540584/q%3D80_m%3D600/v2?sig=093847b4b129a8e16fbd580bcb46d629e5b3c259e0108292de1cb3b5e73c21b8');    
             }
 
-            #grad1 {
-                background-image: url("https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b");                
+            #events {
+                background-image: url('https://drscdn.500px.org/photo/1108540440/q%3D80_m%3D600/v2?sig=35739692ebf5d1e3e95dde39cfb233bd6e75f0c459c4e67c2df7451e771f9882');    
             }
 
-            #grad2 {
-                background-image: url("https://drscdn.500px.org/photo/1108079861/q%3D80_m%3D600/v2?sig=6902964c7c4232ad0d6b7a689abea9601ce9ca4364b935c09f5208c5145c2907");                
-            }
+                #parties-gatherings {
+                    background-image: url('https://drscdn.500px.org/photo/1105618325/q%3D80_m%3D600/v2?sig=aa5700bbff5bb276ff8e99b02b680e4b6ace6597162fd2eecbab4d2546db468d');                    
+                }
 
-            #grad4 {
-                background-image: url("https://drscdn.500px.org/photo/1108078636/q%3D80_m%3D600/v2?sig=cddaf02e859fa1b160f6f548bf4c923dac88e28a06357a4d9c391f2ae0b40e7f");                
-            }
+                #festivals {
+                    background-image: url('https://drscdn.500px.org/photo/1105618188/q%3D80_m%3D600/v2?sig=9a0595f353d39453c2aa36dd316006539bce13c9409712b648e7bfe676ad4708');                    
+                }
 
-            #grad7 {
-                background-image: url("https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e");                
-            }
+                #weddings-elopements {
+                    background-image: url('https://drscdn.500px.org/photo/1108080215/q%3D80_m%3D600/v2?sig=36e5d42518c1ab9e687ae473a7a33ea977654d07a54909174de115da961bbe6b');    
+                }
+
+                    #full_day_wedding {
+                        background-image: url('https://drscdn.500px.org/photo/1108540764/q%3D80_m%3D600/v2?sig=651266160622f28a68170a0b59cdfc617d0ca13c22e1a2453089dafedd181f88');    
+                    }
 
             #traditional_description {
                 background-image: url("https://drscdn.500px.org/photo/1105618187/q%3D80_m%3D600/v2?sig=bdaa14d6192ef129890ce6f1d9b90f3052e6a8899c6f4ce773358ef5b32eb264");                
