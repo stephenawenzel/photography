@@ -235,7 +235,7 @@ main {
                 }
 
                     #grad1 {
-                        background-image: url("https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b");                
+                        background-image: url("https://drscdn.500px.org/photo/1108078633/q%3D80_m%3D600/v2?sig=c6cac1fcb5d66bca014388ef16370cc9699d20f7cf1fe1742755279dd7a3ec7c");                
                     }
         
                     #grad2 {
@@ -247,7 +247,7 @@ main {
                     }
         
                     #grad7 {
-                        background-image: url("https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e");                
+                        background-image: url("https://drscdn.500px.org/photo/1108655761/q%3D80_m%3D600/v2?sig=7c476e05950d95947b84a3656c3b6d4b953233b2dbcd59513c29e556be517c7e");                
                     }
 
             #career {
@@ -357,16 +357,17 @@ main {
                 bottom: 0;
                 left: 0;
                 width: 100%;
-                height: 85%;
+                height: 100%;
                 background-color: rgba(255, 255, 255, 0.9);
                 justify-content: center;
                 align-items: center;
-                z-index: 8;
+                z-index: 10;
             }
         
             .popup-image {
                 border-radius: 0.5em;
                 width: 80%;
+                max-height: 80vh;
                 aspect-ratio: 2 / 3;
                 background-size: contain;
                 background-repeat: no-repeat;
@@ -401,14 +402,6 @@ main {
     .w {
         aspect-ratio: 3 / 2;
         width: 42.75%;
-    }
-
-    .popup {
-        height: 90%;
-    }
-
-    .popup-image {
-        max-height: 50%;
     }
 }
 
