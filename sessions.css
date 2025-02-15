@@ -359,15 +359,15 @@ main {
             }
 
                 #mini {
-                    background-image: url("https://drscdn.500px.org/photo/1105618184/q%3D80_m%3D600/v2?sig=44cda1db5e11a7c5ba912d8e2ec0ab2a761cd258a564f1aa4d6f861722762aec");                
+                    background-image: url("https://drscdn.500px.org/photo/1108655720/q%3D80_m%3D600/v2?sig=f06dc5519f6e6d475f4a247f0b6709ba16068483645ea70e79878cbcea574816");                
                 }
 
                 #signature {
-                    background-image: url("https://drscdn.500px.org/photo/1108078237/q%3D80_m%3D600/v2?sig=8c77b348e15daf7a0e80d7f05deb7a44469e14cd36b9446ed88a6e27efe6ee8c");
+                    background-image: url("https://drscdn.500px.org/photo/1108655706/q%3D80_m%3D600/v2?sig=9ab6f994bb3767d9b254d13dd22f00ecf562634889879d980039142e3a1320f0");
                 }
 
                 #grad {
-                    background-image: url("https://drscdn.500px.org/photo/1108078633/q%3D80_m%3D600/v2?sig=c6cac1fcb5d66bca014388ef16370cc9699d20f7cf1fe1742755279dd7a3ec7c");                
+                    background-image: url("https://drscdn.500px.org/photo/1108078637/q%3D80_m%3D600/v2?sig=2c60345d2b07506192278cecb16035a7e77cfe0632ec1791b31e0cceb5872ebd");                
                 }
 
                     #grad1 {
@@ -375,15 +375,15 @@ main {
                     }
         
                     #grad2 {
-                        background-image: url("https://drscdn.500px.org/photo/1108079861/q%3D80_m%3D600/v2?sig=6902964c7c4232ad0d6b7a689abea9601ce9ca4364b935c09f5208c5145c2907");                
+                        background-image: url("https://drscdn.500px.org/photo/1108655777/q%3D80_m%3D600/v2?sig=133229122202cf1691ac9fdb2fd8934cc2a912be99623e6c4acb7e46d1cba917");                
                     }
         
                     #grad4 {
-                        background-image: url("https://drscdn.500px.org/photo/1108078636/q%3D80_m%3D600/v2?sig=cddaf02e859fa1b160f6f548bf4c923dac88e28a06357a4d9c391f2ae0b40e7f");                
+                        background-image: url("https://drscdn.500px.org/photo/1108655768/q%3D80_m%3D600/v2?sig=c0f3aacae3043e093a3be95ad61a985aa47136377913f2b70ceecf5033a33a1f");                
                     }
         
                     #grad7 {
-                        background-image: url("https://drscdn.500px.org/photo/1108655761/q%3D80_m%3D600/v2?sig=7c476e05950d95947b84a3656c3b6d4b953233b2dbcd59513c29e556be517c7e");                
+                        background-image: url("https://drscdn.500px.org/photo/1108655758/q%3D80_m%3D600/v2?sig=44162d46a97d26fa7aa5be0b009d9afc9c84abd4033eaa407d54ba0295b8f8c9");                
                     }
 
             #career {
@@ -407,11 +407,11 @@ main {
                 }
 
             #talent {
-                background-image: url('https://drscdn.500px.org/photo/1108540584/q%3D80_m%3D600/v2?sig=093847b4b129a8e16fbd580bcb46d629e5b3c259e0108292de1cb3b5e73c21b8');    
+                background-image: url('https://drscdn.500px.org/photo/1108655718/q%3D80_m%3D600/v2?sig=92d5ef4210fc70c5b6353e2ea82f912d4c5a3945ad97db8d5938dc770e4ca666');    
             }
 
             #events {
-                background-image: url('https://drscdn.500px.org/photo/1105618188/q%3D80_m%3D600/v2?sig=9a0595f353d39453c2aa36dd316006539bce13c9409712b648e7bfe676ad4708');    
+                background-image: url('https://drscdn.500px.org/photo/1108655751/q%3D80_m%3D600/v2?sig=8f09b4f061f41e3ef0755c5d3134188e52cd2e8588b42d402417375a7736ce63');    
             }
 
                 #parties-gatherings {
@@ -419,7 +419,7 @@ main {
                 }
 
                 #festivals {
-                    background-image: url('https://drscdn.500px.org/photo/1105618188/q%3D80_m%3D600/v2?sig=9a0595f353d39453c2aa36dd316006539bce13c9409712b648e7bfe676ad4708');                    
+                    background-image: url('https://drscdn.500px.org/photo/1108655746/q%3D80_m%3D600/v2?sig=8ced16a0f7b0ec6ebb9b8eb94893dfa8f44e4f18a66e2b26efc920ff83a73a38');                    
                 }
 
                 #weddings-elopements {
@@ -502,7 +502,7 @@ main {
         
             .popup-image {
                 border-radius: 0.5em;
-                width: 80%;
+                width: 95%;
                 max-height: 97vh;
                 aspect-ratio: 2 / 3;
                 background-size: contain;
