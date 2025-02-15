@@ -44,41 +44,71 @@
             <article id="sig-box">
                 <img class="sig m-0" src="white_signature.png" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
             </article>
-            <h2 style="font-size: 1em;" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
-            <h2 style="font-size: 1em; color: #e8b130;" class="col-12 col-sm-12">Portraits & Nature Photography</h2>
-            <h1 class="col-12 col-sm-12">Signature</h1>
+            <article id="text" class="col-12 col-sm-12 col-md-6">
+                <article id="sub-text" class="col-12 col-sm-12">
+                    <h2 style="font-size: 1em;" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
+                    <h2 style="font-size: 1em; color: #e8b130;" class="col-12 col-sm-12">Portraits & Nature Photography</h2>
+                </article>             
+            </article>   
+            <h1 id="md-title">Signature</h1>
+            <h1 id="sm-title" class="col-12 col-sm-12">Signature</h1>
             <a id="header-back" class="btn" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></a>
+            <a id="header-insta" class="btn" href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a id="schedule-btn" class="btn" href="https://form.jotform.com/221043959027051" target="_blank"><i class="fa-solid fa-clock"></i></a>
+            <a id="general-btn" class="btn" href="https://form.jotform.com/243628591101150" target="_blank"><i class="fa-solid fa-envelope"></i></a>
         </section>
     </header>
 
     <main class="row">
         <section class="main_category col-12 col-sm-12">
+
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-star"></i> Scroll to view example images! <br><br> Schedule your session by tapping the card below or the button under the card.</p>
             
             <article class="specific_category col-11 col-sm-12 col-xl-3">
                 <a id="signature" href="https://form.jotform.com/221043959027051" target="_blank" class="description col-12 col-sm-12">
                     <span>Signature Session</span><br>
                     Timeless portraits, effortless experience. Whether for individuals, couples, or families, this session blends elegance with a relaxed atmosphere to create images you’ll love forever!                </a>
                 <article class="subcat col-12 col-sm-12">
-                    <a class="btn col-12 col-sm-12">Schedule Your Portraits</a>
+                    <a href="https://form.jotform.com/221043959027051" target="_blank" class="btn col-12 col-sm-12">Schedule Your Portraits</a>
                     <div id="line" class="col-12 col-sm-12"></div>
                     <p class="duration col-4 col-sm-4"><i class="fa-regular fa-clock"></i><br>1.5 hrs</p>
                     <p class="images col-4 col-sm-4"><i class="fa-solid fa-camera"></i><br>15 edited</p>
                     <p class="price col-4 col-sm-4"><i class="fa-solid fa-dollar-sign"></i><br> $250</p>
                 </article>
-            </article>            
+            </article>        
+
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-hand-point-down"></i> Click or tap a photo to expand it!</p>
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-star"></i> Touch again to close the picture</p>    
             
             <article id="gallery" class="col-12 col-sm-12">
                 <!--
-                <div class="image w" style="background-image: url('')"></div>
-                <div class="image h" style="background-image: url('')"></div>
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('')"></div>
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('')"></div>
                 -->
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
+                <!--Lucie - Misty Mountains-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1105618184/q%3D80_m%3D600/v2?sig=44cda1db5e11a7c5ba912d8e2ec0ab2a761cd258a564f1aa4d6f861722762aec')"></div>
+                <!--Lucie - Rainbow-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1105618183/q%3D80_m%3D600/v2?sig=0d3896bfc73b1297ab05482e7c2e69b58259d3845a2d66ed454bf13ae79d7b0f')"></div>
+                <!--Lucie - Machette-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655710/q%3D80_m%3D600/v2?sig=0f25537ea425ef3d09860b1788dc89316b1c0a270e9bbdf818117527a8486546')"></div>
+                <!--Lucie - Sunset Hair-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655709/q%3D80_m%3D600/v2?sig=69f79c8f17519e38cbb07c296a81dd0e67b63d82457ee2189475ba9e22bcf120')"></div>
+                <!--Oriet - Wall-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655706/q%3D80_m%3D600/v2?sig=9ab6f994bb3767d9b254d13dd22f00ecf562634889879d980039142e3a1320f0')"></div>
+                <!--Oriet - Squatting-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655708/q%3D80_m%3D600/v2?sig=5e0ae22e3ddfabc0e01c994a709f7c95d90e5ea249a5e65500e8c188944fb7b5')"></div>
+                <!--Oriet - Fashion-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1105618185/q%3D80_m%3D600/v2?sig=6abefefb84cac815c5c306d04525dff2c12de583570355141740847d5507deeb')"></div>                
+                <!--Oriet - Ladder-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655707/q%3D80_m%3D600/v2?sig=bfdd49adf0a2eb6fc97ea43cea839a7ead2d2b2f030aaaf887135ab09ff5919b')"></div>
+                <!--Emma - Outdoor Headshot-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078237/q%3D80_m%3D600/v2?sig=8c77b348e15daf7a0e80d7f05deb7a44469e14cd36b9446ed88a6e27efe6ee8c')"></div>
+                <!--Jordan - Waterrock Knob-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655744/q%3D80_m%3D600/v2?sig=69ef2570da1055edfd38020f9a889ad598b31088c1d07efebdff1fed0cb1a3a3')"></div>
+                <!--Noah - Waterrock Knob-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655745/q%3D80_m%3D600/v2?sig=28e9100300cd1a0da886338cc292e804226e641e81ad0b2ec58336f914a5f801')"></div>
+                <!--Mallory - Blue Sky-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655729/q%3D80_m%3D600/v2?sig=95ca3bd487a7d2f7b185731ec5421cc35bdd1ad211913312b340628c55d46ab8')"></div>
             </article>
         
             <!-- Popup Overlay -->

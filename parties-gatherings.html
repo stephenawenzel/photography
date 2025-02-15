@@ -44,16 +44,25 @@
             <article id="sig-box">
                 <img class="sig m-0" src="white_signature.png" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
             </article>
-            <h2 style="font-size: 1em;" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
-            <h2 style="font-size: 1em; color: #e8b130;" class="col-12 col-sm-12">Portraits & Nature Photography</h2>
-            <h1 class="col-12 col-sm-12">Parties & Gatherings</h1>
+            <article id="text" class="col-12 col-sm-12 col-md-6">
+                <article id="sub-text" class="col-12 col-sm-12">
+                    <h2 style="font-size: 1em;" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
+                    <h2 style="font-size: 1em; color: #e8b130;" class="col-12 col-sm-12">Portraits & Nature Photography</h2>
+                </article>             
+            </article>   
+            <h1 id="md-title">Parties & Gatherings</h1>
+            <h1 id="sm-title" class="col-12 col-sm-12">Parties & Gatherings</h1>
             <a id="header-back" class="btn" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></a>
+            <a id="header-insta" class="btn" href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a id="schedule-btn" class="btn" href="https://form.jotform.com/221043959027051" target="_blank"><i class="fa-solid fa-clock"></i></a>
+            <a id="general-btn" class="btn" href="https://form.jotform.com/243628591101150" target="_blank"><i class="fa-solid fa-envelope"></i></a>
         </section>
     </header>
 
     <main class="row">
         <section class="main_category col-12 col-sm-12">
+
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-star"></i> Scroll to view example images! <br><br> Schedule your session by tapping the card below or the button under the card.</p>
             
             <article class="specific_category col-11 col-sm-12 col-xl-3">
                 <a id="parties-gatherings" href="https://form.jotform.com/221043959027051" target="_blank" class="description col-12 col-sm-12">
@@ -61,25 +70,33 @@
                     Celebrate life’s special moments with stunning photography that keeps the memories alive. From birthdays to corporate events, book now to capture the fun, laughter, and unforgettable moments!
                 </a>
                 <article class="subcat col-12 col-sm-12">
-                    <a class="btn col-12 col-sm-12">Book Your Celebration</a>
+                    <a href="https://form.jotform.com/221043959027051" target="_blank" class="btn col-12 col-sm-12">Book Your Celebration</a>
                     <div id="line" class="col-12 col-sm-12"></div>
                     <p class="duration col-4 col-sm-4"><i class="fa-regular fa-clock"></i><br> 3 hours</p>
                     <p class="images col-4 col-sm-4"><i class="fa-solid fa-camera"></i><br> 200+ edited</p>
                     <p class="price col-4 col-sm-4"><i class="fa-solid fa-dollar-sign"></i><br> $1200+</p> 
                 </article>
-            </article>            
+            </article>          
+
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-hand-point-down"></i> Click or tap a photo to expand it!</p>
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-star"></i> Touch again to close the picture</p>  
             
             <article id="gallery" class="col-12 col-sm-12">
                 <!--
-                <div class="image w" style="background-image: url('')"></div>
-                <div class="image h" style="background-image: url('')"></div>
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('')"></div>
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('')"></div>
                 -->
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
+
+                <!--Downtime - Shea & KJ-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655725/q%3D80_m%3D600/v2?sig=efea39694848bd878eff26a21da19b32e2b2e7d28cfc4e5397e3e9148968926a')"></div>
+                <!--Downtime - Three-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655719/q%3D80_m%3D600/v2?sig=12eb9d19774eeb6b0a76eeeaf363c1169954c7b0e2a247e36bb3e2767bca54f9')"></div>
+                <!--Downtime - Shea DJ-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1105618325/q%3D80_m%3D600/v2?sig=aa5700bbff5bb276ff8e99b02b680e4b6ace6597162fd2eecbab4d2546db468d')"></div>
+                <!--Ryab's Grad Party - Book-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655742/q%3D80_m%3D600/v2?sig=be3f413a8d10ca6244364229e740e74113f7f0fd315cabf418a05e7688c3bde9')"></div>
+                <!--Ryan's Group Photo-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655740/q%3D80_m%3D600/v2?sig=800a873ff969ac1e7a0a00f6460b19cb5440c6eea42ad674bf311a871eea7965')"></div>
             </article>
         
             <!-- Popup Overlay -->

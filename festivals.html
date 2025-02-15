@@ -44,16 +44,25 @@
             <article id="sig-box">
                 <img class="sig m-0" src="white_signature.png" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
             </article>
-            <h2 style="font-size: 1em;" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
-            <h2 style="font-size: 1em; color: #e8b130;" class="col-12 col-sm-12">Portraits & Nature Photography</h2>
-            <h1 class="col-12 col-sm-12">Fetivals</h1>
+            <article id="text" class="col-12 col-sm-12 col-md-6">
+                <article id="sub-text" class="col-12 col-sm-12">
+                    <h2 style="font-size: 1em;" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
+                    <h2 style="font-size: 1em; color: #e8b130;" class="col-12 col-sm-12">Portraits & Nature Photography</h2>
+                </article>             
+            </article>   
+            <h1 id="md-title">Festivals</h1>
+            <h1 id="sm-title" class="col-12 col-sm-12">Festivals</h1>
             <a id="header-back" class="btn" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></a>
+            <a id="header-insta" class="btn" href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a id="schedule-btn" class="btn" href="https://form.jotform.com/221043959027051" target="_blank"><i class="fa-solid fa-clock"></i></a>
+            <a id="general-btn" class="btn" href="https://form.jotform.com/243628591101150" target="_blank"><i class="fa-solid fa-envelope"></i></a>
         </section>
     </header>
 
     <main class="row">
         <section class="main_category col-12 col-sm-12">
+
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-star"></i> Scroll to view example images! <br><br> Schedule your session by tapping the card below or the button under the card.</p>
             
             <article class="specific_category col-11 col-sm-12 col-xl-3">
                 <a id="festivals" href="https://form.jotform.com/221043959027051" target="_blank" class="description col-12 col-sm-12">
@@ -61,25 +70,59 @@
                     Bring the energy and excitement of your festival to life with professional photography. From live performances to vibrant crowds, book now to ensure every unforgettable moment is captured!
                 </a>
                 <article class="subcat col-12 col-sm-12">
-                    <a class="btn col-12 col-sm-12">Capture the Action</a>
+                    <a href="https://form.jotform.com/221043959027051" target="_blank" class="btn col-12 col-sm-12">Capture the Action</a>
                     <div id="line" class="col-12 col-sm-12"></div>
                     <p class="duration col-4 col-sm-4"><i class="fa-regular fa-clock"></i><br> 4+ hours</p>
                     <p class="images col-4 col-sm-4"><i class="fa-solid fa-camera"></i><br> 250+ edited</p>
                     <p class="price col-4 col-sm-4"><i class="fa-solid fa-dollar-sign"></i><br> $1500+</p> 
                 </article>
-            </article>            
+            </article>        
+
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-hand-point-down"></i> Click or tap a photo to expand it!</p>
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-star"></i> Touch again to close the picture</p>    
             
             <article id="gallery" class="col-12 col-sm-12">
                 <!--
-                <div class="image w" style="background-image: url('')"></div>
-                <div class="image h" style="background-image: url('')"></div>
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('')"></div>
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('')"></div>
                 -->
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
+                <!--J Creek Cloggers - Zeb's Jump-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1105618188/q%3D80_m%3D600/v2?sig=9a0595f353d39453c2aa36dd316006539bce13c9409712b648e7bfe676ad4708')"></div>
+               
+                <!--J Creek Cloggers - Couple-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655749/q%3D80_m%3D600/v2?sig=415f34b5432027ab2500b655ffc05fb9c2bc85a81171446b78207c0fc81ef0e8')"></div>
+                <!--Charlotte AutoFair 2024 - Stage & Jumbotron-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655748/q%3D80_m%3D600/v2?sig=d8b834dcebf16170de9022cc0085eef1b4ae58c42307364b052ecf302907e6a1')"></div>
+                <!--Charlotte AutoFair 2024 - JCC Group Photo-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655747/q%3D80_m%3D600/v2?sig=ca5954e1ee1f2a06d31bf2fbba7dfe66db04699ff96641186232c35bd9f81eff')"></div>
+                <!--J Creek Cloggers - Zeb & Dancer-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655746/q%3D80_m%3D600/v2?sig=8ced16a0f7b0ec6ebb9b8eb94893dfa8f44e4f18a66e2b26efc920ff83a73a38')"></div>
+                <!--BDTKD - Sean Breaking-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655754/q%3D80_m%3D600/v2?sig=1bfadb9de4bbb75dd5eeb65561505d14e0a38a3dadfa6a6bc2cea716e40fc849')"></div>
+                <!--BDTKD - Marshall Pose-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655752/q%3D80_m%3D600/v2?sig=21194e09aa77df44228ca33e578a1b2291ce7fa49e1446efd3cef5e8ab4ae6d5')"></div>
+                <!--BDTKD - Marshall Breaking-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655751/q%3D80_m%3D600/v2?sig=8f09b4f061f41e3ef0755c5d3134188e52cd2e8588b42d402417375a7736ce63')"></div>
+                <!--BDTKD - THS Sparring-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655750/q%3D80_m%3D600/v2?sig=8501933d0cb6830ad03dcf1dfe066ff9d49ae595670b7031eca37ae103cb8904')"></div>
+                <!--BDTKD - 15th Group Photo-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108540440/q%3D80_m%3D600/v2?sig=35739692ebf5d1e3e95dde39cfb233bd6e75f0c459c4e67c2df7451e771f9882')"></div>
+                <!--THS Band - Concert-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655743/q%3D80_m%3D600/v2?sig=8c674cdd861669db08dd7218d1658f4020d1d9ea550f190dfdba38e664228523')"></div>
+                <!--THS MB - Friday Night Lights-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1105618190/q%3D80_m%3D600/v2?sig=1078c69fdd0c16d6da065d9211a0da0d7ea94ef3326414ae0542bfdfa461cc58')"></div>
+                <!--THS Drum Major-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655738/q%3D80_m%3D600/v2?sig=4a1b2f40f5aa24ecf2ed117351e62dfbd528078c093de19c87160b5b13214b71')"></div>
+                <!--Smoky Mountain Showdown - Trumpet-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655736/q%3D80_m%3D600/v2?sig=4b5541eb7175a14ed70a94fb2bcca348e83b0bfe005b1e3377d2656c3ab4352a')"></div>
+                <!--Smoky Mountain Showdown - Tubas-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655735/q%3D80_m%3D600/v2?sig=ffd0b908856cd5a1cd3d14b6f21f9efc12512b382903d7e293e8d13320c5256e')"></div>
+                <!--Smoky Mountain Showdown - French Horns-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655733/q%3D80_m%3D600/v2?sig=b1fefa81aa47e32d96b62b4b057efbab1f873d1ef404fdb7759fd4389cb44ea9')"></div>
+                <!--Smoky Mountain Showdown - Bari Sax-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655732/q%3D80_m%3D600/v2?sig=932a22ba76906c474c8532d6ac184b8e17bb682a5ac77bce96a617dc3aa7f5cf')"></div>
+                <!--Smoky Mountain Showdown - SM Drum Major-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655730/q%3D80_m%3D600/v2?sig=ca4dc2d86f7547c7f084648cefbe21a919cfc535dc5ad162f36366aefbf22afc')"></div>
             </article>
         
             <!-- Popup Overlay -->

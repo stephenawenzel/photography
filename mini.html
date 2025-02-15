@@ -44,16 +44,25 @@
             <article id="sig-box">
                 <img class="sig m-0" src="white_signature.png" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
             </article>
-            <h2 style="font-size: 1em;" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
-            <h2 style="font-size: 1em; color: #e8b130;" class="col-12 col-sm-12">Portraits & Nature Photography</h2>
-            <h1 class="col-12 col-sm-12">Mini Session</h1>
+            <article id="text" class="col-12 col-sm-12 col-md-6">
+                <article id="sub-text" class="col-12 col-sm-12">
+                    <h2 style="font-size: 1em;" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
+                    <h2 style="font-size: 1em; color: #e8b130;" class="col-12 col-sm-12">Portraits & Nature Photography</h2>
+                </article>             
+            </article>   
+            <h1 id="md-title">Mini Session</h1>
+            <h1 id="sm-title" class="col-12 col-sm-12">Mini Session</h1>
             <a id="header-back" class="btn" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></a>
+            <a id="header-insta" class="btn" href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a id="schedule-btn" class="btn" href="https://form.jotform.com/221043959027051" target="_blank"><i class="fa-solid fa-clock"></i></a>
+            <a id="general-btn" class="btn" href="https://form.jotform.com/243628591101150" target="_blank"><i class="fa-solid fa-envelope"></i></a>
         </section>
     </header>
 
     <main class="row">
         <section class="main_category col-12 col-sm-12">
+
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-star"></i> Scroll to view example images! <br><br> Schedule your session by tapping the card below or the button under the card.</p>
             
             <article class="specific_category col-11 col-sm-12 col-xl-3">
                 <a id="mini" href="https://form.jotform.com/221043959027051" target="_blank" class="description col-12 col-sm-12">
@@ -63,25 +72,33 @@
                     in a brief yet impactful time frame.
                 </a>
                 <article class="subcat col-12 col-sm-12">
-                    <a class="btn col-12 col-sm-12">Book a Quick Session</a>
+                    <a href="https://form.jotform.com/221043959027051" target="_blank" class="btn col-12 col-sm-12">Book a Quick Session</a>
                     <div id="line" class="col-12 col-sm-12"></div>
                     <p class="duration col-4 col-sm-4"><i class="fa-regular fa-clock"></i><br> 30 minutes</p>
                     <p class="images col-4 col-sm-4"><i class="fa-solid fa-camera"></i><br>4 edited</p>
                     <p class="price col-4 col-sm-4"><i class="fa-solid fa-dollar-sign"></i><br> $150</p> 
                 </article>
-            </article>            
+            </article>      
+
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-hand-point-down"></i> Click or tap a photo to expand it!</p>
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-star"></i> Touch again to close the picture</p>      
             
             <article id="gallery" class="col-12 col-sm-12">
                 <!--
-                <div class="image w" style="background-image: url('')"></div>
-                <div class="image h" style="background-image: url('')"></div>
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('')"></div>
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('')"></div>
                 -->
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
+
+                <!--Tori - Stompin' Ground-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655769/q%3D80_m%3D600/v2?sig=0b0e1d8080b58a06f818865c4b7eac6458243a228e6c68d3ddeb6d167e314cf8')"></div>
+                <!--Mallory - Blue Sky-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655729/q%3D80_m%3D600/v2?sig=95ca3bd487a7d2f7b185731ec5421cc35bdd1ad211913312b340628c55d46ab8')"></div>
+                <!--Marcus - UNC Basketball-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655727/q%3D80_m%3D600/v2?sig=24b552e32bbe3d3a1894299a84f6c00711f37c53523227b97d7d6b75d08fbad9')"></div>            
+                <!--Grace - Box Ukelele-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655720/q%3D80_m%3D600/v2?sig=f06dc5519f6e6d475f4a247f0b6709ba16068483645ea70e79878cbcea574816')"></div>
+                <!--Lucie - Misty Mountains-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1105618184/q%3D80_m%3D600/v2?sig=44cda1db5e11a7c5ba912d8e2ec0ab2a761cd258a564f1aa4d6f861722762aec')"></div>
             </article>
         
             <!-- Popup Overlay -->

@@ -44,16 +44,25 @@
             <article id="sig-box">
                 <img class="sig m-0" src="white_signature.png" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
             </article>
-            <h2 style="font-size: 1em;" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
-            <h2 style="font-size: 1em; color: #e8b130;" class="col-12 col-sm-12">Portraits & Nature Photography</h2>
-            <h1 class="col-12 col-sm-12">Career Sessions</h1>
+            <article id="text" class="col-12 col-sm-12 col-md-6">
+                <article id="sub-text" class="col-12 col-sm-12">
+                    <h2 style="font-size: 1em;" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
+                    <h2 style="font-size: 1em; color: #e8b130;" class="col-12 col-sm-12">Portraits & Nature Photography</h2>
+                </article>             
+            </article>   
+            <h1 id="md-title">Career Sessions</h1>
+            <h1 id="sm-title" class="col-12 col-sm-12">Career Sessions</h1>
             <a id="header-back" class="btn" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></a>
+            <a id="header-insta" class="btn" href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a id="schedule-btn" class="btn" href="https://form.jotform.com/221043959027051" target="_blank"><i class="fa-solid fa-clock"></i></a>
+            <a id="general-btn" class="btn" href="https://form.jotform.com/243628591101150" target="_blank"><i class="fa-solid fa-envelope"></i></a>
         </section>
     </header>
 
     <main class="row">
         <section class="main_category col-12 col-sm-12">
+
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-star"></i> Scroll to view example images! <br><br> Schedule your session by tapping the card below or the button under the card.</p>
             
             <article class="specific_category col-11 col-sm-12 col-xl-3">
                 <a id="standard" href="https://form.jotform.com/221043959027051" target="_blank" class="description col-12 col-sm-12">
@@ -61,7 +70,7 @@
                     A clean, professional headshot that makes a strong first impression. Perfect for resumes, LinkedIn, business profiles, and company directories.
                 </a>
                 <article class="subcat col-12 col-sm-12">
-                    <a class="btn col-12 col-sm-12">Book Your Headshot</a>
+                    <a href="https://form.jotform.com/221043959027051" target="_blank" class="btn col-12 col-sm-12">Book Your Headshot</a>
                     <div id="line" class="col-12 col-sm-12"></div>
                     <p class="duration col-4 col-sm-4"><i class="fa-regular fa-clock"></i><br> 30 min</p>
                     <p class="images col-4 col-sm-4"><i class="fa-solid fa-camera"></i><br> 3 edited</p>
@@ -75,7 +84,7 @@
                     Go beyond the basics with a headshot session that offers more variety. Multiple poses and expressions ensure you get the perfect shot for any professional setting.
                 </a>
                 <article class="subcat col-12 col-sm-12">
-                    <a class="btn col-12 col-sm-12">Get a Polished Look</a>
+                    <a href="https://form.jotform.com/221043959027051" target="_blank" class="btn col-12 col-sm-12">Get a Polished Look</a>
                     <div id="line" class="col-12 col-sm-12"></div>
                     <p class="duration col-4 col-sm-4"><i class="fa-regular fa-clock"></i><br>1 hr</p>
                     <p class="images col-4 col-sm-4"><i class="fa-solid fa-camera"></i><br>6 edited</p>
@@ -89,7 +98,7 @@
                     Showcase your confidence and personality with a dynamic branding session. Great for entrepreneurs, executives, and professionals looking to stand out.
                 </a>
                 <article class="subcat col-12 col-sm-12">
-                    <a class="btn col-12 col-sm-12">Stand Out & Succeed</a>
+                    <a href="https://form.jotform.com/221043959027051" target="_blank" class="btn col-12 col-sm-12">Stand Out & Succeed</a>
                     <div id="line" class="col-12 col-sm-12"></div>
                     <p class="duration col-4 col-sm-4"><i class="fa-regular fa-clock"></i><br>1 hr</p>
                     <p class="images col-4 col-sm-4"><i class="fa-solid fa-camera"></i><br>8 edited</p>
@@ -103,25 +112,42 @@
                     A full-scale branding experience designed to elevate your personal or business image. Multiple outfit changes, locations, and creative direction make this the ultimate career session.
                 </a>
                 <article class="subcat col-12 col-sm-12">
-                    <a class="btn col-12 col-sm-12">Elevate Your Brand</a>
+                    <a href="https://form.jotform.com/221043959027051" target="_blank" class="btn col-12 col-sm-12">Elevate Your Brand</a>
                     <div id="line" class="col-12 col-sm-12"></div>
                     <p class="duration col-4 col-sm-4"><i class="fa-regular fa-clock"></i><br>2 hours</p>
                     <p class="images col-4 col-sm-4"><i class="fa-solid fa-camera"></i><br>12 edited</p>
                     <p class="price col-4 col-sm-4"><i class="fa-solid fa-dollar-sign"></i><br> $400</p>
                 </article>
-            </article>        
+            </article>    
+
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-hand-point-down"></i> Click or tap a photo to expand it!</p>
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-star"></i> Touch again to close the picture</p>    
             
             <article id="gallery" class="col-12 col-sm-12">
                 <!--
-                <div class="image w" style="background-image: url('')"></div>
-                <div class="image h" style="background-image: url('')"></div>
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('')"></div>
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('')"></div>
                 -->
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
+                <!--Dylan - Old Well-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108079316/q%3D80_m%3D600/v2?sig=87621f25df5536ab3ade4c5f3780b233e571c759f025322d71f2059162b0cfb0')"></div>             
+                <!--Emma - Outdoor Headshot-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078237/q%3D80_m%3D600/v2?sig=8c77b348e15daf7a0e80d7f05deb7a44469e14cd36b9446ed88a6e27efe6ee8c')"></div>
+                <!--Marcus - UNC Basketball-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655727/q%3D80_m%3D600/v2?sig=24b552e32bbe3d3a1894299a84f6c00711f37c53523227b97d7d6b75d08fbad9')"></div>            
+                <!--Oriet Signature - Red Star-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655784/q%3D80_m%3D600/v2?sig=b5b1e23ad53df6105ef31a4fcece271382c25aa8ca780bf8bb38bb15a936259e')"></div>            
+                <!--Sam - Classic Headshot-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078632/q%3D80_m%3D600/v2?sig=bffdb1445fcb58c7d38caa1c67c2adc99eea21b11d6c680f1b74ce6127782d9a')"></div>
+                <!--Oriet - Film Portrait-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108540455/q%3D80_m%3D600/v2?sig=6552eacce3718da1f08fa6028268afbda0558fd4c04ca922ba1b63ec5da233e4')"></div>
+                <!--Alex - Golden Silhouette & Piano-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655711/q%3D80_m%3D600/v2?sig=6f00a03b546fb7a0c91a817fdf4c85b848b8dfe50c0e97343586103b846d2a1d')"></div>
+                <!--Alex - Above View Grand Piano Golden-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1105618182/q%3D80_m%3D600/v2?sig=a5fe47e6700c7056493f25f7f4ff517a16b5e8e2d775a53f455d2d1bd2e15f49')"></div>             
+                <!--Joe - Outdoor Alto Sax-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655718/q%3D80_m%3D600/v2?sig=92d5ef4210fc70c5b6353e2ea82f912d4c5a3945ad97db8d5938dc770e4ca666')"></div>               
+                <!--Shea - DJ Light Painting-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1105618325/q%3D80_m%3D600/v2?sig=aa5700bbff5bb276ff8e99b02b680e4b6ace6597162fd2eecbab4d2546db468d')"></div>
             </article>
         
             <!-- Popup Overlay -->

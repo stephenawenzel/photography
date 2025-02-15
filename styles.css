@@ -1,26 +1,3 @@
-/*WORKFLOW ?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
-    1. BIG IDEA CONCEPT
-    2. AUDIENCE TO TARGET
-    3. RESEARCH
-    4. UI DESIGN IDEAS
-        > COLOR PALETTE & TYPOGRAPHY
-            > COLOR BLINDNESS
-        > MOBILE-FIRST DESIGN
-    5. DESIGN PROCESS
-        A. GENERAL SETTINGS
-            a. MOBILE -> ENORMOUS
-        B. HEADER
-            a. MOBILE -> ENORMOUS
-        C. FOOTER
-            a. MOBILE -> ENORMOUS
-        D. MAIN
-            a. MOBILE -> ENORMOUS
-    6. SHOW PEOPLE. TAKE NOTES.
-    7. IMPLEMENT WHAT YOU LEARNED
-    8. ADD NEW IDEAS
-?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????*/
-
-
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ GENERAL SETTINGS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
@@ -51,32 +28,6 @@ body {
     z-index: 5;
     opacity: 70%;
 }
-
-#slideshow {
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    animation: slideshow 20s infinite;
-    transition: background-image 0.25s ease-in-out;
-}
-
-    /* Animation keyframes to switch between images */
-    @keyframes slideshow {
-        0% /*Gradient Horizon*/ { background-image: url('https://drscdn.500px.org/photo/1105280310/q%3D80_m%3D600/v2?sig=9cb3d4bd383a30dc605757f4a31d2b5b3cc0c4fb9c7f917cf42e8205709e2924'); }
-        10% /*Rainbow's Embrace*/ { background-image: url('https://drscdn.500px.org/photo/1105613666/q%3D80_m%3D600/v2?sig=067f021598adc64c6e580b03db9ff0e23f11da725929e5791886f7aa113df0ef'); }
-        20% /*Resting Majesty*/ { background-image: url('https://drscdn.500px.org/photo/1105613670/q%3D80_m%3D600/v2?sig=3f6309bd7536163046de9a86732178266a725d45cc1c06691c7ad15c4b461287'); }
-        30% /*Reaching for the Sky*/ { background-image: url('https://drscdn.500px.org/photo/1105613741/q%3D80_m%3D600/v2?sig=728e4597fafb7a48be1e4b9170d838ad8693ec43ed1677c564851a0ef90b8d7a'); }
-        40% /*Lucie*/ { background-image: url('https://drscdn.500px.org/photo/1105618183/q%3D80_m%3D600/v2?sig=0d3896bfc73b1297ab05482e7c2e69b58259d3845a2d66ed454bf13ae79d7b0f'); }
-        50% /*Oriet*/ { background-image: url('https://drscdn.500px.org/photo/1105618187/q%3D80_m%3D600/v2?sig=bdaa14d6192ef129890ce6f1d9b90f3052e6a8899c6f4ce773358ef5b32eb264'); }
-        60% /*Alex*/ { background-image: url('https://drscdn.500px.org/photo/1105618182/q%3D80_m%3D600/v2?sig=a5fe47e6700c7056493f25f7f4ff517a16b5e8e2d775a53f455d2d1bd2e15f49'); }
-        70% /*Madeline*/ { background-image: url('https://drscdn.500px.org/photo/1105618328/q%3D80_m%3D600/v2?sig=42f4ff4a58eda73f8a25eee13ef2ba960d9844961c0dc79dff32614fcbebe392'); }
-        80% /*Downtime*/ { background-image: url('https://drscdn.500px.org/photo/1105618325/q%3D80_m%3D600/v2?sig=aa5700bbff5bb276ff8e99b02b680e4b6ace6597162fd2eecbab4d2546db468d'); }
-        90% /*J Creek Cloggers*/ { background-image: url('https://drscdn.500px.org/photo/1105618188/q%3D80_m%3D600/v2?sig=9a0595f353d39453c2aa36dd316006539bce13c9409712b648e7bfe676ad4708'); }
-        100% /* Same as start! */{ background-image: url('https://drscdn.500px.org/photo/1105280310/q%3D80_m%3D600/v2?sig=9cb3d4bd383a30dc605757f4a31d2b5b3cc0c4fb9c7f917cf42e8205709e2924'); }
-    }
 
 .btn {
     height: 2em;
@@ -110,28 +61,6 @@ body {
 
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-
-    #slideshow {
-        animation: slideshow 20s infinite;
-    }
-
-    /* Animation keyframes to switch between images */
-    @keyframes slideshow {
-        0% /*Gradient Horizon*/ { background-image: url('https://drscdn.500px.org/photo/1105613671/q%3D80_m%3D600/v2?sig=4b6c2bde352fa86a0420604afa22bcec1f9c9e5fe90c77c161eae108121e50fb'); }
-        10% /*Peak Autumn Vibrance*/ { background-image: url('https://drscdn.500px.org/photo/1105615248/q%3D80_m%3D600/v2?sig=52646cfb466eb612823f61d153426d3cf102771295a1ecb7e447c3e528888459'); }
-        20% /*Semipalmated Plover*/ { background-image: url('https://drscdn.500px.org/photo/1105613675/q%3D80_m%3D600/v2?sig=d2fd3093043c180a70c9dd775e815102ca87b3d41f7e2019d7a3f539126642e9'); }
-        30% /*Intergalactic Explosion*/ { background-image: url('https://drscdn.500px.org/photo/1105613734/q%3D80_m%3D600/v2?sig=ecb8825f199d129d7319674eaec92f715c0ee827abc2d516621ce7ad5a30e830'); }
-        40% /*Lucie*/ { background-image: url('https://drscdn.500px.org/photo/1105618184/q%3D80_m%3D600/v2?sig=44cda1db5e11a7c5ba912d8e2ec0ab2a761cd258a564f1aa4d6f861722762aec'); }
-        50% /*Oriet*/ { background-image: url('https://drscdn.500px.org/photo/1105618185/q%3D80_m%3D600/v2?sig=6abefefb84cac815c5c306d04525dff2c12de583570355141740847d5507deeb'); }
-        60% /*Alex*/ { background-image: url('https://drscdn.500px.org/photo/1105618186/q%3D80_m%3D600/v2?sig=5770248a93f40ab1ddf437abf246acd007441a19aed98b197639fd86ad3a87ea'); }
-        70% /*Madeline*/ { background-image: url('https://drscdn.500px.org/photo/1105618327/q%3D80_m%3D600/v2?sig=dccbe0734ba79df0b17f5fe6d13fe26fab393f01798b58cb1fca20e213985d7f'); }
-        80% /*Downtime*/ { background-image: url('https://drscdn.500px.org/photo/1105618326/q%3D80_m%3D600/v2?sig=ea25d7702274d9d0a73e28721363da4e7897651ff4f643b372374c2cb41bd67f'); }
-        90% /*THS Marching Band*/ { background-image: url('https://drscdn.500px.org/photo/1105618190/q%3D80_m%3D600/v2?sig=1078c69fdd0c16d6da065d9211a0da0d7ea94ef3326414ae0542bfdfa461cc58'); }
-        100% /* Same as start! */ { background-image: url('https://drscdn.500px.org/photo/1105613671/q%3D80_m%3D600/v2?sig=4b6c2bde352fa86a0420604afa22bcec1f9c9e5fe90c77c161eae108121e50fb'); }
-    }
-    
-}
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 
 @media screen and (min-width: 992px) {
@@ -169,6 +98,7 @@ header {
         justify-content: flex-start;
         align-items: center;
         height: 8em;
+        margin-bottom: 3em;
     }
 
         .sig {
@@ -262,7 +192,13 @@ header {
         text-align: left;
         margin: 0.5em 0 0.5em 0;
         padding: 0 0 0 0;
-        max-width: 50%;
+        max-width: 70%;
+    }
+
+    .fa-icon {
+        color: #e8b130;
+        padding: 0.5ch 0.5ch 0.5ch 0.1ch;
+        box-sizing:content-box;
     }
 
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/

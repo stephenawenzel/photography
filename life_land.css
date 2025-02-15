@@ -97,7 +97,9 @@ header {
     }
 
         #sig-box {
-            display:block;
+            display:flex;
+            justify-content: center;
+            align-items: center;
         }
 
             .sig {
@@ -114,10 +116,23 @@ header {
             border-top: 0.01em solid white;
         }
 
+        #md-title {
+            display: none;
+        }
+
     #header-back {
         background-color: black;
         position: absolute;
-        bottom: 60%;
+        bottom: 75%;
+        left: 3%;
+        border: white solid 0.1em;
+        color: white;
+    }
+
+    #header-insta {
+        background-color: black;
+        position: absolute;
+        bottom: 47%;
         left: 3%;
         border: white solid 0.1em;
         color: white;
@@ -126,7 +141,16 @@ header {
     #schedule-btn {
         background-color: black;
         position: absolute;
-        bottom: 60%;
+        bottom: 75%;
+        right: 3%;
+        border: white solid 0.1em;
+        color: white;
+    }
+
+    #general-btn {
+        background-color: black;
+        position: absolute;
+        bottom: 47%;
         right: 3%;
         border: white solid 0.1em;
         color: white;
@@ -135,85 +159,117 @@ header {
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
     
-        #header-back {
-            color: white;
+    #header-back {
+        color: white;
+    }
+
+    #schedule-btn {
+        color: white;
+    }
+    
+}
+
+/*------------- MEDIUM SCREENS (COL-MD-) ----------------------*/
+
+@media screen and (min-width: 768px) {
+    #header-right {
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0.1em;
+    }
+
+    #sm-title {
+        display: none;
+    }
+
+    #md-title {
+        font-size: 1.4em;
+        display: initial;
+        color: white;
+        padding: 0.2em;
+        margin-top: 0;
+        border-top: none;
+    }
+
+    #text {
+        order: 1;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1.5ch 0 1.5ch;
+        margin: 0;
+        max-width: 36ch;
+    }
+
+        #sub-text {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            border-left: white solid 0.1em;
+            border-right: white solid 0.1em;
         }
-    
-        #schedule-btn {
-            color: white;
-        }
-    
-}
 
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
-    
-}
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-        
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-    
-}
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
-    
-}
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
+    #sig-box {
+        order: 3;
+    }
 
-}
-/*====================================================== NAVIGATION PANE ================================================================*/
+    #header-right h2 {
+        padding: 0;
+        margin: 0;
+    }
 
-/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+    #header-back {
+        bottom: -80%;
+        left: 3%;
+    }
 
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
-    
-}
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-        
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-    
-}
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
-    
-}
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
+    #header-insta {
+        bottom: -80%;
+        left: 9%;
+    }
 
-}
-/*====================================================== SOCIAL MEDIA AND CONTACT =======================================================*/
+    #schedule-btn {
+        bottom: -80%;
+        right: initial;
+        left: 15%;
+    }
 
-/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
-
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
-    
-}
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-        
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-    
-}
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
-    
-}
-/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
-@media screen and (min-width: 1400px) {
+    #general-btn {
+        bottom: -80%;
+        right: initial;
+        left: 21%;
+    }
 
 }
 
+@media screen and (min-width: 1000px) {
+
+    #header-back {
+        bottom: 25%;
+        left: 3%;
+    }
+
+    #header-insta {
+        bottom: 25%;
+        left: 9%;
+    }
+
+    #schedule-btn {
+        bottom: 25%;
+        right: initial;
+        left: 15%;
+    }
+
+    #general-btn {
+        bottom: 25%;
+        right: initial;
+        left: 21%;
+    }
+
+}
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ MAIN \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
@@ -422,33 +478,23 @@ footer {
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 ::-webkit-scrollbar {
-    width: 0.5em;
-    background: black; 
-}
-
-::-webkit-scrollbar-track {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
     background: black;
-    border-radius: 0.5em;
-}
-
-::-webkit-scrollbar-thumb {
+  }
+  
+  ::-webkit-scrollbar-thumb {
     background: #e8b130;
-    background-image: -webkit-linear-gradient(
-        20deg, 
-        rgba(255,255,255,.8) 25%, 
-        transparent 25%, 
-        transparent 50%, 
-        rgba(255,255,255,.8) 50%, 
-        rgba(255,255,255,.8) 75%, 
-        transparent 75%
-    );
-    border-radius: 0.5em;
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #d9a020;
-}
+    border-radius: 10px;
+    box-shadow: 0 0 10px #e8b130;
+    transition: box-shadow 0.8s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 20px #e8b130;
+  }
 
 /*---------------------- PRINTING -------------------------------*/
 @media print {

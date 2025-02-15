@@ -44,16 +44,25 @@
             <article id="sig-box">
                 <img class="sig m-0" src="white_signature.png" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
             </article>
-            <h2 style="font-size: 1em;" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
-            <h2 style="font-size: 1em; color: #e8b130;" class="col-12 col-sm-12">Portraits & Nature Photography</h2>
-            <h1 class="col-12 col-sm-12">Talent Session</h1>
+            <article id="text" class="col-12 col-sm-12 col-md-6">
+                <article id="sub-text" class="col-12 col-sm-12">
+                    <h2 style="font-size: 1em;" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
+                    <h2 style="font-size: 1em; color: #e8b130;" class="col-12 col-sm-12">Portraits & Nature Photography</h2>
+                </article>             
+            </article>   
+            <h1 id="md-title">Talent Session</h1>
+            <h1 id="sm-title" class="col-12 col-sm-12">Talent Session</h1>
             <a id="header-back" class="btn" onclick="goBack()"><i class="fa-solid fa-arrow-left"></i></a>
+            <a id="header-insta" class="btn" href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a id="schedule-btn" class="btn" href="https://form.jotform.com/221043959027051" target="_blank"><i class="fa-solid fa-clock"></i></a>
+            <a id="general-btn" class="btn" href="https://form.jotform.com/243628591101150" target="_blank"><i class="fa-solid fa-envelope"></i></a>
         </section>
     </header>
 
     <main class="row">
         <section class="main_category col-12 col-sm-12">
+
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-star"></i> Scroll to view example images! <br><br> Schedule your session by tapping the card below or the button under the card.</p>
             
             <article class="specific_category col-11 col-sm-12 col-xl-3">
                 <a id="talent" href="https://form.jotform.com/221043959027051" target="_blank" class="description col-12 col-sm-12">
@@ -61,25 +70,64 @@
                     Showcase your passion with a photography session that captures your unique talents, hobbies, or business. Let’s create eye-catching images that make you stand out—book today!
                 </a>
                 <article class="subcat col-12 col-sm-12">
-                    <a class="btn col-12 col-sm-12">Showcase Your Passion</a>
+                    <a href="https://form.jotform.com/221043959027051" target="_blank" class="btn col-12 col-sm-12">Showcase Your Passion</a>
                     <div id="line" class="col-12 col-sm-12"></div>
                     <p class="duration col-4 col-sm-4"><i class="fa-regular fa-clock"></i><br> 1.5 hrs</p>
                     <p class="images col-4 col-sm-4"><i class="fa-solid fa-camera"></i><br> 12 edited</p>
                     <p class="price col-4 col-sm-4"><i class="fa-solid fa-dollar-sign"></i><br> $300+</p> 
                 </article>
             </article>            
+
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-hand-point-down"></i> Click or tap a photo to expand it!</p>
+            <p class="notice col-12 col-sm-12"><i class="fa-solid fa-star"></i> Touch again to close the picture</p>
             
             <article id="gallery" class="col-12 col-sm-12">
                 <!--
-                <div class="image w" style="background-image: url('')"></div>
-                <div class="image h" style="background-image: url('')"></div>
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('')"></div>
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('')"></div>
                 -->
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
-                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078638/q%3D80_m%3D600/v2?sig=576012f105269863f588d2231856daf299ce4d0d18ca4989a32129447c0f262b');"></div>
-                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108078635/q%3D80_m%3D600/v2?sig=4a339b18ca90824c88c6ea9ed336319446c66503353e9f2a831643069927364e')"></div>
+
+                <!-- Talents -->
+                <!--Ava & Ciara - Fire Spinning-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655774/q%3D80_m%3D600/v2?sig=6bd9f9230aba3d9dbc5c175b5a1293ede8c2a25284643ddfe22725177d92099a')"></div>
+                <!--Ava - Solo Fire Spinning-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655773/q%3D80_m%3D600/v2?sig=d073a75c802419b4d7800f711bbe0288e7af95c087d48ca262e76050bec7a568')"></div>
+                <!--Oriet Signature - Red Star-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655784/q%3D80_m%3D600/v2?sig=b5b1e23ad53df6105ef31a4fcece271382c25aa8ca780bf8bb38bb15a936259e')"></div>
+                <!--Shea - DJ Light Painting-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1105618325/q%3D80_m%3D600/v2?sig=aa5700bbff5bb276ff8e99b02b680e4b6ace6597162fd2eecbab4d2546db468d')"></div>
+                <!--Raquel - Taekwondo Side Kick with Red and Blue-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108540584/q%3D80_m%3D600/v2?sig=093847b4b129a8e16fbd580bcb46d629e5b3c259e0108292de1cb3b5e73c21b8')"></div>
+                <!--Tori - Stompin' Ground-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655769/q%3D80_m%3D600/v2?sig=0b0e1d8080b58a06f818865c4b7eac6458243a228e6c68d3ddeb6d167e314cf8')"></div>
+
+                <!-- Musicians -->
+                <!--Joe - Outdoor Alto Sax-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655718/q%3D80_m%3D600/v2?sig=92d5ef4210fc70c5b6353e2ea82f912d4c5a3945ad97db8d5938dc770e4ca666')"></div>
+                <!--Grace - Box Ukelele-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655720/q%3D80_m%3D600/v2?sig=f06dc5519f6e6d475f4a247f0b6709ba16068483645ea70e79878cbcea574816')"></div>
+                <!--Sophie - Golden Violin-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655717/q%3D80_m%3D600/v2?sig=e89addf4742e1275d2767afd6115e3367c162de63ddfddc74d761b8220cd0238')"></div>
+                <!--Kathryn - Golden Flute Black Background-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655713/q%3D80_m%3D600/v2?sig=0c219df63827927a63023e1359f180f67083edf7c555b71bffc319ba820b9763')"></div>
+                <!--Madeline - Bass Light Painting-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655716/q%3D80_m%3D600/v2?sig=3b0abef36a516d94700b91bb5d3ff88d3b668d453a067deb0af289e541d64ebd')"></div>
+                <!--Madeline - Magenta Bass Lamppost Portrait-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655714/q%3D80_m%3D600/v2?sig=f117d6e73093abf0cf911788fcdb4fd9d9d5f5c1aaf4db6ea7eff72b33133c63')"></div>
+                <!--Madeline - Bass Natural Light Painting-->
+                <div class="image w" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1105618327/q%3D80_m%3D600/v2?sig=dccbe0734ba79df0b17f5fe6d13fe26fab393f01798b58cb1fca20e213985d7f')"></div>
+                <!--Alex - Grand Piano Green Painting-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655712/q%3D80_m%3D600/v2?sig=bbae0aed91b45b4e9c4f1c2a6a9ca44efc5b037759fa9efc80d89ec41d120506')"></div>
+                <!--Alex - Golden Silhouette & Piano-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655711/q%3D80_m%3D600/v2?sig=6f00a03b546fb7a0c91a817fdf4c85b848b8dfe50c0e97343586103b846d2a1d')"></div>
+                <!--Alex - Above View Grand Piano Golden-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1105618182/q%3D80_m%3D600/v2?sig=a5fe47e6700c7056493f25f7f4ff517a16b5e8e2d775a53f455d2d1bd2e15f49')"></div>
+                <!--Kelly C - Purple Grand Piano Portrait-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655724/q%3D80_m%3D600/v2?sig=9409f7f497dcafe49971d2bdba9be61e4998839d090ad5d0cf2aa9a111816095')"></div>
+                <!--Kelly C - B/W Grand Piano Painting-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655722/q%3D80_m%3D600/v2?sig=19170464afae5106d076e0cabf745be175a52bf17771114835673197f65d411b')"></div>
+                <!--Kelly C - Magenta Piano Painting-->
+                <div class="image h" onclick="openPopup(this)" style="background-image: url('https://drscdn.500px.org/photo/1108655721/q%3D80_m%3D600/v2?sig=58df24e3935f675888f53cad2926982356f35f57f1b82710cf49b8432f4066b2')"></div>
             </article>
         
             <!-- Popup Overlay -->
