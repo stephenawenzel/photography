@@ -541,13 +541,17 @@ footer {
     /* PHOTOS IN ALPHABETICAL ORDER 
     
         #Image_Title {
-            background-image: url("/photography/Creations/Image_Title.jpg");
+            background-image: url("LINK");
         }
     
     */
  
     #A_Sea_of_Carolina_Blue {        
         background-image: url("https://drscdn.500px.org/photo/1105613711/q%3D80_m%3D600/v2?sig=f289271fbc606a8c9046f082529e39d5d805a14ee7f9239bf7269fa9ae380652");
+    }
+
+    #A_Strike_Above {
+        background-image: url("https://drscdn.500px.org/photo/1110429461/q%3D80_m%3D600/v2?sig=b77dba99fb786ae89fdd7189626912faba2d6bd1bc2fc6088df7225eb7137ee3");
     }
     
     #Ars_and_Scientia {
@@ -638,12 +642,32 @@ footer {
         background-image: url("https://drscdn.500px.org/photo/1105613734/q%3D80_m%3D600/v2?sig=ecb8825f199d129d7319674eaec92f715c0ee827abc2d516621ce7ad5a30e830");
     }
 
+    #Lighting_Strike {
+        background-image: url("https://drscdn.500px.org/photo/1110429462/q%3D80_m%3D600/v2?sig=9032d2d53c7f18380116d735e5d61a14017f519e657fb89920a2adc158f4787f");
+    }
+
     #Locks_of_Love {
         background-image: url("https://drscdn.500px.org/photo/1105613735/q%3D80_m%3D600/v2?sig=62ef19d74f2bad6572c328a3085a46b23b0345d9b3811af6f95c778fe1306a67");
     }
 
+    #Lucky {
+        background-image: url("https://drscdn.500px.org/photo/1110429465/q%3D80_m%3D600/v2?sig=183b1bc46aba6235900c3994ea6bfa5d33bdc3eabb25d74ad38e3a49459823f1");
+    }
+
+    #Lucky_Strike {
+        background-image: url("https://drscdn.500px.org/photo/1110429464/q%3D80_m%3D600/v2?sig=0b50ea9dc1ea2d3f9e1c1367b5d0b6e7f8bd992f86b7174242c09e036126cdd6");
+    }
+
+    #Lucky_Strike_Water_Tower {
+        background-image: url("https://drscdn.500px.org/photo/1110429463/q%3D80_m%3D600/v2?sig=6bb9c41b662ef5424707013ee1d1045d3e653f8425680b85a10efaf6bd890b9e");
+    }
+
     #Majesty {
         background-image: url("https://drscdn.500px.org/photo/1105613736/q%3D80_m%3D600/v2?sig=24ea67ca39668de09a26bdf83b66af6046246ba8a0df77752aced4f7c0ce0794");
+    }
+
+    #Make_History_Every_Day {
+        background-image: url("https://drscdn.500px.org/photo/1110429467/q%3D80_m%3D600/v2?sig=7c6be8a9d10630c687a01cce7fdc298247ce50c8f49b3bbcecb7a66bc271c15a");        
     }
 
     #Mathias_Rex {

@@ -690,10 +690,10 @@ input[type="submit"]:hover {
 
 /*
 
-    /* PHOTOS IN ALPHABETICAL ORDER 
+    /* PHOTOS IN ALPHABETICAL ORDER - numbers placed last
     
         #Image_Title {
-            background-image: url("/photography/Life_Landscapes/Image_Title.jpg");
+            background-image: url("LINK");
         }
     
     */
@@ -869,6 +869,10 @@ input[type="submit"]:hover {
     #Lush_Horizons {
         background-image: url("https://drscdn.500px.org/photo/1105613657/q%3D80_m%3D600/v2?sig=39a221a81efde01e8d0c522d81d24d4823f3506e9cba9ca04670cafed95b5783");
     }
+
+    #Magnolia_Blossoms {
+        background-image: url("https://drscdn.500px.org/photo/1110429466/q%3D80_m%3D600/v2?sig=6cc2da5abfe253c4f52f5df88f40949a50d91897d110a8f8c8d00c3fe250d598");
+    }
     
     #Majestic_Repose {
         background-image: url("https://drscdn.500px.org/photo/1105613658/q%3D80_m%3D600/v2?sig=432da3f80e69b66898011eca274859b72a90fa23c49414ac2b37c9ab74fd2cad");
@@ -901,6 +905,10 @@ input[type="submit"]:hover {
     #Perched_on_Tradition {
         background-image: url("https://drscdn.500px.org/photo/1105613664/q%3D80_m%3D600/v2?sig=2d99330f50aa254f2410a4e0a52573a48c34a3a181fbd2d0a156752d0e8f4db0");
     }
+
+    #Pre-Eclipse_Full_Moon {
+        background-image: url("https://drscdn.500px.org/photo/1110429468/q%3D80_m%3D600/v2?sig=210a647c9daa2cb3b94c0d336901b856d4a583d19b97595671180e6d106e45e5");
+    }
     
     #Purple_Stripe_Jellyfish {
         background-image: url("https://drscdn.500px.org/photo/1105613665/q%3D80_m%3D600/v2?sig=8289e27311c3bb4b8d0ebe0aadc5217a314f4494fc6d7db6162fd8091aa1cacd");
@@ -928,6 +936,10 @@ input[type="submit"]:hover {
     
     #Retro_Glow {
         background-image: url("https://drscdn.500px.org/photo/1105613671/q%3D80_m%3D600/v2?sig=4b6c2bde352fa86a0420604afa22bcec1f9c9e5fe90c77c161eae108121e50fb");
+    }
+
+    #Return {
+        background-image: url("https://drscdn.500px.org/photo/1110429469/q%3D80_m%3D600/v2?sig=16ed83a7bf6ea28a9beeeba89fbc8f338ee04d4e7f921bce491f643284f40e68");
     }
     
     #Ripples_of_Dawn {
@@ -984,6 +996,10 @@ input[type="submit"]:hover {
     
     #Sunsets_Icy_Veil {
         background-image: url("https://drscdn.500px.org/photo/1105613685/q%3D80_m%3D600/v2?sig=8be9b6276ff775d98f5649d1655f2b8c597cee9d48f2b1249837d556beae3f9e");
+    }
+
+    #Sweet_Like_Honey {
+        background-image: url("https://drscdn.500px.org/photo/1110429470/q%3D80_m%3D600/v2?sig=aa6ae86e33a13a6104f7e6f4b116f57b267c1bf873f170dd7db24632d21a555e");
     }
     
     #Tapestry_of_Churches {
@@ -1056,6 +1072,10 @@ input[type="submit"]:hover {
     
     #Zebras_Distinctive_Stripes {
         background-image: url("https://drscdn.500px.org/photo/1105613702/q%3D80_m%3D600/v2?sig=c7af17f8475a061a8da82b1db2fd0c1e6108b5aa76f0d5d4b574f90eaa4a6150");
+    }
+
+    #Full_Worm_Moon_2025 {
+        background-image: url("https://drscdn.500px.org/photo/1110429460/q%3D80_m%3D600/v2?sig=5047a2cf040e398ae41b749da4697407a7827e7bec2dc71d8c9276543a49bafa");
     }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
