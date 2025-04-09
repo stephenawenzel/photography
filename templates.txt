@@ -1,0 +1,140 @@
+----------------------- TEMPLATES FOR NEW IMAGES --------------------------
+
+
+    <!--
+    <div class="image w" onclick="openPopup(this)" style="background-image: url('')"></div>
+    <div class="image h" onclick="openPopup(this)" style="background-image: url('')"></div>
+    -->
+
+
+
+    <!-- ORDER ALL IMAGES ALPHABETICALLY
+
+    NEW PHOTO TEMPLATE: 
+    For photos added within the last 3 months: <span style="color: #e8b130; font-weight: bold;">TITLE</span>
+        
+    <section class="cont" data-tags="NEW">
+        <article id="TITLE" class="image col-12 col-sm-12 col-lg-12" onMouseDown="popupMsg('©2025 Stephen Wenzel. To purchase the image, view the store.')"></article>
+        <article class="container_box col-12 col-sm-12 col-lg-12">
+            <h3 class="title col-11 col-sm-8">TITLE</h3>
+            <p class="description col-11 col-sm-8"><i class="fa-solid fa-quote-left"></i>CAPTION<i class="fa-solid fa-quote-right"></i></p>
+                <a href="https://stephenwenzelphotography.pixieset.com/nature/store/" class="btn col-12 col-sm-12 col-lg-8 col-xl-5" target="_blank">View Store</a>
+        </article>
+    </section>
+
+    -->
+
+
+    /* Images in CSS 
+
+        #Image_Title {
+            background-image: url("LINK");
+        }
+
+    */
+
+
+
+
+
+
+
+
+
+------------------------- IDEAS ----------------------------------------
+
+
+    <!-- Slideshow - add later to About.html
+    <article id="philosophy_slideshow" class="about_img col-10 col-sm-10 col-md-6"></article>
+    -->
+            
+    <!-- (Not Yet)
+    <article class="specific_category col-11 col-sm-12 col-xl-3">
+        <a id="weddings-elopements" href="weddings-elopements.html" class="description col-12 col-sm-12">
+            <span>Weddings & Elopements</span><br>
+            Your love story deserves breathtaking photos that last a lifetime. Let’s create stunning wedding or elopement images—book your special day now!
+        </a>
+    </article>
+    -->
+
+
+
+       /*slideshow for L&L or Creations*/
+
+            /*
+            .slideshow {
+                position: relative;
+                height: 20em;
+            }
+
+            .slideshow a {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                animation: fade 25s infinite;
+            }
+
+            .slideshow a:nth-child(1) {
+                animation-delay: 0s;
+            }
+
+            .slideshow a:nth-child(2) {
+                animation-delay: 4s;
+            }
+
+            .slideshow a:nth-child(3) {
+                animation-delay: 8s;
+            }
+
+            .slideshow a:nth-child(4) {
+                animation-delay: 12s;
+            }
+
+            .slideshow a:nth-child(5) {
+                animation-delay: 16s;
+            }
+
+            .slideshow a:nth-child(6) {
+                animation-delay: 20s;
+            }
+
+            .slideshow a:nth-child(7) {
+                animation-delay: 24s;
+            }
+
+            .slideshow a:nth-child(8) {
+                animation-delay: 28s;
+            }
+
+            .slideshow a:nth-child(9) {
+                animation-delay: 32s;
+            }
+
+            .slideshow a:nth-child(10) {
+                animation-delay: 36s;
+            }
+
+            .slideshow img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            @keyframes fade {
+                0% { opacity: 0; }
+                10% { opacity: 1; }
+                25% { opacity: 1; }
+                35% { opacity: 0; }
+                100% { opacity: 0; }
+            }
+
+            /*
+
+
+
+
+
+

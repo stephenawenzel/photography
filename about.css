@@ -267,7 +267,7 @@ main {
     align-items: center;
 }
 
-.title {
+.title_photo {
     height: 9em;
     font-size: 2.8em;
     font-style: italic;
@@ -278,7 +278,6 @@ main {
     align-items: flex-end;
     margin: 0;
     padding: 0.2em;
-    background-color: hsla(255, 100%, 0%, 0.7);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -288,12 +287,21 @@ main {
     background-blend-mode: multiply;
 }
 
+.title {
+    border-top: solid #e8b130;
+    border-bottom: solid #e8b130;
+    font-size: 2em;
+    text-align: center;
+    padding: 0.5em;
+    margin: 0.5em;
+}
+
     #about p {
-        background-color: rgba(255, 255, 255, 0.8);
-        color: black;
+        color: white;
+        font-size: 1.2em;
         margin: 2em 0;
         border-radius: 1em;
-        padding: 1em;
+        padding: 1em 0.25em;
         max-width: 80ch;
     }
 
@@ -309,19 +317,12 @@ main {
     padding: 0;
 }
 
-    #philosophy h1 {
-        background-color: white;
-        color: black;
-        text-align: center;
-        padding: 0.5em 0;
-        margin-top: 2em;
-    }
-
-    #philosophy article {
+    .phil {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
         align-items: center;
+        padding: 0;
     }
 
     #philosophy h3 {
@@ -385,7 +386,6 @@ main {
         height: 25vh;
         width: 90%;
         background-color: black;
-        background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
         background-origin: border-box;
@@ -394,15 +394,19 @@ main {
         box-shadow: 0 0 1em 1em hsla(100, 100%, 100%, 0.2);
     }
 
-        #discovering {
-            background-image: url('https://drscdn.500px.org/photo/1105613679/q%3D80_m%3D600/v2?sig=e2ee1a3287380b632f56c5bbf9c049317211be23a634aed4e322c34db851424e');
+        #selfie {
+            background-image: url('selfie.jpg');
         }
 
         #folkmoot {
             background-image: url('slideshows/wonderland.jpg');
         }
 
-        #uncchapelhill {
+        #folkmoot_group {
+            background-image: url('folkmoot_group.jpg');
+        }
+
+        #senior_photo {
             background-image: url('slideshows/grad.jpg');
         }
 
@@ -411,15 +415,12 @@ main {
         }
 
         #community {
-            background-image: url('slideshows/ths2023.jpg');
+            background-image: url('ths.jpg');
+            background-position: 0% 50%;
         }
 
         #hobbies {
-            background-image: url('slideshows/profiletrail.jpg');
-        }
-
-        #letsconnect {
-            background-image: url('slideshows/sunset.jpeg');
+            background-image: url('fish.JPG');
         }
 
 #organizations {
@@ -509,6 +510,37 @@ main {
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
 
+    #about p {
+        background-color: initial;
+        color: white;
+        height: 25em;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1em;
+    }
+
+    .phil {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        font-size: 1.2em;
+    }
+
+    #philosophy h3 {
+        color: #e8b130;
+        font-size: 1.5em;
+        margin: 1em 0;
+        text-align: center;
+    }
+
+    #philosophy p {
+        color: white;
+    }
+
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
@@ -516,29 +548,6 @@ main {
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
-
-    .phil {
-        margin: 1em 0 1em 0;
-    }
-
-    #philosophy h3 {
-        text-align: center;
-        margin: 0;
-    }
-
-    #philosophy p {
-        text-align: left;
-        border-left: solid #e8b130 0.2em;
-        margin: 0;
-    }
-    
-    #philosophy_slideshow {
-        height: 40em;
-    }
-
-    #about p {
-        max-width: 120ch;
-    }
     
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
