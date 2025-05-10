@@ -513,7 +513,7 @@ main {
     #about p {
         background-color: initial;
         color: white;
-        height: 25em;
+        height: initial;
         display: flex;
         flex-flow: row wrap;
         align-items: center;
@@ -548,6 +548,7 @@ main {
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
+
     
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
