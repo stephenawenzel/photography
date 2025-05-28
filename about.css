@@ -234,24 +234,24 @@ header {
 
     #header-back {
         bottom: 25%;
-        left: 3%;
+        left: 1%;
     }
 
     #header-insta {
         bottom: 25%;
-        left: 9%;
+        left: 7%;
     }
 
     #schedule-btn {
         bottom: 25%;
         right: initial;
-        left: 15%;
+        left: 13%;
     }
 
     #general-btn {
         bottom: 25%;
         right: initial;
-        left: 21%;
+        left: 19%;
     }
 
 }
@@ -423,6 +423,37 @@ main {
             background-image: url('fish.JPG');
         }
 
+    .header-social_media {
+        margin: 1em 0 3em 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-items: center;
+        align-items: center;
+        border-radius: 0.5em;
+        background-color: white;
+    }
+
+        .header-social_media i {
+            padding: 0.1em;
+            color: black;
+            font-size: 3em;
+            margin: 0.2em;
+        }
+
+        .header-social_media a {
+            text-align: center;
+        }
+    
+        .header-social_media i:link, .header-social_media i:visited, .header-social_media i:active{
+            cursor:pointer;
+            color: black;
+        }
+        
+        .header-social_media i:hover{
+            cursor:pointer;
+            color: #E8B130;
+        }
+
 #organizations {
     display: flex;
     flex-flow: row wrap;
@@ -548,8 +579,29 @@ main {
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
+    .header-social_media {
+        width: 20vw;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        background-color: black;
+    }    
 
+        .header-social_media i {
+            color: white;
+        }
     
+        .header-social_media i:link, .header-social_media i:visited, .header-social_media i:active{
+            color: white;
+        }
+
+    #about p {
+        max-width: 50vw;
+    }
+
+    #philosophy p {
+        max-width: 50vw;
+    }
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {

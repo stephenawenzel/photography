@@ -29,7 +29,7 @@
         }
     </script> 
 
-    <!--STYLES FOR BACKGROUND SLIDESHOW - TO LOAD PRIOR TO IT GOING-->
+    <!--STYLES FOR BACKGROUND SLIDESHOW - TO LOAD PRIOR TO IT FUNCTIONING-->
 
     <style id="slideshow">
         #slideshow {
@@ -43,49 +43,40 @@
             transition: background-image 0.25s ease-in-out;
         }
 
-        /* Slideshow Organization & Tips */
-            /*
-            - 60% Landscapes (to showcase natural beauty and establish a strong visual base)
-            - 40% Creative/Talent (strategically placed for impact and variety)
-            - Alternates between landscapes and creative shots for dynamic pacing
-            - Starts and ends with the same image for a seamless transition
-            - Mixes lighting, color tones, and subject variety for a natural rhythm
-            */
-
             @keyframes slideshow {
-                0%   /*Alex - Piano*/ { background-image: url('https://drscdn.500px.org/photo/1108655711/q%3D80_m%3D600/v2?sig=6f00a03b546fb7a0c91a817fdf4c85b848b8dfe50c0e97343586103b846d2a1d'); }
-                7%   /*Emily - Bubbles*/ { background-image: url('https://drscdn.500px.org/photo/1112724426/q%3D80_m%3D600/v2?sig=08f4bc99f60eccca860254ddb89c90226ef57b35300cd04a4ede32fb25378358'); }
-                13%   /*Raquel - TKD*/ { background-image: url('https://drscdn.500px.org/photo/1108540584/q%3D80_m%3D600/v2?sig=093847b4b129a8e16fbd580bcb46d629e5b3c259e0108292de1cb3b5e73c21b8'); } 
-                20%   /*Oriet - Wall*/ { background-image: url('https://drscdn.500px.org/photo/1108655706/q%3D90_m%3D2048/v2?sig=5b8962ab87d4464a321b46d3779bc3c012e69e032558fbf1cb04e5b0b6847db3'); } 
-                27%   /*Lucie - Rainbow*/ { background-image: url('https://drscdn.500px.org/photo/1105618183/q%3D80_m%3D600/v2?sig=0d3896bfc73b1297ab05482e7c2e69b58259d3845a2d66ed454bf13ae79d7b0f'); }  
-                33%   /*Turner - Arboretum*/ { background-image: url('https://drscdn.500px.org/photo/1112724665/q%3D80_m%3D600/v2?sig=199b56b3c80647ea7d3dc03b853891e7987b78f2f7b0e14e8a1aeed08a1e672e'); }  
-                40%   /*J Creek Cloggers - Zeb*/ { background-image: url('https://drscdn.500px.org/photo/1105618188/q%3D80_m%3D600/v2?sig=9a0595f353d39453c2aa36dd316006539bce13c9409712b648e7bfe676ad4708'); }  
-                47%   /*Shea Rush*/ { background-image: url('https://drscdn.500px.org/photo/1105618325/q%3D80_m%3D600/v2?sig=aa5700bbff5bb276ff8e99b02b680e4b6ace6597162fd2eecbab4d2546db468d'); }  
-                53%   /*Sam - Career*/ { background-image: url('https://drscdn.500px.org/photo/1108078632/q%3D80_m%3D600/v2?sig=bffdb1445fcb58c7d38caa1c67c2adc99eea21b11d6c680f1b74ce6127782d9a'); }  
-                60%   /*Eduardo - Grad*/ { background-image: url('https://drscdn.500px.org/photo/1108078637/q%3D80_m%3D600/v2?sig=2c60345d2b07506192278cecb16035a7e77cfe0632ec1791b31e0cceb5872ebd'); }  
-                67%   /*Pathway_to_the_Smoky_Horizon*/ { background-image: url('https://drscdn.500px.org/photo/1105613662/q%3D80_m%3D600/v2?sig=1f04b1b5d2d806f1b91b970488be2ea5b2e2cbd97d830f93b90e0538bc15ebb7'); }  
-                73%   /*Blooming_Mountain_Laurel*/ { background-image: url('https://drscdn.500px.org/photo/1105614820/q%3D80_m%3D600/v2?sig=0755b403e595cf83c9e1a530dd9704e9b26ff3b7ca640547aa904e4cf42a7e11'); }  
-                80%   /*Rainbows_Embrace*/ { background-image: url('https://drscdn.500px.org/photo/1105613666/q%3D80_m%3D600/v2?sig=067f021598adc64c6e580b03db9ff0e23f11da725929e5791886f7aa113df0ef'); }  
-                87%   /*American_Bald_Eagle*/ { background-image: url('https://drscdn.500px.org/photo/1105614829/q%3D80_m%3D600/v2?sig=17e06a07feff044d1ebd807846f13a86e31ab6620cf94a83816160bad648a0a2'); }  
-                100%   /*Reaching_for_the_Sky*/ { background-image: url('https://drscdn.500px.org/photo/1105613741/q%3D80_m%3D600/v2?sig=728e4597fafb7a48be1e4b9170d838ad8693ec43ed1677c564851a0ef90b8d7a'); } 
+                0% /*Emily - Bubbles*/ { background-image: url('https://drscdn.500px.org/photo/1112724426/q%3D80_m%3D600/v2?sig=08f4bc99f60eccca860254ddb89c90226ef57b35300cd04a4ede32fb25378358'); }
+                7% /*Oriet - Wall*/ { background-image: url('https://drscdn.500px.org/photo/1108655706/q%3D90_m%3D2048/v2?sig=5b8962ab87d4464a321b46d3779bc3c012e69e032558fbf1cb04e5b0b6847db3'); } 
+                13% /*Lucie - Rainbow*/ { background-image: url('https://drscdn.500px.org/photo/1105618183/q%3D80_m%3D600/v2?sig=0d3896bfc73b1297ab05482e7c2e69b58259d3845a2d66ed454bf13ae79d7b0f'); }   
+                20% /*Alex - Piano*/ { background-image: url('https://drscdn.500px.org/photo/1105618182/q%3D80_m%3D600/v2?sig=a5fe47e6700c7056493f25f7f4ff517a16b5e8e2d775a53f455d2d1bd2e15f49'); }
+                27% /*Sam - Career*/ { background-image: url('https://drscdn.500px.org/photo/1108078632/q%3D80_m%3D600/v2?sig=bffdb1445fcb58c7d38caa1c67c2adc99eea21b11d6c680f1b74ce6127782d9a'); }  
+                33% /*Turner - Arboretum*/ { background-image: url('https://drscdn.500px.org/photo/1112724665/q%3D80_m%3D600/v2?sig=199b56b3c80647ea7d3dc03b853891e7987b78f2f7b0e14e8a1aeed08a1e672e'); }  
+                40% /*Eduardo - Grad*/ { background-image: url('https://drscdn.500px.org/photo/1108078637/q%3D80_m%3D600/v2?sig=2c60345d2b07506192278cecb16035a7e77cfe0632ec1791b31e0cceb5872ebd'); } 
+                47% /*J Creek Cloggers - Zeb*/ { background-image: url('https://drscdn.500px.org/photo/1105618188/q%3D80_m%3D600/v2?sig=9a0595f353d39453c2aa36dd316006539bce13c9409712b648e7bfe676ad4708'); } 
+                53% /*Shea Rush*/ { background-image: url('https://drscdn.500px.org/photo/1105618325/q%3D80_m%3D600/v2?sig=aa5700bbff5bb276ff8e99b02b680e4b6ace6597162fd2eecbab4d2546db468d'); }  
+                60% /*Raquel TKD*/ { background-image: url('https://drscdn.500px.org/photo/1108540584/q%3D80_m%3D600/v2?sig=093847b4b129a8e16fbd580bcb46d629e5b3c259e0108292de1cb3b5e73c21b8'); }  
+                67% /*Smooth Sailing*/ { background-image: url('https://drscdn.500px.org/photo/1105613677/q%3D80_m%3D600/v2?sig=2290944bbd7eeb59b553f16d3f7186b7489d968806844cfdbbe94a13645f61d2'); }  
+                73% /*Ripples of Dawn*/ { background-image: url('https://drscdn.500px.org/photo/1105613672/q%3D80_m%3D600/v2?sig=20ba74024dde935ed22720e75c85f471b45c6538a83478955226d29638f25731'); } 
+                80% /*Resting Majesty*/ { background-image: url('https://drscdn.500px.org/photo/1105613670/q%3D80_m%3D600/v2?sig=3f6309bd7536163046de9a86732178266a725d45cc1c06691c7ad15c4b461287'); }  
+                87% /*Rainbows_Embrace*/ { background-image: url('https://drscdn.500px.org/photo/1105613666/q%3D80_m%3D600/v2?sig=067f021598adc64c6e580b03db9ff0e23f11da725929e5791886f7aa113df0ef'); }
+                100% /*Lucky Strike - American Tobacco Campus*/ { background-image: url('https://drscdn.500px.org/photo/1110429464/q%3D80_m%3D600/v2?sig=0b50ea9dc1ea2d3f9e1c1367b5d0b6e7f8bd992f86b7174242c09e036126cdd6'); }
             }            
             @media screen and (min-width: 768px) {
                 @keyframes slideshow {
-                0%   /*Madeline - Bass*/ { background-image: url('https://drscdn.500px.org/photo/1105618327/q%3D80_m%3D600/v2?sig=dccbe0734ba79df0b17f5fe6d13fe26fab393f01798b58cb1fca20e213985d7f'); }
-                7%   /*Emily - Thought Bubble*/ { background-image: url('https://drscdn.500px.org/photo/1112724428/q%3D80_m%3D600/v2?sig=6294ad91bc821ab1c7c18b167c2700a093f14135107c6f4ddbc973632e125286'); }
-                13%   /*Kathryn - Flute*/ { background-image: url('https://drscdn.500px.org/photo/1108655713/q%3D80_m%3D600/v2?sig=0c219df63827927a63023e1359f180f67083edf7c555b71bffc319ba820b9763'); } 
-                20%   /*Oriet - Fashion*/ { background-image: url('https://drscdn.500px.org/photo/1105618185/q%3D80_m%3D600/v2?sig=6abefefb84cac815c5c306d04525dff2c12de583570355141740847d5507deeb'); } 
-                27%   /*Lucie - Misty Mountains*/ { background-image: url('https://drscdn.500px.org/photo/1105618184/q%3D80_m%3D600/v2?sig=44cda1db5e11a7c5ba912d8e2ec0ab2a761cd258a564f1aa4d6f861722762aec'); }  
-                33%   /*Charlotte AutoFair - J Creek Cloggers*/ { background-image: url('https://drscdn.500px.org/photo/1108655747/q%3D80_m%3D600/v2?sig=ca5954e1ee1f2a06d31bf2fbba7dfe66db04699ff96641186232c35bd9f81eff'); }  
-                40%   /*Shea Rush & KJ Smith*/ { background-image: url('https://drscdn.500px.org/photo/1108655725/q%3D80_m%3D600/v2?sig=efea39694848bd878eff26a21da19b32e2b2e7d28cfc4e5397e3e9148968926a'); }  
-                47%   /*Marcus - UNC Basketball*/ { background-image: url('https://drscdn.500px.org/photo/1108655727/q%3D80_m%3D600/v2?sig=24b552e32bbe3d3a1894299a84f6c00711f37c53523227b97d7d6b75d08fbad9'); }  
-                53%   /*Ariana's UNC Grad Group - Champagne*/ { background-image: url('https://drscdn.500px.org/photo/1108655758/q%3D80_m%3D600/v2?sig=44162d46a97d26fa7aa5be0b009d9afc9c84abd4033eaa407d54ba0295b8f8c9'); }  
-                60%   /*Sunset_over_the_Blue_Ridge*/ { background-image: url('https://drscdn.500px.org/photo/1105613684/q%3D80_m%3D600/v2?sig=67845d8cf2e4a9b1c8326403ed33d0dc55068776d9ca12bce3b8d7d52e8c2598'); }  
-                67%   /*Peak_Autumn_Vibrance*/ { background-image: url('https://drscdn.500px.org/photo/1105615248/q%3D80_m%3D600/v2?sig=52646cfb466eb612823f61d153426d3cf102771295a1ecb7e447c3e528888459'); }  
-                73%   /*Fryingpan's Warmth*/ { background-image: url('https://drscdn.500px.org/photo/1105280307/q%3D80_m%3D600/v2?sig=5621303a616dc8322af5d87ac6bb824007d0e8985343ceeacbf219591377f5fa'); }  
-                80%   /*Semipalmated_Plover*/ { background-image: url('https://drscdn.500px.org/photo/1105613675/q%3D80_m%3D600/v2?sig=d2fd3093043c180a70c9dd775e815102ca87b3d41f7e2019d7a3f539126642e9'); }  
-                87%   /*Bran_Castle*/ { background-image: url('https://drscdn.500px.org/photo/1105613716/q%3D80_m%3D600/v2?sig=b375b1d3ee4c8629f6485968958376cd3d80342e8257322ca316d99cb0974416'); }  
-                100%   /*Burst*/ { background-image: url('https://drscdn.500px.org/photo/1105613718/q%3D80_m%3D600/v2?sig=06787b3b0dbdc3393f004d93549c75ae8ab910f80fad61581239e4062b5d55c4'); } 
+                0% /*Emily - Thought Bubble*/ { background-image: url('https://drscdn.500px.org/photo/1112724428/q%3D80_m%3D600/v2?sig=6294ad91bc821ab1c7c18b167c2700a093f14135107c6f4ddbc973632e125286'); }
+                7% /*Oriet - Wall*/ { background-image: url('https://drscdn.500px.org/photo/1108655789/q%3D80_m%3D600/v2?sig=b19e2ef3eacdd96b55c4e5670bfc49cbd2f17780c2c9840b90ea00860cc790f3'); }
+                13% /*Lucie - Misty Mountains*/ { background-image: url('https://drscdn.500px.org/photo/1105618184/q%3D80_m%3D600/v2?sig=44cda1db5e11a7c5ba912d8e2ec0ab2a761cd258a564f1aa4d6f861722762aec'); }
+                20% /*Kathryn - Flute*/ { background-image: url('https://drscdn.500px.org/photo/1108655713/q%3D80_m%3D600/v2?sig=0c219df63827927a63023e1359f180f67083edf7c555b71bffc319ba820b9763'); }
+                27% /*Madeline - Bass*/ { background-image: url('https://drscdn.500px.org/photo/1105618327/q%3D80_m%3D600/v2?sig=dccbe0734ba79df0b17f5fe6d13fe26fab393f01798b58cb1fca20e213985d7f'); }
+                33% /*Ava - Old Well Grad*/ { background-image: url('https://drscdn.500px.org/photo/1108655779/q%3D80_m%3D600/v2?sig=1366663eac34ca7f41db9a4bedbf82517cd7ef0b954f66e60fa72cdaf6be8823'); }
+                40% /*Guys Grad Group*/ { background-image: url('https://drscdn.500px.org/photo/1108078636/q%3D80_m%3D600/v2?sig=cddaf02e859fa1b160f6f548bf4c923dac88e28a06357a4d9c391f2ae0b40e7f'); }
+                47% /*Shea Rush & KJ Smith*/ { background-image: url('https://drscdn.500px.org/photo/1108655725/q%3D80_m%3D600/v2?sig=efea39694848bd878eff26a21da19b32e2b2e7d28cfc4e5397e3e9148968926a'); }  
+                53% /*Charlotte AutoFair - J Creek Cloggers*/ { background-image: url('https://drscdn.500px.org/photo/1108655747/q%3D80_m%3D600/v2?sig=ca5954e1ee1f2a06d31bf2fbba7dfe66db04699ff96641186232c35bd9f81eff'); }  
+                60% /*THS Symphonic Band*/ { background-image: url('https://drscdn.500px.org/photo/1108655743/q%3D80_m%3D600/v2?sig=8c674cdd861669db08dd7218d1658f4020d1d9ea550f190dfdba38e664228523'); }
+                67% /*Folkmoot Martisorul - Band*/ { background-image: url('https://drscdn.500px.org/photo/1109059500/q%3D80_m%3D600/v2?sig=4f365004c5a8a9040ccf891ffef69653881483c0bf4255af94c0c9f962e7c559'); }
+                73% /*Folkmoot Bahamas*/ { background-image: url('https://drscdn.500px.org/photo/1109059499/q%3D80_m%3D600/v2?sig=6f01682ce13ff4e6e9ccbd04136868b2b8b45084fb047fb89008d9a2aa9764b7'); }
+                80% /*Whimsy in the Marsh*/ { background-image: url('https://drscdn.500px.org/photo/1105614826/q%3D80_m%3D600/v2?sig=8678ab7d7df2158527e6cd143d742d488c0d194769b388a60a05dc122d365315');}
+                87% /*Crowned in Mist*/ { background-image: url('https://drscdn.500px.org/photo/1105280088/q%3D80_m%3D600/v2?sig=9c5b38010bd3b1ff18d1ac748b895c316d6d8477ee2dcbbbbf47bd85e4912634');} 
+                100% /*Highland Whispers*/ { background-image: url('https://drscdn.500px.org/photo/1105613652/q%3D80_m%3D600/v2?sig=f4f018c6c9bc832819f42fdf55a252443529cdf7f7a8cd9188e8082cc7567e13');} 
                 }            
             }
     </style>
@@ -93,12 +84,12 @@
 
 <body id="slideshow" class="container-fluid">
     <div id="cover"></div>
-    <header class="row pt-2 pb-2">
-        <article class="col-12 col-sm-5 col-md-5 sig-box">
+    <header class="row">
+        <article class="col-12 col-sm-12 col-md-12 sig-box">
             <img class="sig" src="white_signature.png" onMouseDown="popupMsg('Copyright Stephen Wenzel ©2021')">
-            <h2 style="font-size: 1em;" class="col-12 col-sm-12">Stephen Wenzel Photography</h2>
-            <h2 style="font-size: 1em;" class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
-            <h2 style="font-size: 1em; color: #e8b130;" class="col-12 col-sm-12">Portraits & Nature Photography</h2>
+            <h1 class="col-12 col-sm-12">Stephen Wenzel Photography</h1>
+            <h2 class="col-12 col-sm-12">Community, Collaboration, Creativity</h2>
+            <h2 style="color: #e8b130" class="col-12 col-sm-12">Portraits & Nature Photography</h2>
         </article>
         <nav class="col-12 col-sm-8 navbar navbar-expand">
             <div id="menu-button-container" class="col-12 col-sm-12">
@@ -127,23 +118,20 @@
                 </ul>
             </nav>
         </nav>
-    </header>
-    
-    <footer class="row footer pt-3 pb-3">
-        <section class="col-12 col-sm-12 footer-content"></section>
-            <article class="col-10 col-sm-10 col-md-10 footer-info">
-                <p class="col-12 col-sm-12"><i>Feb. 2025 Update</i></p>
+        <section class="col-12 col-sm-12 header-content">
+            <article class="col-12 col-sm-12 col-md-12 header-info">
+                <p class="col-12 col-sm-12"><i>Updated May 2025</i></p>
                 <p class="col-12 col-sm-12">Capturing moments in Durham, NC, and beyond.</p>
                 <p class="col-12 col-sm-12">e. <a href="mailto:swenzelphotography@gmail.com?subject=Website%20Visitor%20Email">swenzelphotography@gmail.com</a></p>
                 <p class="col-12 col-sm-12">©2025 Stephen Wenzel</p>
                 <p class="col-12 col-sm-12">All Rights Reserved</p>
             </article>
-            <article class="footer-social_media col-2 col-sm-2">
+            <article class="header-social_media col- col-sm-">
                 <a href="https://www.instagram.com/stephenwenzelphotography/" target="_blank"><i id="Instagram" class="fab fa-instagram"></i></a>
                 <a href="https://youtube.com/@stephenwenzelphotography?si=eXc3JMnLoyuAF7ax" target="_blank"><i class="fa-brands fa-youtube"></i></a>
             </article>
         </section>
-    </footer>
+    </header>
 
 </body>
     <!-- Optional JavaScript -->

@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-content: center;
     height: 100%;
-    overflow-y: hidden;
+    overflow: hidden;
     cursor: default;
     user-select: none;
 }
@@ -46,6 +46,12 @@ body {
     color: black;
     border: none;
 }
+/*------------- extra small SCREENS ------------------------*/
+@media screen and (max-width: 400px) {
+    body {
+        font-size: 0.8em;
+    }
+}
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
@@ -62,14 +68,25 @@ body {
 
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+    body * {
+        font-size: 1.05em;
+    }
+}
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 
 @media screen and (min-width: 992px) {
 
 }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body * {
+        font-size: 0.95em;
+    }    
+}
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
-    
+
 }
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
 @media screen and (min-width: 1400px) {
@@ -79,16 +96,20 @@ body {
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 /*====================================================== MAIN CONTENT ===================================================================*/
 
+/*Idea - when hovering over a menu option, change background picture to one that relates to option*/
+
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
 header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
     color: white;
-    width: 90%;
+    width: 90vw;
     z-index: 8;
-    position: fixed;
-    overflow-y: hidden;
-    margin: 3em 0 0 0;
-    top: 0;
+    margin: 0;
+    padding: 1em 1em;
     border-left: solid white 0.05em;
     font-size: 1.2em;
 }
@@ -108,10 +129,13 @@ header {
         }
 
         .sig-box h1 {
+            font-size: 1.2em;
             padding: 0;
+            margin-bottom: 1em;
         }
 
         .sig-box h2 {
+            font-size: 1em;
             padding: 0;
         }
 
@@ -121,10 +145,6 @@ header {
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
-    header {
-        border-left: solid white 0.1em;
-        margin-top: 2em;
-    }
 
     .sig-box {
         padding: 0 0 0 1em;
@@ -135,14 +155,14 @@ header {
 @media screen and (min-width: 768px) {
 
     .sig-box {
-        margin-bottom: 3em;
+        margin-bottom: 4em;
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
     }
 
         .sig {
-            max-height: 3em;
+            max-height: 5em;
         }
 
 }
@@ -215,74 +235,55 @@ header {
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
-.footer {
-    width: 90%;
-    color: white;
-    position: fixed;
-    right: 8vw;
-    bottom: 0;
-    font-size: 0.9em;
-    margin-bottom: 5vh;
-    padding: 0;
-    z-index: 8;
+.header-content {
+    font-size: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1em;
 }
 
-.footer-content {
+.header-info {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
+    margin: 0;
 }
 
-.footer-info {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 1em 0 1em;
-}
-
-    .footer-info p {
+    .header-info p {
         padding: 0;
         margin: 0;
-        text-align: right;
+        font-size: 0.9em;
     }
 
-.footer-button {
+.header-social_media {
+    margin: 1em 0 0 0;
     display: flex;
     flex-flow: row wrap;
-    align-content: center;
-    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border-radius: 0.5em;
 }
 
-.footer-social_media {
-    position: relative;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
-    font-size: 1.1em;
-    border-left: 0.1em white solid;
-    padding: 0 0.5em 0 0;
-}
-
-    .footer-social_media i {
-        padding: 0.25em 0.75em 0.25em 0.75em;
+    .header-social_media i {
+        padding: 0.1em;
         color: white;
-        font-size: 1.5em;
-        margin: 0.2em 0.5em;
+        font-size: 2em;
+        margin: 0.2em;
     }
 
-    .footer-social_media a {
+    .header-social_media a {
         text-align: center;
     }
   
-    .footer-social_media i:link, .footer-social_media i:visited, .footer-social_media i:active{
+    .header-social_media i:link, .header-social_media i:visited, .header-social_media i:active{
         cursor:pointer;
         color: white;
     }
     
-    .footer-social_media i:hover{
+    .header-social_media i:hover{
         cursor:pointer;
         color: #E8B130;
     }
@@ -293,42 +294,14 @@ header {
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
-    
-    .footer-content {
-        justify-content: flex-start;
-    }
-
-    .footer-info {
-        justify-content: flex-start;
-        text-align: left;
-    }
-
-    .footer-social_media {
-        justify-content: center;
-    }
 
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
 
-    .footer-info {
-        justify-content: flex-start;
-        text-align: left;
-    }
-
-    .footer-social_media {
-        justify-content: center;
-    }
-
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
 @media screen and (min-width: 1200px) {
-    .footer {
-        width: 50%;
-        right: 0;
-        top: 2em;
-        bottom: initial;
-    }
 }
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
