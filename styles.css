@@ -14,7 +14,6 @@ body {
     justify-content: center;
     align-content: center;
     height: 100%;
-    overflow: hidden;
     cursor: default;
     user-select: none;
 }
@@ -154,15 +153,21 @@ header {
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
 
-    .sig-box {
-        margin-bottom: 4em;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: flex-start;
-    }
-
         .sig {
             max-height: 5em;
+        }
+
+        .sig {
+            max-height: 3em;
+        }
+
+        .sig-box h1 {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+
+        .sig-box h2 {
+            font-size: 1em;
         }
 
 }
