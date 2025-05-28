@@ -108,7 +108,7 @@ header {
     width: 90vw;
     z-index: 8;
     margin: 0;
-    padding: 1em 1em;
+    padding: 0 1em;
     border-left: solid white 0.05em;
     font-size: 1.2em;
 }
@@ -119,7 +119,7 @@ header {
         justify-content: flex-start;
         align-items: center;
         height: 8em;
-        margin-bottom: 3em;
+        margin-bottom: 2em;
     }
 
         .sig {
@@ -130,7 +130,7 @@ header {
         .sig-box h1 {
             font-size: 1.2em;
             padding: 0;
-            margin-bottom: 1em;
+            margin-bottom: 0.5em;
         }
 
         .sig-box h2 {
