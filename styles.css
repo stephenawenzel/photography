@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-content: flex-start;
     height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
     cursor: default;
     user-select: none;
     background-color: black;
@@ -109,7 +109,7 @@ header {
     color: white;
     width: 90vw;
     z-index: 8;
-    margin: 3em 0 0 0;
+    margin: 2em 0 0 0;
     padding: 0 1em;
     border-left: solid white 0.05em;
     font-size: 1.2em;
