@@ -361,7 +361,6 @@ main {
         justify-content: center;
         gap: 0.5em;
         padding: 0.5em;
-        border: solid white 0.1em;
     }
     
         .filter-button {
@@ -586,6 +585,10 @@ footer {
         background-image: url("https://drscdn.500px.org/photo/1105613719/q%3D80_m%3D600/v2?sig=6ad38ca9bd00868b940d38317a19890c566dbcbe7a599558c3e0c6fc750c0a8b");
     }
 
+    #Cascade_of_Wisps {
+        background-image: url("https://drscdn.500px.org/photo/1114668900/q%3D80_m%3D600/v2?sig=6560554705011a479bf444f5dd1da0bb054a93e8849a5c7895f4e8545f970d16");
+    }
+
     #Courtyard_from_Above {
         background-image: url("https://drscdn.500px.org/photo/1105613720/q%3D80_m%3D600/v2?sig=30a51769e98195eb7bcf614ef25934832fecb8cfb32c9510c1dff436cdf3dab0");
     }
@@ -682,6 +685,10 @@ footer {
         background-image: url("https://drscdn.500px.org/photo/1105613739/q%3D80_m%3D600/v2?sig=795ec713cfb0136980c1b047ee9ec484ae26ff99af0171ef034d35f91a9e41cf");
     }
 
+    #Queen_Palm_in_the_Sky {
+        background-image: url("https://drscdn.500px.org/photo/1114668901/q%3D80_m%3D600/v2?sig=272675b191086328785bbc1e8bff5204ec63d96c58dda9ca311e469955f04811");
+    }
+
     #Radiant_Burst {
         background-image: url("https://drscdn.500px.org/photo/1105613740/q%3D80_m%3D600/v2?sig=60abf4f6af1c220d1f60e2a03d22b17bd8d7fb0b4f78f4d1e76b26bf0d10fde2");
     }
@@ -744,6 +751,18 @@ footer {
 
     #Towers_of_the_Holy_Trinity_Church {
         background-image: url("https://drscdn.500px.org/photo/1105613756/q%3D80_m%3D600/v2?sig=b90c629eb21324b605bc6533f8f5f85371e50f9bd747d470bb80659a2f571549");
+    }
+
+    #Traces {
+        background-image: url("https://drscdn.500px.org/photo/1114668902/q%3D80_m%3D600/v2?sig=b42cdf57b90bfb54c5270d68200aea4f0d8010f2acd67c59402240b8222370ca");
+    }
+
+    #Traversing_the_Night {
+        background-image: url("https://drscdn.500px.org/photo/1114668903/q%3D80_m%3D600/v2?sig=d70f61e7037a6268e48571f6f84e903e0dec8b59846b31be420a03c46e38262f");
+    }
+
+    #Turning_Tide {
+        background-image: url("https://drscdn.500px.org/photo/1114668904/q%3D80_m%3D600/v2?sig=dcc691d7fc72c9ade45fba2e275a1f792eb525c285ad47b2fda93a301c70c109");
     }
 
     #View_Through_History {
