@@ -16,36 +16,48 @@ body {
 }
 
 .btn {
-    height: 2em;
+    height: 3em;
+    max-width: 25ch;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0;
+    border: none;
+    font-size: 1.1em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.btn:link, .btn:visited, .btn:hover, .btn:active {
+    background-color: black;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.header_btn {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
     border-radius: 15px;
-    border: none;
-    font-size: 1.1em;
+    font-size: 1.5em;
     background-color: white;
     color: black;
+    text-decoration: none;
 }
 
-.btn:link, .btn:visited, .btn:hover, .btn:active {
+.header_btn:link, .header_btn:visited, .header_btn:hover, .header_btn:active {
     background-color: white;
     color: black;
     border: none;
+    text-decoration: none;
 }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
-
-    .btn:link, .btn:visited, .btn:active {
-        background-color: white;
-        color: black;
-    }
-
-    .btn:hover {
-        background-color: white;
-        color: #E8B130;
-    }
 
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
@@ -54,6 +66,10 @@ body {
 }
 /*------------- LARGE SCREENS (COL-LG-) ------------------------*/
 @media screen and (min-width: 992px) {
+
+    body  {
+        font-size: 1.5rem;
+    }
     
 }
 /*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
@@ -63,6 +79,17 @@ body {
 /*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
 @media screen and (min-width: 1400px) {
 
+}
+
+
+
+/*------------- screns with small heights (COL-LG-) ------------------------*/
+@media screen and (max-height: 992px) {
+
+    body  {
+        font-size: 1rem !important;
+    }
+    
 }
 
 
@@ -77,16 +104,16 @@ header {
     justify-content: center;
     align-content: space-around;
     align-items: center;
-    padding: 1vh 0 0 0;
+    padding: 1em 0 0 0;
     text-align: center;
     position: -webkit-sticky; /*Safari*/
     position: sticky;
     top: 0;
     border-bottom: white 0.1em solid;
     z-index: 10;
-    background-color: black;
     width: 100vw;
     color: white;
+    background-color: black;
 }
 
     #header-right {
@@ -95,6 +122,7 @@ header {
         justify-content: center;
         height: 100%;
         align-content: space-around;
+        background-color: black;
     }
 
         #sig-box {
@@ -112,7 +140,7 @@ header {
         header h1 {
             color: white;
             font-size: 2em;
-            padding: 0.2em;
+            padding: 0.75em;
             margin-top: 0.2em;
             border-top: 0.01em solid white;
         }
@@ -124,50 +152,69 @@ header {
     #header-back {
         background-color: black;
         position: absolute;
-        bottom: 75%;
-        left: 3%;
-        border: white solid 0.1em;
+        bottom: 83%;
+        left: 5%;
         color: white;
+        cursor: pointer;
     }
 
     #header-insta {
         background-color: black;
         position: absolute;
-        bottom: 47%;
-        left: 3%;
-        border: white solid 0.1em;
+        bottom: 60%;
+        left: 5%;
         color: white;
     }
 
     #schedule-btn {
         background-color: black;
         position: absolute;
-        bottom: 75%;
-        right: 3%;
-        border: white solid 0.1em;
+        bottom: 83%;
+        right: 5%;
         color: white;
     }
 
     #general-btn {
         background-color: black;
         position: absolute;
-        bottom: 47%;
-        right: 3%;
-        border: white solid 0.1em;
+        bottom: 60%;
+        right: 5%;
         color: white;
     }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
-    
+    .header_btn {
+        background-color: white !important;
+        color: black !important;
+        border-radius: 0.25em;
+        padding: 0.4em;
+        font-size: 1.5em;
+    }
+
     #header-back {
-        color: white;
+        bottom: 30%;
+        right: initial;
+        left: 1em;
+    }
+
+    #header-insta {
+        bottom: 30%;
+        right: initial;
+        left: 3em;
     }
 
     #schedule-btn {
-        color: white;
+        bottom: 30%;
+        right: initial;
+        left: 5em;
     }
-    
+
+    #general-btn {
+        bottom: 30%;
+        right: initial;
+        left: 7.1em;
+    }
 }
 
 /*------------- MEDIUM SCREENS (COL-MD-) ----------------------*/
@@ -176,7 +223,9 @@ header {
     #header-right {
         align-items: center;
         justify-content: flex-end;
+        align-content: center;
         padding: 0.1em;
+        padding-bottom: 1em;
     }
 
     #sm-title {
@@ -184,6 +233,7 @@ header {
     }
 
     #md-title {
+        order: 1;
         font-size: 1.4em;
         display: initial;
         color: white;
@@ -192,29 +242,11 @@ header {
         border-top: none;
     }
 
-    #text {
-        order: 1;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        padding: 0 1.5ch 0 1.5ch;
-        margin: 0;
-        max-width: 36ch;
-    }
-
-        #sub-text {
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: center;
-            align-items: center;
-            margin: 0;
-            border-left: white solid 0.1em;
-            border-right: white solid 0.1em;
-        }
-
     #sig-box {
-        order: 3;
+        order: 2;
+        padding-left: 1em;
+        margin-left: 1em;
+        border-left: solid #e8b130 0.1em;
     }
 
     #header-right h2 {
@@ -222,52 +254,8 @@ header {
         margin: 0;
     }
 
-    #header-back {
-        bottom: -80%;
-        left: 3%;
-    }
-
-    #header-insta {
-        bottom: -80%;
-        left: 9%;
-    }
-
-    #schedule-btn {
-        bottom: -80%;
-        right: initial;
-        left: 15%;
-    }
-
-    #general-btn {
-        bottom: -80%;
-        right: initial;
-        left: 21%;
-    }
-
-}
-
-@media screen and (min-width: 1000px) {
-
-    #header-back {
-        bottom: 25%;
-        left: 3%;
-    }
-
-    #header-insta {
-        bottom: 25%;
-        left: 9%;
-    }
-
-    #schedule-btn {
-        bottom: 25%;
-        right: initial;
-        left: 15%;
-    }
-
-    #general-btn {
-        bottom: 25%;
-        right: initial;
-        left: 21%;
+    #text {
+        display: none;
     }
 
 }
@@ -282,27 +270,29 @@ main {
     justify-content: space-around;
     align-items: center;
     border-bottom: white solid 0.2em;
+    width: 100vw;
 }
 
 .banner {
-    background-color: gray;
-    font-size: 1em;
+    background-color: white;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
     padding: 0.5em;
     text-align: center;
 }
 
 .cont {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    margin: 3em 0;
+    display: block;
+    width: 100%;
+    float: left;
+    padding: 0.5em;
 }
 
     .image {
         width: 100%;
         height: 20em;
+        max-height: 50vh;
         background-position: center center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -310,50 +300,101 @@ main {
         background-attachment: scroll;
         background-clip: border-box;
         padding: 0;
+        cursor: pointer;
     }
 
     .container_box {
-        background-color: black;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: space-around;
-        border-right: solid hsla(42, 80%, 55%, 0.5) 0.3em;
-        border-top: solid hsla(42, 80%, 55%, 0.5)  0.3em;
-        border-radius: 100% 10% 100% 0;
         color: white;
-        padding: 1em;
-        margin-top: 1em;
+        display: none;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: space-around;
+        border: none;
     }
 
-        .title {
+    /* ---- Popup (Background Image Instead of <img>) ----------------------- */
+    .popup {        
+        display: none;
+        position: fixed;
+        flex-flow: row wrap;
+        justify-content: center;
+        justify-items: center;
+        align-content: center;
+        align-items: center;
+        inset: 0;
+        z-index: 10;
+        padding: 0;
+        margin: 0 auto;
+        background-color: black;
+        border: white solid 0.1em;
+    }
+
+        .popup .image {
+            height: 40em;
+            margin-bottom: 1em;
+            cursor: default;
+        }
+
+        .popup .container_box {
+            background-color: white;
+            padding: 0.5em;
+            border-radius: 1em;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            max-width: 70ch;
+        }
+
+        .popup .title {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
             font-size: 1.3em;
-            font-style: italic;
-            text-align: right;
             padding: 0.3em;
-            border-bottom: solid white 0.1em;
+            color: black;
+            font-weight: bold;
+            margin: 0 0 1em 0;
+            min-width: 20ch;
         }
 
-        .description {
+            .popup .title a {
+                background-color: black;
+                color: white;
+                padding: 0 1em;
+                margin: 0;
+                border-radius: 0.2em;
+            }
+
+            .title {
+                display: none;
+            }
+            
+            /* Hidden for now. I need to edit the descriptions to be much shorter. 3 sentences max.
+        .popup .description {
+            display: block;
             font-size: 1.1em;
-            padding: 1em;
-            opacity: 100%;
-            text-align: justify;
+            padding: 0.5em;
+            color: black;
+            margin: 0;
         }
-
-            .fa-quote-left, .fa-quote-right {
-                color: #e8b130;
-                font-size: 1.1em;
-                opacity: 80%;
+        
+            .description {
+                display: none;
             }
 
-            .fa-quote-left {
-                padding: 0 1em 0 0;
-            }
+            */
 
-            .fa-quote-right {
-                padding: 0 0 0 1em;
-            }
+        .close {
+            position: absolute;
+            top: 0;
+            right: 0.5em;
+            font-size: 3em;
+            padding: 0;
+            cursor: pointer;
+            color: white;
+        }
 
     .filter-buttons {
         display: flex;
@@ -361,10 +402,11 @@ main {
         justify-content: center;
         gap: 0.5em;
         padding: 0.5em;
+        margin: 0.5em 0;
     }
     
         .filter-button {
-            padding: 0.5em 1.5em; 
+            padding: 0.5em 1.5em;
             background-color: white;
             border: none;
             border-radius: 0.5em;
@@ -380,34 +422,81 @@ main {
 
     /* Back to Top Button */
     #backToTop {
-        display: none; /* Initially hidden */
+        display: none;
         position: fixed;
-        bottom: 1.5em;
-        right: 0.7em;
-        background-color: hsla(42, 80%, 55%, 1); /* Button color */
-        color: white;
-        border: none;
-        padding: 0.5em 0.75em;
-        font-size: 1em;
-        border-radius: 0.5em;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+        color: black;
+        border: black solid 0.08em;
+        padding: 0;
+        width: 2em;
+        height: 2em;
+        font-size: 2em;
+        border-radius: 1em 0 0 0;
         cursor: pointer;
         transition: opacity 0.3s ease;
         z-index: 8;
     }
 
     #backToTop:hover {
-        background-color: hsla(42, 80%, 70%, 1); /* Hover color */
+        background-color: white;
     }
+
+    /* Purchase Prints */
+    #Purchase_Prints {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        color: black;
+        border: none;
+        padding: 0;
+        width: 15ch;
+        height: 2.5em;
+        font-size: 1.5em;
+        border: solid black 0.1em;
+        border-radius: 0 1em 0 0;
+        cursor: pointer;
+        z-index: 8;
+        text-decoration: none;
+    }
+
+
+
+/* -------- screens with small heights  ----------------------*/
+    @media screen and (max-height: 700px) {
+        
+        .cont::-webkit-scrollbar {
+            width: initial;
+        }
+        
+        .cont::-webkit-scrollbar-track {
+            background: black;
+            display: initial;
+        }
+        
+        .cont::-webkit-scrollbar-thumb {
+            background: #e8b130;
+            border-radius: 10px;
+        }
+        
+        .cont::-webkit-scrollbar-thumb:hover {
+            box-shadow: 0 0 20px #e8b130;
+        }
+
+    }
+
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
 @media screen and (min-width: 576px) {
-    
+
 }
 /*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
 @media screen and (min-width: 768px) {
 
-    .image {
-        height: 40em;
+    .popup .title {
+        min-width: 50ch;
     }
         
 }
@@ -507,7 +596,6 @@ footer {
     }
 }
 
-
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 ::-webkit-scrollbar {
@@ -516,7 +604,6 @@ footer {
   
   ::-webkit-scrollbar-track {
     background: black;
-    border-left: solid 0.1em white;
   }
   
   ::-webkit-scrollbar-thumb {
@@ -535,6 +622,52 @@ footer {
     body {
         display: none !important;
     }
+}
+
+.form-container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: black;
+}
+
+    .form-container h1 {
+        color: black;
+    }
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: black;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: black;
+}
+
+input[type="submit"] {
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    color: black;
+}
+
+input[type="submit"]:hover {
+    background-color: #4cae4c;
+    color: black;
 }
 
     /* PHOTOS IN ALPHABETICAL ORDER 

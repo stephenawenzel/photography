@@ -294,8 +294,6 @@ main {
         flex-flow: row wrap;
         justify-content: space-around; 
         align-items: center;
-        border-left: dashed 0.5em black;
-        border-right: dashed 0.5em black;
     }
 
     .notice {
