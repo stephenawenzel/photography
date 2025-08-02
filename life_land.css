@@ -120,7 +120,6 @@ header {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        height: 100%;
         align-content: space-around;
         background-color: black;
     }
@@ -141,8 +140,8 @@ header {
             color: white;
             font-size: 2em;
             padding: 0.75em;
-            margin-top: 0.2em;
             border-top: 0.01em solid white;
+            margin: 0;
         }
 
         #md-title {
@@ -183,7 +182,45 @@ header {
     }
 
 /*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) {  
+
+    #header-right {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+        #sig-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .sig {
+                position: relative;
+                max-height: 3em;
+                margin: 0 0 0.1em 0;
+            }
+
+        header h1 {
+            color: white;
+            font-size: 2em;
+            padding: 0.75em;
+            border-top: 0.01em solid white;
+        }
+
+        #md-title {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+            font-size: 1.6em;
+            margin-top: 1em;
+            max-width: 35%;
+            height: 3em;
+        }
+
     .header_btn {
         background-color: white !important;
         color: black !important;
@@ -193,25 +230,25 @@ header {
     }
 
     #header-back {
-        bottom: 30%;
+        bottom: 25%;
         right: initial;
         left: 1em;
     }
 
     #header-insta {
-        bottom: 30%;
+        bottom: 25%;
         right: initial;
         left: 3em;
     }
 
     #schedule-btn {
-        bottom: 30%;
+        bottom: 25%;
         right: initial;
         left: 5em;
     }
 
     #general-btn {
-        bottom: 30%;
+        bottom: 25%;
         right: initial;
         left: 7.1em;
     }
@@ -225,7 +262,6 @@ header {
         justify-content: flex-end;
         align-content: center;
         padding: 0.1em;
-        padding-bottom: 1em;
     }
 
     #sm-title {
@@ -234,7 +270,6 @@ header {
 
     #md-title {
         order: 1;
-        font-size: 1.4em;
         display: initial;
         color: white;
         padding: 0.2em;
@@ -316,10 +351,8 @@ main {
         display: none;
         position: fixed;
         flex-flow: row wrap;
-        justify-content: center;
         justify-items: center;
         align-content: center;
-        align-items: center;
         inset: 0;
         z-index: 10;
         padding: 0;
