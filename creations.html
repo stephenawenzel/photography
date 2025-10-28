@@ -1023,32 +1023,39 @@
     </script>
 
 
-    <script>// Set background images and attach popup trigger
+    <script>
+        // Set background images and attach popup trigger
         document.querySelectorAll('.image').forEach(img => {
-        const src = img.dataset.src;
-        img.style.backgroundImage = `url(${src})`;
+            const src = img.dataset.src;
+            img.style.backgroundImage = `url(${src})`;
 
-        img.addEventListener('click', () => {
-            const section = img.closest('.cont');
-            const clonedSection = section.cloneNode(true);
+            img.addEventListener('click', () => {
+                const section = img.closest('.cont');
+                const clonedSection = section.cloneNode(true);
 
-            // Reset image styles for popup
-            const popupImage = clonedSection.querySelector('.image');
-            popupImage.style.backgroundImage = `url(${src})`;
+                // Reset image styles for popup
+                const popupImage = clonedSection.querySelector('.image');
+                popupImage.style.backgroundImage = `url(${src})`;
 
-            const popupContent = document.getElementById('popup-content');
-            popupContent.innerHTML = '';
-            popupContent.appendChild(clonedSection);
+                const popupContent = document.getElementById('popup-content');
+                popupContent.innerHTML = '';
+                popupContent.appendChild(clonedSection);
 
-            document.getElementById('popup').style.display = 'block';
-        });
+                document.getElementById('popup').style.display = 'block';
+            });
         });
 
         function closePopup() {
             document.getElementById('popup').style.display = 'none';
         }
 
-</script>
+        // Close when clicking anywhere outside the popup content
+        document.getElementById('popup').addEventListener('click', function(e) {
+            if (e.target === this) { // only trigger if the click is on the overlay, not inside content
+                closePopup();
+            }
+        });
+    </script>
 
 
 

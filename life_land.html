@@ -133,6 +133,20 @@
             </article>
         </section>
 
+        <section class="cont" data-tags="Animals,NEW">
+            <article id="American_Red_Squirrel" class="image col-12 col-sm-12 col-lg-12"
+                data-src="https://drscdn.500px.org/photo/1117985168/q%3D75_m%3D600/v2?sig=c21f1a678cb10692b981a5f81d9cc8d67895573c13fe079a88a8dc9a9785fddc">
+            </article>
+            <article class="container_box col-12 col-sm-12 col-lg-12">
+                <h3 class="title col-12 col-sm-12">
+                    American Red Squirrel
+                </h3>
+                <!-- Hidden for now. Need to update descriptions to be shorter.     <p class="description col-12 col-sm-12">
+                </p> -->
+                    <a href="https://stephenwenzelphotography.pixieset.com/life_landscapes/" class="btn col-12 col-sm-12 col-lg-8 col-xl-5" target="_blank">Purchase Prints & Art</a>
+            </article>
+        </section>
+
         <section class="cont" data-tags="Landscapes">
             <article id="Appalachian_Allure" class="image col-12 col-sm-12 col-lg-12"
                 data-src="https://drscdn.500px.org/photo/1105614830/q%3D80_m%3D600/v2?sig=c3481e87efeb77a2162d6e8431f4539a60cdea6adaa867665fa3de6641fe8e83">
@@ -1818,32 +1832,39 @@
     </script>
 
 
-    <script>// Set background images and attach popup trigger
+    <script>
+        // Set background images and attach popup trigger
         document.querySelectorAll('.image').forEach(img => {
-        const src = img.dataset.src;
-        img.style.backgroundImage = `url(${src})`;
+            const src = img.dataset.src;
+            img.style.backgroundImage = `url(${src})`;
 
-        img.addEventListener('click', () => {
-            const section = img.closest('.cont');
-            const clonedSection = section.cloneNode(true);
+            img.addEventListener('click', () => {
+                const section = img.closest('.cont');
+                const clonedSection = section.cloneNode(true);
 
-            // Reset image styles for popup
-            const popupImage = clonedSection.querySelector('.image');
-            popupImage.style.backgroundImage = `url(${src})`;
+                // Reset image styles for popup
+                const popupImage = clonedSection.querySelector('.image');
+                popupImage.style.backgroundImage = `url(${src})`;
 
-            const popupContent = document.getElementById('popup-content');
-            popupContent.innerHTML = '';
-            popupContent.appendChild(clonedSection);
+                const popupContent = document.getElementById('popup-content');
+                popupContent.innerHTML = '';
+                popupContent.appendChild(clonedSection);
 
-            document.getElementById('popup').style.display = 'block';
-        });
+                document.getElementById('popup').style.display = 'block';
+            });
         });
 
         function closePopup() {
             document.getElementById('popup').style.display = 'none';
         }
 
-</script>
+        // Close when clicking anywhere outside the popup content
+        document.getElementById('popup').addEventListener('click', function(e) {
+            if (e.target === this) { // only trigger if the click is on the overlay, not inside content
+                closePopup();
+            }
+        });
+    </script>
 
 
 

@@ -319,7 +319,6 @@ main {
         align-items: center;
         padding: 2em 0;
         margin: 0 0.1em 0 0.1em;
-        max-width: 40ch;
     }    
         
     .specific_category a:link a:visited, a:hover, a:active {
@@ -329,11 +328,12 @@ main {
     }
 
         .description {
-            height: 55vh;
+            height: 20em;
+            width: 20em;
             display: flex;
             flex-flow: row wrap;
-            justify-content: flex-start;
-            align-content: space-between;
+            justify-content: center;
+            align-content: center;
             padding: 1em;
             box-shadow: black 0px 0px 30px;
             border-radius: 0.5em;
@@ -351,11 +351,14 @@ main {
         }
 
             .description span {
-                display: block;
+                display: inline-block;
                 color: white;
-                font-size: 1.5em;
+                font-size: 5em;
                 text-transform: uppercase;
                 font-weight: bold;
+                width: 100%;
+                text-align: center;
+                opacity: 0.7;
             }
 
             .description:hover {
@@ -364,6 +367,9 @@ main {
 
             #classics {
                 background-image: url('https://drscdn.500px.org/photo/1112724426/q%3D80_m%3D600/v2?sig=08f4bc99f60eccca860254ddb89c90226ef57b35300cd04a4ede32fb25378358');    
+                height: 20em;
+                width: 20em;
+                background-position: 50% 70%;
             }
 
                 #mini {
@@ -379,23 +385,30 @@ main {
                 }
 
                     #grad1 {
-                        background-image: url("https://drscdn.500px.org/photo/1108078633/q%3D80_m%3D600/v2?sig=c6cac1fcb5d66bca014388ef16370cc9699d20f7cf1fe1742755279dd7a3ec7c");                
+                        background-image: url("https://drscdn.500px.org/photo/1112724426/q%3D80_m%3D600/v2?sig=08f4bc99f60eccca860254ddb89c90226ef57b35300cd04a4ede32fb25378358");     
+                        background-size: 150%;
+                        background-position: 50% 80%;          
                     }
         
                     #grad2 {
                         background-image: url("https://drscdn.500px.org/photo/1108655777/q%3D80_m%3D600/v2?sig=133229122202cf1691ac9fdb2fd8934cc2a912be99623e6c4acb7e46d1cba917");                
+                        background-size: 160%;
+                        background-position: 50% 50%;
                     }
         
                     #grad4 {
-                        background-image: url("https://drscdn.500px.org/photo/1108655768/q%3D80_m%3D600/v2?sig=c0f3aacae3043e093a3be95ad61a985aa47136377913f2b70ceecf5033a33a1f");                
+                        background-image: url("https://drscdn.500px.org/photo/1108655758/q%3D80_m%3D600/v2?sig=44162d46a97d26fa7aa5be0b009d9afc9c84abd4033eaa407d54ba0295b8f8c9");                
                     }
         
                     #grad7 {
-                        background-image: url("https://drscdn.500px.org/photo/1108655758/q%3D80_m%3D600/v2?sig=44162d46a97d26fa7aa5be0b009d9afc9c84abd4033eaa407d54ba0295b8f8c9");                
+                        background-image: url("https://drscdn.500px.org/photo/1108655761/q%3D80_m%3D600/v2?sig=7c476e05950d95947b84a3656c3b6d4b953233b2dbcd59513c29e556be517c7e");                
                     }
 
             #career {
                 background-image: url('https://drscdn.500px.org/photo/1108078632/q%3D80_m%3D600/v2?sig=bffdb1445fcb58c7d38caa1c67c2adc99eea21b11d6c680f1b74ce6127782d9a');    
+                height: 20em;
+                width: 20em;
+                background-position: 50% 30%;
             }
 
                 #standard {
@@ -415,19 +428,31 @@ main {
                 }
 
             #talent {
-                background-image: url('https://drscdn.500px.org/photo/1108655718/q%3D80_m%3D600/v2?sig=92d5ef4210fc70c5b6353e2ea82f912d4c5a3945ad97db8d5938dc770e4ca666');    
+                background-image: url('https://drscdn.500px.org/photo/1108655718/q%3D80_m%3D600/v2?sig=92d5ef4210fc70c5b6353e2ea82f912d4c5a3945ad97db8d5938dc770e4ca666');
+                height: 20em;
+                width: 20em;
+                background-position: 50% 10%;
             }
 
             #events {
                 background-image: url('https://drscdn.500px.org/photo/1108655751/q%3D80_m%3D600/v2?sig=8f09b4f061f41e3ef0755c5d3134188e52cd2e8588b42d402417375a7736ce63');    
+                height: 20em;
+                width: 20em;
+                background-position: 53% 50%;
             }
 
                 #parties-gatherings {
                     background-image: url('https://drscdn.500px.org/photo/1105618325/q%3D80_m%3D600/v2?sig=aa5700bbff5bb276ff8e99b02b680e4b6ace6597162fd2eecbab4d2546db468d');                    
+                    height: 20em;
+                    width: 20em;
+                    background-position: 50% 30%;
                 }
 
                 #festivals {
                     background-image: url('https://drscdn.500px.org/photo/1109059498/q%3D80_m%3D600/v2?sig=0ebdb16aaef05b4e85577510140aaee5d437a674fdbe8945191fe59128134769');                    
+                    height: 20em;
+                    width: 20em;
+                    background-position: 50% 20%;
                 }
 
                 #weddings-elopements {
@@ -443,7 +468,7 @@ main {
             }
 
     .subcat {
-        padding: 2em 1em 1em 1em;
+        padding: 1em 1em 2em 1em;
         margin: 1.5em 0;
         text-align: center;
         display: flex;
@@ -451,6 +476,11 @@ main {
         justify-content: center;
         border: solid black 0.1em;
     }
+
+        .subcat_rates {
+            color: black;
+            text-decoration: underline;
+        }
 
         .subcat p {
             margin: 0;
@@ -542,10 +572,6 @@ main {
     
 /*------------- iPad Air & Pro -----------------------*/
 @media screen and (min-height: 100px) {
-
-    .description {
-        height: 75vh;
-    }
         
     .h {
         aspect-ratio: 2 / 3;
