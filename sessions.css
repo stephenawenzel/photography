@@ -319,6 +319,7 @@ main {
         align-items: center;
         padding: 2em 0;
         margin: 0 0.1em 0 0.1em;
+        min-height: 40ch;
     }    
         
     .specific_category a:link a:visited, a:hover, a:active {
@@ -328,7 +329,7 @@ main {
     }
 
         .description {
-            height: 20em;
+            height: 40ch;
             width: 20em;
             display: flex;
             flex-flow: row wrap;
@@ -350,6 +351,12 @@ main {
             background-blend-mode:overlay;
         }
 
+            .availability_btn {
+                color: black !important;
+                background-color: white !important;
+                border: solid black 0.2em !important;
+            }
+
             .description span {
                 display: inline-block;
                 color: white;
@@ -366,34 +373,39 @@ main {
             }
 
             #classics {
-                background-image: url('https://drscdn.500px.org/photo/1112724426/q%3D80_m%3D600/v2?sig=08f4bc99f60eccca860254ddb89c90226ef57b35300cd04a4ede32fb25378358');    
+                background-image: url('https://drscdn.500px.org/photo/1108078237/q%3D75_m%3D600/v2?sig=1e871b8a9f2a06a77723ef667ca2af157eb299264b5e305bd88de55eeee84e1a');    
                 height: 20em;
                 width: 20em;
-                background-position: 50% 70%;
+                background-position: 50% 40%;
             }
 
                 #mini {
-                    background-image: url("https://drscdn.500px.org/photo/1108655720/q%3D80_m%3D600/v2?sig=f06dc5519f6e6d475f4a247f0b6709ba16068483645ea70e79878cbcea574816");                
+                    background-image: url("https://drscdn.500px.org/photo/1108655789/q%3D75_m%3D600/v2?sig=66bfd2f603afc091ff1f6242ac82b863b22fdbec39bef2c46d4248e575934179");                
+                    background-position: 50% 20%;
+                    background-size: 170%;
                 }
 
                 #signature {
-                    background-image: url("https://drscdn.500px.org/photo/1108655706/q%3D80_m%3D600/v2?sig=9ab6f994bb3767d9b254d13dd22f00ecf562634889879d980039142e3a1320f0");
+                    background-image: url("https://drscdn.500px.org/photo/1105618184/q%3D75_m%3D600/v2?sig=3a0a2af278ef7d283f0cb5246c2dbb1322dccf9853a897f5189b3f612079bebf");
+                    background-position: 50% 60%;
+                    background-size: 150%;
                 }
 
                 #grad {
-                    background-image: url("https://drscdn.500px.org/photo/1112724665/q%3D80_m%3D600/v2?sig=199b56b3c80647ea7d3dc03b853891e7987b78f2f7b0e14e8a1aeed08a1e672e");                
+                    background-image: url("https://drscdn.500px.org/photo/1108655759/q%3D75_m%3D600/v2?sig=28b8c0da779be808145e157357bb0dd943c85f9842842f8f0f00ffe597d33304");                
+                    background-position: 50% 50%;
+                    background-size: 130%;
                 }
 
                     #grad1 {
-                        background-image: url("https://drscdn.500px.org/photo/1112724426/q%3D80_m%3D600/v2?sig=08f4bc99f60eccca860254ddb89c90226ef57b35300cd04a4ede32fb25378358");     
-                        background-size: 150%;
-                        background-position: 50% 80%;          
+                        background-image: url("https://drscdn.500px.org/photo/1112724424/q%3D75_m%3D600/v2?sig=d8c63c06ae1c9d2a62114b1c584402571d1054b9e82d3613596df6f57a9a0240");     
+                        background-size: 100%;
+                        background-position: 50% 20%;          
                     }
         
                     #grad2 {
-                        background-image: url("https://drscdn.500px.org/photo/1108655777/q%3D80_m%3D600/v2?sig=133229122202cf1691ac9fdb2fd8934cc2a912be99623e6c4acb7e46d1cba917");                
-                        background-size: 160%;
-                        background-position: 50% 50%;
+                        background-image: url("https://drscdn.500px.org/photo/1108655768/q%3D75_m%3D600/v2?sig=a3b538ecfe4dd33407ac1f5c9f961f5ce4b14b14a5350ee523a85bdfc65046b2");                
+                        background-position: 50% 35%;
                     }
         
                     #grad4 {
@@ -413,35 +425,42 @@ main {
 
                 #standard {
                     background-image: url('https://drscdn.500px.org/photo/1108078632/q%3D80_m%3D600/v2?sig=bffdb1445fcb58c7d38caa1c67c2adc99eea21b11d6c680f1b74ce6127782d9a');
+                    background-position: 50% 30%;
                 }
 
                 #upgrade {
                     background-image: url('https://drscdn.500px.org/photo/1108540455/q%3D80_m%3D600/v2?sig=6552eacce3718da1f08fa6028268afbda0558fd4c04ca922ba1b63ec5da233e4');
+                    background-position: 50% 30%;
                 }
 
                 #level-up {
                     background-image: url('https://drscdn.500px.org/photo/1108540575/q%3D80_m%3D600/v2?sig=5073a18cfb68ab4f4a1aebacfc83681c1bdc44e24504a71fddeef6aff824d4d7');
+                    background-position: 50% 30%;
                 }
 
                 #professionalist {
                     background-image: url('https://drscdn.500px.org/photo/1105618182/q%3D80_m%3D600/v2?sig=a5fe47e6700c7056493f25f7f4ff517a16b5e8e2d775a53f455d2d1bd2e15f49');
+                    background-position: 50% 40%;
                 }
 
             #talent {
-                background-image: url('https://drscdn.500px.org/photo/1108655718/q%3D80_m%3D600/v2?sig=92d5ef4210fc70c5b6353e2ea82f912d4c5a3945ad97db8d5938dc770e4ca666');
-                height: 20em;
-                width: 20em;
-                background-position: 50% 10%;
+                background-image: url('https://drscdn.500px.org/photo/1108540584/q%3D75_m%3D600/v2?sig=5840aa2a2d2850533af41b04b958502a0a5196b7202694be446179d2d6d24038');
             }
+
+                #talent_solo {
+                    background-image: url('https://drscdn.500px.org/photo/1108655714/q%3D75_m%3D600/v2?sig=8fd99f773a5b44744c7cf73fc652611dce7efc3c220ef99811daaa4b0c5d7136');
+                    background-position: 50% 20%;
+                }
+
+                #talent_group {
+                    background-image: url('https://drscdn.500px.org/photo/1108655774/q%3D75_m%3D600/v2?sig=3ab442b333fe093e5d3d80cfec6acf9df39499ab2ceef060437986a29124d007');
+                }
 
             #events {
-                background-image: url('https://drscdn.500px.org/photo/1108655751/q%3D80_m%3D600/v2?sig=8f09b4f061f41e3ef0755c5d3134188e52cd2e8588b42d402417375a7736ce63');    
-                height: 20em;
-                width: 20em;
-                background-position: 53% 50%;
+                background-image: url('https://drscdn.500px.org/photo/1109059480/q%3D75_m%3D600/v2?sig=51730995f53012410b37f1c540dcac1bbfbf7c554d4970e2715caa4c074dffe0');    
             }
 
-                #parties-gatherings {
+                #gatherings {
                     background-image: url('https://drscdn.500px.org/photo/1105618325/q%3D80_m%3D600/v2?sig=aa5700bbff5bb276ff8e99b02b680e4b6ace6597162fd2eecbab4d2546db468d');                    
                     height: 20em;
                     width: 20em;
