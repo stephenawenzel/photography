@@ -1,0 +1,492 @@
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ GENERAL SETTINGS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+body {
+    position: relative;
+    font-family: 'Cairo', sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: black;
+    color: white;
+    cursor: default;
+    user-select: none;
+}
+
+.btn {
+    height: 3em;
+    max-width: 25ch;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    border-radius: 0;
+    border: none;
+    font-size: 1.1em;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.btn:link, .btn:visited, .btn:hover, .btn:active {
+    background-color: black;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+a:link, a:visited, a:hover, a:active {
+    background-color: black;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+.header_btns:link, .header_btns:visited, .header_btns:hover, .header_btns:active {
+    background-color: white;
+    color: black !important;
+    border: none;
+    text-decoration: none;
+}
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+        
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+
+    body  {
+        font-size: 1.5rem;
+    }
+    
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+
+
+
+/*------------- screns with small heights (COL-LG-) ------------------------*/
+@media screen and (max-height: 992px) {
+
+    body  {
+        font-size: 1rem !important;
+    }
+    
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*====================================================== MAIN CONTENT ===================================================================*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 1.3em; /* Different from other pages to allow scroll */
+    position: fixed; /* Different from other pages to allow scroll */
+    width: 100%;
+    z-index: 1;
+    font-size: 1em;
+}
+
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+    header {
+        font-size: 1.5em;
+        position: relative; /* Different from other pages to allow scroll */
+        width: initial; /* Different from other pages to allow scroll */
+    }
+}
+
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    header {
+        font-size: 1.1em;
+        justify-content: center;
+        border-bottom: none;
+        padding-bottom: 1em;
+    }
+}
+
+/*====================================================== NAVIGATION PANE ================================================================*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+    
+    .navbar {
+        position: relative;
+        color: white;
+        margin: 0;
+        padding: 0;
+        z-index: 9;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+    }
+
+        .navbar h1 {
+            font-size: 1.5em;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+    .navbar-collapse {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 7.5em;
+    }
+
+    .active a { 
+        color: #E8B130 !important;
+    }
+                
+    .custom-toggler .navbar-toggler {
+        position: relative;
+    }
+
+    #menu-button-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        color: white !important;
+        font-size: 3em;
+        min-height: 5ch;
+    }
+
+    #menu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        cursor:pointer;
+    }
+
+    .navbar-nav {
+        background-color: black;
+        padding: 0;
+        width: 100%;
+    }
+
+        .nav-item {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+            .nav-item a {
+                color: white;
+                min-height: calc( 100svh / 6 );
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-content: center;
+                font-size: 2em;
+            }
+
+            .nav-item a:hover {
+                color: #E8B130;
+            }
+
+        .nav-link {
+            color: white;
+        }
+
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+
+    .navbar h1 {
+        padding: 0.5em;
+    }
+
+    .navbar-collapse {
+        position: relative;
+        top: initial;
+        background-color: black;
+    }
+
+    #menu-button-container {
+        display: none;
+    }
+
+    .navbar-nav {
+        border-top: 0.1em solid white;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .nav-item {
+        max-width: 30%;
+    }
+
+    .nav-item a {
+        min-height: 5ch;
+        font-size: inherit;
+    }
+
+}
+
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    .navbar-nav {
+        border: solid white 0.1em;
+    }
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ MAIN \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+main {
+    background-color: blue;
+    margin-top: 16ch;
+    border-bottom: white solid 0.2em;
+}
+
+.banner {
+    background-color: white;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.5em;
+    text-align: center;
+}
+
+#collection_selection {
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: space-between;
+    padding: 0 1ch;
+    margin: 0;
+}
+
+    #landscape {
+        background-image: url('PeakAutumnVibrance.jpg');
+        background-size: cover;
+        background-position: 80% 50%;
+    }
+
+    #wildlife {
+        background-image: url('AmericanRedSquirrel.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    #black_and_white {
+        background-image: url('NewYorkCitySkyline.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    #abstract{
+        background-image: url('Verticality.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    #travel {
+        background-image: url('TapestryofChurches.jpg');
+        background-size: cover;
+        background-position: 100% 50%;
+    }
+
+.collection_select {
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    height: 20ch;
+    margin: 5ch 0;
+    padding: 5ch;
+    font-size: 1.5em;
+    border-radius: 1ch;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+}
+
+    .hover-underline {
+        background-color: hsla(255, 0%, 0%, 0.5);
+        padding: 0.5ch 1ch;
+        border-radius: 1ch;
+        color: white;
+        position: relative;
+        display: inline-block;
+    }
+
+    .hover-underline::after,
+    .hover-underline::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0.2ch;
+        background: linear-gradient(to right, #e8b130, #ffffff);
+        bottom: -5px;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.4s ease-out;
+        color: white;
+    }
+
+    .hover-underline::before {
+        top: -5px;
+        transform-origin: left;
+        color: white;
+    }
+
+    .hover-underline:hover::after,
+    .hover-underline:hover::before {
+        transform: scaleX(1);
+        color: white;
+    }
+
+.image_info {
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+    text-align: center;
+    margin: 5ch;
+}
+
+    .image_info img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .image_title {
+        color: black;
+        font-size: 1.2em;
+        margin-top: 1em;
+        font-style: italic;
+    }
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+    main {
+        margin-top: initial;
+    }
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+
+        
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ FOOTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+footer {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 5vw;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #e8b130;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #e8b130;
+    transition: box-shadow 0.8s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 20px #e8b130;
+  }
+
+/*---------------------- PRINTING -------------------------------*/
+@media print {
+    body {
+        display: none !important;
+    }
+}
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+    
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+        
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+    
+}
+/*[END] -------- ENORMOUS SCREENS (COL-XL-) ----------------------*/
+@media screen and (min-width: 1400px) {
+
+}
+/*---------------------- PRINTING -------------------------------*/
+@media print {
+
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ FOOTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+footer {
+    color: black;
+    position: fixed;
+    bottom: 0;
+    left: 5vw;
+}

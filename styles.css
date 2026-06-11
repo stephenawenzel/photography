@@ -26,7 +26,7 @@ body {
     margin: 0;
     background-color: black;
     z-index: 4;
-    opacity: 70%;
+    opacity: 100%;
 }
 
 .btn {
@@ -307,76 +307,11 @@ header {
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
 
-.header-content {
-    font-size: 1em;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 0.5em;
-}
-
-.header-info {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0.25em 0 0 0;
-}
-
-    .header-info p {
-        padding: 0;
-        margin: 0;
-        font-size: 0.9em;
-    }
-
-.header-social_media {
-    margin: 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-items: center;
-    align-items: center;
-    border-radius: 0.5em;
-}
-
-    .header-social_media i {
-        padding: 0.1em;
-        color: white;
-        font-size: 2em;
-        margin: 0.2em;
-    }
-
-    .header-social_media a {
-        text-align: center;
-    }
-  
-    .header-social_media i:link, .header-social_media i:visited, .header-social_media i:active{
-        cursor:pointer;
-        color: white;
-    }
-    
-    .header-social_media i:hover{
-        cursor:pointer;
-        color: #E8B130;
-    }
-
-/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
-@media screen and (min-width: 576px) {
-    .header-social_media i {
-        font-size: 1.5em;
-    }
-        
-}
-/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
-@media screen and (min-width: 768px) {
-
-}
-/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
-@media screen and (min-width: 992px) {
-
-}
-/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
-@media screen and (min-width: 1200px) {
+footer {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 5vw;
 }
 
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
