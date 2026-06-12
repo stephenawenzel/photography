@@ -1,0 +1,508 @@
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ GENERAL SETTINGS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+body {
+    position: relative;
+    -webkit-user-select: none; /* Webkit */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10 */
+    /* Currently not supported in Opera but will be soon */
+    -o-user-select: none;
+    user-select: none;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+    cursor: default;
+}
+
+.btn {
+    margin-top: 2em;
+    height: 4em;
+    max-width: 35ch;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    border: solid #E8B130 0.2em;
+    font-size: 1.1em;
+    background-color: hsla(0, 100%, 100%, 0.1);
+    color: white;
+    text-decoration: none;
+}
+
+.btn:link, .btn:visited, .btn:hover, .btn:active {
+    background-color: hsla(0, 100%, 100%, 0.1);
+    color: white;
+    border: solid #e8b130 0.2em;
+    text-decoration: none;
+}
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+
+    html::-webkit-scrollbar {
+        width: 1em;
+        background: white;
+    }
+    
+    html::-webkit-scrollbar-button {
+        display: none;
+    }
+    
+    html::-webkit-scrollbar-thumb {
+        background:#E8B130;
+        border-radius: 5px;
+    }
+    
+    html::-webkit-scrollbar-track {
+        background: white;
+    }
+        
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    body  {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        font-size: 1.5rem;   
+    }
+}
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*====================================================== MAIN CONTENT ===================================================================*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 1.3em; /* Different from other pages to allow scroll */
+    position: fixed; /* Different from other pages to allow scroll */
+    width: 100%;
+    z-index: 1;
+    font-size: 1em;
+}
+
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+    header {
+        font-size: 1.5em;
+        position: relative; /* Different from other pages to allow scroll */
+        width: initial; /* Different from other pages to allow scroll */
+    }
+}
+
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    header {
+        font-size: 1.1em;
+        justify-content: center;
+        border-bottom: none;
+        padding-bottom: 1em;
+    }
+}
+
+/*====================================================== NAVIGATION PANE ================================================================*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+    
+    .navbar {
+        position: relative;
+        color: white;
+        margin: 0;
+        padding: 0;
+        z-index: 9;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+    }
+
+        .navbar h1 {
+            font-size: 1.5em;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+    .navbar-collapse {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 7.5em;
+    }
+
+    .active a { 
+        color: #E8B130 !important;
+    }
+                
+    .custom-toggler .navbar-toggler {
+        position: relative;
+    }
+
+    #menu-button-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        color: white !important;
+        font-size: 3em;
+        min-height: 5ch;
+    }
+
+    #menu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        cursor:pointer;
+    }
+
+    .navbar-nav {
+        background-color: black;
+        padding: 0;
+        width: 100%;
+    }
+
+        .nav-item {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+            .nav-item a {
+                color: white;
+                min-height: calc( 100svh / 8 );
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-content: center;
+                font-size: 1.5em;
+            }
+
+            .nav-item a:hover {
+                color: #E8B130;
+            }
+
+        .nav-link {
+            color: white;
+        }
+
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+
+    .navbar h1 {
+        padding: 0.5em;
+    }
+
+    .navbar-collapse {
+        position: relative;
+        top: initial;
+        background-color: black;
+    }
+
+    #menu-button-container {
+        display: none;
+    }
+
+    .navbar-nav {
+        border-top: 0.1em solid white;
+    }
+
+    .nav-item {
+        max-width: 20%;
+    }
+
+    .nav-item a {
+        min-height: 5ch;
+        font-size: inherit;
+    }
+
+}
+
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    .navbar-nav {
+        border: solid white 0.1em;
+    }
+}
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ MAIN \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    padding-top: 18ch;
+}
+
+    .main_category {
+        padding: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around; 
+        align-items: center;
+    }
+
+    #callout {
+        background-color: white;
+        color: black;
+        font-size: 1.1em;
+        padding: 10ch 2ch;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-content: center;
+    }
+
+    #opening {
+        background-image: linear-gradient(to bottom right, #e8b130, black);
+        color: white;
+        font-size: 1.1em;
+        padding: 2ch;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .category-info {
+        padding: 0;
+        margin: 0;
+        box-shadow: black 0px 0px 30px;
+        border-radius: 1em;
+    }
+
+    .specific_category {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2em 1em;
+        margin: 0;
+        min-height: 40ch;
+    }    
+
+        #foundation_collection {
+            background-image: linear-gradient(to bottom right, gray, black);
+        }
+
+        #foundations {
+            background-image: url("20200820-Oriet_Hemenway-11.jpg");
+            background-position: 50% 15%;
+        }
+
+        #signature_collection {
+            background-image: linear-gradient(to bottom right, purple, black);
+        }
+
+        #signatures {
+            background-image: url("20191202-Madeline_Yara-3.jpg");
+            background-position: center 10%;
+        }
+
+        #legacy_collection {
+            background-image: linear-gradient(to bottom right, #e8b130, black);
+        }
+
+        #legacy {
+            background-image: url("MEJO_489-20260209_Update-15.jpg");
+            background-position: 50% 30%;
+        }
+        
+    .specific_category a:link a:visited, a:hover, a:active {
+        color: white;
+        text-decoration: none;
+        border: none;
+    }
+
+        .description {
+            height: 40ch;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+            border-radius: 1em 1em 0 0;
+            font-size: 1.1em;
+            color: white;
+            background-color: hsla(0, 00%, 00%, 0.7);
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-origin: border-box;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-blend-mode:overlay;
+        }
+        
+        .package_description {
+            height: 40ch;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-content: center;
+            padding: 1em;
+            color: white;
+            background-color: hsla(255, 100%, 100%, 0);
+            font-size: 1.2em;
+        }
+
+            .description span {
+                display: inline-block;
+                color: white;
+                font-size: 3em;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-align: center;
+                opacity: 0.7;
+            }
+
+    .subcat {
+        padding: 1.5em 0;
+        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        font-size: 1.2em;
+    }
+
+        .subcat ul {
+            list-style: none;
+            padding: 1em 0;
+            margin: 0;
+            color: white;
+        }
+
+            .subcat ul li {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;   
+                align-content: center;
+                height: 5ch;   
+            }
+
+            .price {
+                color: #e8b130;
+                font-weight: bold;
+                font-size: 1.3em;
+            }
+
+        .subcat_rates {
+            color: black;
+            text-decoration: underline;
+        }
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+
+    main {
+        padding-top: 0;
+    }
+
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+
+    #callout {
+        font-size: 1em;
+    }
+
+    .specific_category * {
+        max-width: 80vw;
+    }
+
+    .package_description {
+        padding-top: 8ch;
+        padding-bottom: 8ch;
+        margin: 0;
+        height: initial;
+    }
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    
+    main {
+        font-size: 1.2rem;
+    }
+    
+}
+/*------------- EXTRA LARGE SCREENS (COL-XL-) ------------------*/
+@media screen and (min-width: 1200px) {
+
+    main {
+        font-size: 0.9rem;
+    }
+
+    .specific_category {
+        align-content: center;
+        min-height: 220ch;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: space-between;
+        padding-bottom: 20ch;
+    }
+   
+}
+    
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ FOOTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+footer {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 5vw;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #e8b130;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #e8b130;
+    transition: box-shadow 0.8s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 20px #e8b130;
+  }
+
+/*---------------------- PRINTING -------------------------------*/
+@media print {
+    body {
+        display: none !important;
+    }
+}

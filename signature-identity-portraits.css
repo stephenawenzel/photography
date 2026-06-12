@@ -1,0 +1,357 @@
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ GENERAL SETTINGS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+body {
+    position: relative;
+    -webkit-user-select: none; /* Webkit */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10 */
+    /* Currently not supported in Opera but will be soon */
+    -o-user-select: none;
+    user-select: none;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+    cursor: default;
+}
+
+.btn {
+    margin-top: 2em;
+    height: 4em;
+    max-width: 35ch;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    border: solid #E8B130 0.2em;
+    font-size: 1.1em;
+    background-color: hsla(0, 100%, 100%, 0.1);
+    color: white;
+    text-decoration: none;
+}
+
+.btn:link, .btn:visited, .btn:hover, .btn:active {
+    background-color: hsla(0, 100%, 100%, 0.1);
+    color: white;
+    border: solid #e8b130 0.2em;
+    text-decoration: none;
+}
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+
+    html::-webkit-scrollbar {
+        width: 1em;
+        background: white;
+    }
+    
+    html::-webkit-scrollbar-button {
+        display: none;
+    }
+    
+    html::-webkit-scrollbar-thumb {
+        background:#E8B130;
+        border-radius: 5px;
+    }
+    
+    html::-webkit-scrollbar-track {
+        background: white;
+    }
+        
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    body  {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        font-size: 1.5rem;   
+    }
+}
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*====================================================== MAIN CONTENT ===================================================================*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 1.3em; /* Different from other pages to allow scroll */
+    position: fixed; /* Different from other pages to allow scroll */
+    width: 100%;
+    z-index: 1;
+    font-size: 1em;
+}
+
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+    header {
+        font-size: 1.5em;
+        position: relative; /* Different from other pages to allow scroll */
+        width: initial; /* Different from other pages to allow scroll */
+    }
+}
+
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    header {
+        font-size: 1.1em;
+        justify-content: center;
+        padding-bottom: 1em;
+    }
+}
+
+/*====================================================== NAVIGATION PANE ================================================================*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+    
+    .navbar {
+        position: relative;
+        color: white;
+        margin: 0;
+        padding: 0;
+        z-index: 9;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+    }
+
+        .navbar h1 {
+            font-size: 1.5em;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+    .navbar-collapse {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 7.5em;
+    }
+
+    .active a { 
+        color: #E8B130 !important;
+    }
+                
+    .custom-toggler .navbar-toggler {
+        position: relative;
+    }
+
+    #menu-button-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        color: white !important;
+        font-size: 3em;
+        min-height: 5ch;
+    }
+
+    #menu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        cursor:pointer;
+    }
+
+    .navbar-nav {
+        background-color: black;
+        padding: 0;
+        width: 100%;
+    }
+
+        .nav-item {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+            .nav-item a {
+                color: white;
+                min-height: calc( 100svh / 8 );
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-content: center;
+                font-size: 1.5em;
+            }
+
+            .nav-item a:hover {
+                color: #E8B130;
+            }
+
+        .nav-link {
+            color: white;
+        }
+
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+
+    .navbar h1 {
+        padding: 0.5em;
+    }
+
+    .navbar-collapse {
+        position: relative;
+        top: initial;
+        background-color: black;
+    }
+
+    #menu-button-container {
+        display: none;
+    }
+
+    .navbar-nav {
+        border-top: 0.1em solid white;
+    }
+
+    .nav-item {
+        max-width: 20%;
+    }
+
+    .nav-item a {
+        min-height: 5ch;
+        font-size: inherit;
+    }
+
+}
+
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    .navbar-nav {
+        border: solid white 0.1em;
+    }
+}
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ MAIN \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+main {
+    background-color: black;
+    padding-top: 18ch;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* What is a Signature Identity Portrait? */
+
+    #sips {
+        background-color: black;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: space-around;
+        color: white;
+        padding: 2em 0;
+        margin: 0;
+    }
+
+        #sips h3 {
+            font-size: 3em;
+        }
+
+        #sips p {
+            font-size: 1.1em;
+        }
+
+        #sips span {
+            color: #e8b130;
+        }
+
+img {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    padding: 2ch 0;
+}
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+
+    img {
+        max-width: 75%;
+        max-height: 100vh;
+        padding: 2ch;
+    }
+    
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+    main {
+        padding-top: 0;
+    }
+
+    img {
+        max-width: 90%;
+    }
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+
+    img {
+        padding: 7ch;
+    }
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ FOOTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+footer {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 5vw;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #e8b130;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #e8b130;
+    transition: box-shadow 0.8s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 20px #e8b130;
+  }
+
+/*---------------------- PRINTING -------------------------------*/
+@media print {
+    body {
+        display: none !important;
+    }
+}

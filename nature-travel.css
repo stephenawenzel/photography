@@ -87,6 +87,7 @@ a:link, a:visited, a:hover, a:active {
     
 }
 
+
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 /*====================================================== MAIN CONTENT ===================================================================*/
 
@@ -119,7 +120,6 @@ header {
     header {
         font-size: 1.1em;
         justify-content: center;
-        border-bottom: none;
         padding-bottom: 1em;
     }
 }
@@ -202,12 +202,12 @@ header {
 
             .nav-item a {
                 color: white;
-                min-height: calc( 100svh / 6 );
+                min-height: calc( 100svh / 8 );
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: center;
                 align-content: center;
-                font-size: 2em;
+                font-size: 1.5em;
             }
 
             .nav-item a:hover {
@@ -237,13 +237,10 @@ header {
 
     .navbar-nav {
         border-top: 0.1em solid white;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
     }
 
     .nav-item {
-        max-width: 30%;
+        max-width: 20%;
     }
 
     .nav-item a {
@@ -259,7 +256,6 @@ header {
         border: solid white 0.1em;
     }
 }
-
 /*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ MAIN \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
 
 /*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/

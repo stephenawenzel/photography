@@ -1,0 +1,651 @@
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ GENERAL SETTINGS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+body {
+    position: relative;
+    -webkit-user-select: none; /* Webkit */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10 */
+    /* Currently not supported in Opera but will be soon */
+    -o-user-select: none;
+    user-select: none;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: white;
+    cursor: default;
+}
+
+.btn {
+    margin-top: 2em;
+    height: 4em;
+    max-width: 35ch;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    border: solid #E8B130 0.2em;
+    font-size: 1.1em;
+    background-color: hsla(0, 100%, 100%, 0.1);
+    color: white;
+    text-decoration: none;
+}
+
+.btn:link, .btn:visited, .btn:hover, .btn:active {
+    background-color: hsla(0, 100%, 100%, 0.1);
+    color: white;
+    border: solid #e8b130 0.2em;
+    text-decoration: none;
+}
+
+/*------------- SMALL SCREENS (COL-SM-) ------------------------*/
+@media screen and (min-width: 576px) {
+
+}
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+
+    html::-webkit-scrollbar {
+        width: 1em;
+        background: white;
+    }
+    
+    html::-webkit-scrollbar-button {
+        display: none;
+    }
+    
+    html::-webkit-scrollbar-thumb {
+        background:#E8B130;
+        border-radius: 5px;
+    }
+    
+    html::-webkit-scrollbar-track {
+        background: white;
+    }
+        
+}
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    body  {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        font-size: 1.5rem;   
+    }
+}
+
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ HEADER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+/*====================================================== MAIN CONTENT ===================================================================*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    font-size: 1.3em; /* Different from other pages to allow scroll */
+    position: fixed; /* Different from other pages to allow scroll */
+    width: 100%;
+    z-index: 1;
+    font-size: 1em;
+}
+
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+    header {
+        font-size: 1.5em;
+        position: relative; /* Different from other pages to allow scroll */
+        width: initial; /* Different from other pages to allow scroll */
+    }
+}
+
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    header {
+        font-size: 1.1em;
+        justify-content: center;
+        padding-bottom: 1em;
+    }
+}
+
+/*====================================================== NAVIGATION PANE ================================================================*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+    
+    .navbar {
+        position: relative;
+        color: white;
+        margin: 0;
+        padding: 0;
+        z-index: 9;
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+    }
+
+        .navbar h1 {
+            font-size: 1.5em;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+    .navbar-collapse {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 7.5em;
+    }
+
+    .active a { 
+        color: #E8B130 !important;
+    }
+                
+    .custom-toggler .navbar-toggler {
+        position: relative;
+    }
+
+    #menu-button-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        color: white !important;
+        font-size: 3em;
+        min-height: 5ch;
+    }
+
+    #menu {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        cursor:pointer;
+    }
+
+    .navbar-nav {
+        background-color: black;
+        padding: 0;
+        width: 100%;
+    }
+
+        .nav-item {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+
+            .nav-item a {
+                color: white;
+                min-height: calc( 100svh / 8 );
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-content: center;
+                font-size: 1.5em;
+            }
+
+            .nav-item a:hover {
+                color: #E8B130;
+            }
+
+        .nav-link {
+            color: white;
+        }
+
+/*------------- MEDIUM SCREENS (COL-MD-) -----------------------*/
+@media screen and (min-width: 768px) {
+
+    .navbar h1 {
+        padding: 0.5em;
+    }
+
+    .navbar-collapse {
+        position: relative;
+        top: initial;
+        background-color: black;
+    }
+
+    #menu-button-container {
+        display: none;
+    }
+
+    .navbar-nav {
+        border-top: 0.1em solid white;
+    }
+
+    .nav-item {
+        max-width: 20%;
+    }
+
+    .nav-item a {
+        min-height: 5ch;
+        font-size: inherit;
+    }
+
+}
+
+/*------------- LARGE SCREENS (COL-LG-) ------------------------*/
+@media screen and (min-width: 992px) {
+    .navbar-nav {
+        border: solid white 0.1em;
+    }
+}
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ MAIN \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+main {
+    background-color: black;
+    color: white;
+    padding: 18ch 0 0 0;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+
+/* Hero Section */
+
+#opener {
+    min-height: 100vh;
+    padding: 0;
+}
+
+#opening-contents {
+    position: relative;
+    min-height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 0;
+}
+
+    /* Background Image */
+    #opening-contents img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        z-index: -2;
+    }
+
+/* Dark Overlay */
+#opening-contents::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.55);
+    z-index: -1;
+}
+
+/* Text Container */
+#opening-text {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: center;
+    padding: 4em 2em;
+    color: white;
+    text-align: left;
+}
+
+/* Headline */
+#opening-contents h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 4em;
+}
+
+/* Subheadline */
+#opening-contents h2 {
+    color: white;
+    padding: 1em 0;
+    margin: 0;
+    max-width: 30ch;
+}
+
+/* Button spacing */
+#opening-text .btn {
+    margin-top: 2em;
+}
+
+@media screeen and (min-width: 596px){
+    main {
+        padding-top: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #opening-text {
+        text-align: center;
+        justify-content: center;
+    }
+    #opening-text .btn {
+        margin-top: 2em;
+        font-size: 1.4rem;
+    }
+
+    
+}
+
+@media screen and (min-width: 992px) {
+    main {
+        max-width: 100%;
+    }
+
+    #opening-contents h2 {
+        max-width: none;
+    }
+
+    #opening-text {
+        justify-content: center;
+    }
+    
+    .sips-scroll {
+        display: flex;
+        flex-direction: column;
+        animation: verticalScroll 180s linear infinite;
+    }
+}
+
+/* Process */
+
+#process {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+    #process h1 {
+        font-size: 4em;
+        text-align: center;
+        padding: 1em 0.5em;
+        margin: 0;
+    }
+
+    .step {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 3em 0;
+        margin: 0;
+    }
+
+    #process h3 {
+        color: #e8b130;
+        font-size: 2.5em;
+        margin: 0;
+    }
+
+    #process p {
+        color: white;
+        margin: 0;
+        padding: 0.5em initial 2em initial;
+        font-size: 1.2em;
+    }
+
+/* Galleries */
+
+#galleries {
+    background-color: black;
+    padding: 0;
+    overflow: hidden;
+}
+
+    #galleries h2 {
+        font-size: 4em;
+        text-align: center;
+        padding: 0;
+        margin: 2em 0;
+    }
+
+    #galleries h3 {
+        text-align: center;
+    }
+
+    /* EACH ROW */
+    .gallery-row {
+        position: relative;
+        width: 100%;
+        height: 20vh;
+        overflow: hidden;
+        margin: 1.5em 0;
+    }
+
+        /* MOVING TRACK */
+        .gallery-track {
+            display: flex;
+            width: max-content;
+            height: 100%;
+            animation: horizontalScroll 60s linear infinite;
+        }
+
+        /* REVERSE DIRECTION */
+        .gallery-track.reverse {
+            animation-direction: reverse;
+        }
+
+        /* IMAGES */
+        .gallery-track img {
+            height: 20vh;
+            width: auto;
+            object-fit: cover;
+            flex-shrink: 0;
+            margin-right: 1em;
+            transition: transform 0.4s ease;
+        }
+
+        /* HOVER EFFECT */
+        .gallery-track img:hover {
+            transform: scale(1.03);
+        }
+
+        /* PAUSE ON HOVER */
+        .gallery-row:hover .gallery-track {
+            animation-play-state: paused;
+        }
+
+        /* SCROLL ANIMATION */
+        @keyframes horizontalScroll {
+
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+
+        }
+
+        /* MOBILE */
+        @media screen and (max-width: 768px) {
+
+            .gallery-row {
+                height: 16vh;
+                margin: 1em 0;
+            }
+
+            .gallery-track img {
+                height: 16vh;
+            }
+
+        }
+
+
+
+/* Philosophy Section */
+
+#philosophy {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    border: #e8b130 solid 1em;
+}
+
+/* Text Container */
+#philosophy-text {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    padding: 10ch 2ch;
+    min-height: 90vh;
+}
+
+/* Headline */
+#philosophy-text h3 {
+    padding: 0;
+    margin: 0 0 1em 0;
+    font-size: 4em;
+}
+
+/* Philosophy Paragraph */
+#philosophy-text p {
+    color: white;
+    padding: 1em 0;
+    margin: 0;
+    max-width: 32ch;
+    font-size: 1.3em;
+    line-height: 1.6;
+}
+
+/* CTA */
+
+#ending {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+}
+
+#ending-overlay {
+    background-color: black;
+    height: 100%;
+    padding: 1em 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#ending h3 {
+    font-size: 5em;
+    padding-bottom: 0.5em;
+}
+
+#ending p {
+    font-size: 2em;
+    margin-bottom: 2em;
+}
+
+@media screen and (min-width: 768px) {
+
+    #sips {
+        font-size: 1.6rem;
+    }
+
+    #sips-text {
+        justify-content: flex-start;
+    }
+
+    .step {
+        text-align: center;
+    }
+    
+    .step-img {
+        display: none;
+    }
+
+    #process {
+        padding-bottom: 5ch;
+    }
+
+    #ending {
+        text-align: center;
+    }
+
+    #process p {
+        font-size: 1.5em;
+    }
+
+    #philosophy-text {
+        min-height: 50ch;
+    }
+
+    #philosophy-text p {
+        max-width: 50ch;
+    }
+
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ FOOTER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+/*[START] ------ EXTRA SMALL SCREENS (COL-) ---------------------*/
+
+footer {
+    color: white;
+    position: fixed;
+    bottom: 0;
+    left: 5vw;
+}
+
+/*\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ OTHER \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #e8b130;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #e8b130;
+    transition: box-shadow 0.8s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    box-shadow: 0 0 20px #e8b130;
+  }
+
+/*---------------------- PRINTING -------------------------------*/
+@media print {
+    body {
+        display: none !important;
+    }
+}
